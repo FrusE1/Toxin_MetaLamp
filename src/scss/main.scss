@@ -37,4 +37,10 @@ body {
 
 /*   header__ui style start  	*/
 
+.ui-header__container {
+	min-height: $hg_icon;
+	align-items: center;
+	display: grid;
+}
+
 /*   header__ui style start  	*/

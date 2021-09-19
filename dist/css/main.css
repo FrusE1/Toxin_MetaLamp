@@ -120,5 +120,12 @@ body {
   padding: 0 10px; }
 
 /*   header__ui style start  	*/
+.header__container {
+  min-height: 108px; }
+
+.ui__icon {
+  height: 48px;
+  background: url(.././fonts/logo.svg) no-repeat; }
+
 /*   header__ui style start  	*/
 
