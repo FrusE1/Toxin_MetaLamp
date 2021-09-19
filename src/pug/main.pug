@@ -1,9 +1,11 @@
 extends base
 
 block content
-	header.header
-		include header/header_ui
-	main.main
-		.main__colors-type
-			.main__container._container
-				include colors&type/colors
+	.wrapper
+		header.header
+			include header/header_ui
+		main.main
+			.main__colors-type
+				.main__container._container
+					include colors&type/colors
+					include colors&type/text

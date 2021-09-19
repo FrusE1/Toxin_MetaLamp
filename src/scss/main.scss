@@ -1,11 +1,23 @@
 @import "../scss/fonts.scss";
 @import "../scss/null.scss";
 
+// Общие переменные (используемые во всей верстке)
+
+$h1: 24px;
+$lh_h1: calc(29 / 24 * 100%);
+
+$h2: 19px;
+$lh_h2: calc(23 / 19 * 100%);
+
+$h3: 12px;
+$lh_h3: calc(15 / 12 * 100%);
+
+$fz_body: 14px;
+$lh_body: calc(24 / 14 * 100%);
+
 // Переменные body
 
 $color: rgba(31, 32, 65, 0.75);
-$fz: 14px;
-$lh: calc(24 / 14 * 100%);
 $bg: #e5e5e5;
 
 // Переменные блока header__ui
@@ -23,8 +35,8 @@ $cr_colors: #1f2041;
 html,
 body {
 	font-family: Montserrat, sans-serif;
-	font-size: $fz;
-	line-height: $lh;
+	font-size: $fz_body;
+	line-height: $lh_body;
 	color: $color;
 	background-color: $bg;
 }
@@ -41,12 +53,27 @@ body {
 	padding: 0 10px;
 }
 
+/* Основные стили по main */
+
+.main__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Стили для самого блока colors & type */
+
+.main__colors-type {
+	margin-top: 37px;
+}
+
 /*   header__ui style start  	*/
 
 .ui-header__container {
-	min-height: $hg_icon;
-	align-items: center;
 	display: grid;
+	align-items: center;
+	min-height: $hg_icon;
+	width: 100%;
+	padding: 0 30px;
 }
 
 /*   header__ui style end  	*/
@@ -57,12 +84,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: $cr_colors;
-	& > * :not(:last-child) {
-		margin-bottom: 20px;
-	}
 	&__block {
 		display: flex;
 		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 	&__rectangle {
 		width: 70px;
@@ -97,3 +124,33 @@ body {
 }
 
 /*   color style end  	*/
+
+/*   text style start  	*/
+
+.main__text > * {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 30px;
+	margin-bottom: 50px;
+}
+.text__title {
+	color: rgba(31, 32, 65, 0.25);
+	text-align: right;
+}
+.text__subtitle {
+	color: $cr_colors;
+	font-weight: 700;
+}
+.text__h1 {
+	font-size: $h1;
+	line-height: $lh_h1;
+}
+.text__h2 {
+	font-size: $h2;
+	line-height: $lh_h2;
+}
+.text__h3 {
+	font-size: $h3;
+	line-height: $lh_h3;
+}
+/*   text style end  	*/

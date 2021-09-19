@@ -132,7 +132,7 @@ body {
   flex-direction: column;
   color: #1f2041; }
   .colors > * :not(:last-child) {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .colors__block {
     display: flex;
     align-items: center; }
