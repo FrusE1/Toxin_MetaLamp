@@ -1,0 +1,124 @@
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \***********************************************************************************************************/
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url(.././fonts/Montserrat-Regular.eot);
+  src: local("☺"), url(.././fonts/Montserrat-Regular.woff) format("woff"), url(.././fonts/Montserrat-Regular.ttf) format("truetype"), url(.././fonts/Montserrat-Regular.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(.././fonts/Montserrat-Bold.eot);
+  src: local("☺"), url(.././fonts/Montserrat-Bold.woff) format("woff"), url(.././fonts/Montserrat-Bold.ttf) format("truetype"), url(.././fonts/Montserrat-Bold.svg) format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*:before,
+*after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html,
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: calc(24 / 14 * 100%);
+  color: rgba(31, 32, 65, 0.75);
+  background-color: #e5e5e5; }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box; }
+
+._container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+/*   header__ui style start  	*/
+/*   header__ui style start  	*/
+

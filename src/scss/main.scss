@@ -1,0 +1,40 @@
+@import "../scss/fonts.scss";
+@import "../scss/null.scss";
+
+// Переменные body
+
+$color: rgba(31, 32, 65, 0.75);
+$fz: 14px;
+$lh: calc(24 / 14 * 100%);
+$bg: #e5e5e5;
+
+// Переменные header__ui
+
+$hg_icon: 108px;
+
+// Конец переменных
+
+html,
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: $fz;
+	line-height: $lh;
+	color: $color;
+	background-color: $bg;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-sizing: content-box;
+}
+._container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/*   header__ui style start  	*/
+
+/*   header__ui style start  	*/
