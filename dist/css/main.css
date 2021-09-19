@@ -120,12 +120,43 @@ body {
   padding: 0 10px; }
 
 /*   header__ui style start  	*/
-.header__container {
-  min-height: 108px; }
+.ui-header__container {
+  min-height: 108px;
+  align-items: center;
+  display: grid; }
 
-.ui__icon {
-  height: 48px;
-  background: url(.././fonts/logo.svg) no-repeat; }
+/*   header__ui style end  	*/
+/*   color style start  	*/
+.colors {
+  display: flex;
+  flex-direction: column;
+  color: #1f2041; }
+  .colors > * :not(:last-child) {
+    margin-bottom: 20px; }
+  .colors__block {
+    display: flex;
+    align-items: center; }
+  .colors__rectangle {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin-right: 40px; }
+  .colors__black_100 {
+    background-color: #1f2041; }
+  .colors__black_75 {
+    background-color: rgba(31, 32, 65, 0.75); }
+  .colors__black_50 {
+    background-color: rgba(31, 32, 65, 0.5); }
+  .colors__black_25 {
+    background-color: rgba(31, 32, 65, 0.25); }
+  .colors__black_5 {
+    background-color: rgba(31, 32, 65, 0.05); }
+  .colors__purple {
+    background-color: #bc9cff; }
+  .colors__green {
+    background-color: #6fcf97; }
+  .colors__title {
+    font-weight: 700; }
 
-/*   header__ui style start  	*/
+/*   color style end  	*/
 

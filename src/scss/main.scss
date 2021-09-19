@@ -8,9 +8,15 @@ $fz: 14px;
 $lh: calc(24 / 14 * 100%);
 $bg: #e5e5e5;
 
-// Переменные header__ui
+// Переменные блока header__ui
 
 $hg_icon: 108px;
+
+// Переменные блока colors
+
+$fz_colors: 19px;
+$lh_colors: calc(28 / 19 * 100%);
+$cr_colors: #1f2041;
 
 // Конец переменных
 
@@ -43,4 +49,51 @@ body {
 	display: grid;
 }
 
-/*   header__ui style start  	*/
+/*   header__ui style end  	*/
+
+/*   color style start  	*/
+
+.colors {
+	display: flex;
+	flex-direction: column;
+	color: $cr_colors;
+	& > * :not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+	&__rectangle {
+		width: 70px;
+		height: 70px;
+		border-radius: 8px;
+		margin-right: 40px;
+	}
+	&__black_100 {
+		background-color: #1f2041;
+	}
+	&__black_75 {
+		background-color: rgba(31, 32, 65, 0.75);
+	}
+	&__black_50 {
+		background-color: rgba(31, 32, 65, 0.5);
+	}
+	&__black_25 {
+		background-color: rgba(31, 32, 65, 0.25);
+	}
+	&__black_5 {
+		background-color: rgba(31, 32, 65, 0.05);
+	}
+	&__purple {
+		background-color: #bc9cff;
+	}
+	&__green {
+		background-color: #6fcf97;
+	}
+	&__title {
+		font-weight: 700;
+	}
+}
+
+/*   color style end  	*/
