@@ -1,0 +1,11 @@
+/* header-ui style start*/
+
+.ui-header__container {
+	display: grid;
+	align-items: center;
+	min-height: $hg_icon;
+	width: 100%;
+	padding: 0 30px;
+}
+
+/* header style end */

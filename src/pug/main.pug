@@ -2,10 +2,17 @@ extends base
 
 block content
 	.wrapper
+		<!-- header-ui start -->
 		header.header
 			include header/header_ui
+		<!-- header-ui end -->
 		main.main
-			.main__colors-type
-				.main__container._container
+			<!-- colors and type start -->
+			.main__colors-type.colors-type
+				.colors-type__container._container
 					include colors&type/colors
 					include colors&type/text
+			<!-- colors and type end -->
+			.main__form-element.form-element
+				.form-element__container._container
+					include form-element/form-element

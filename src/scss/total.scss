@@ -1,0 +1,20 @@
+html,
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: $fz_body;
+	line-height: $lh_body;
+	color: $color;
+	background-color: $bg;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	box-sizing: content-box;
+}
+._container {
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
