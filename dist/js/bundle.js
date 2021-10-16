@@ -31,6 +31,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./pug/colors&type/colors&type.pug":
+/*!*****************************************!*\
+  !*** ./pug/colors&type/colors&type.pug ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cdiv class=\\\"main__colors-type colors-type\\\"\\u003E\\n  \\u003Cdiv class=\\\"colors-type__container _container\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./colors.pug */ \"./pug/colors&type/colors.pug\").call(this, locals)) ? \"\" : pug_interp) + (null == (pug_interp = __webpack_require__(/*! ./text.pug */ \"./pug/colors&type/text.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n\\u003C\\u002Fdiv\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/colors&type/colors&type.pug?");
+
+/***/ }),
+
 /***/ "./pug/colors&type/colors.pug":
 /*!************************************!*\
   !*** ./pug/colors&type/colors.pug ***!
@@ -51,23 +61,43 @@ eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index
 
 /***/ }),
 
+/***/ "./pug/form-element/fields/default-field.pug":
+/*!***************************************************!*\
+  !*** ./pug/form-element/fields/default-field.pug ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"text-field__reg reg-email\\\"\\u003E\\n  \\u003Cdiv class=\\\"reg-email__title\\\"\\u003E\\n    \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n    \\u003Cp class=\\\"reg-email__text\\\"\\u003EDefault\\u003C\\u002Fp\\u003E\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Email\\\"\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/default-field.pug?");
+
+/***/ }),
+
+/***/ "./pug/form-element/fields/focus-field.pug":
+/*!*************************************************!*\
+  !*** ./pug/form-element/fields/focus-field.pug ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"text-field__reg reg-email\\\"\\u003E\\n  \\u003Cdiv class=\\\"reg-email__title margin-reg\\\"\\u003E\\n    \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n    \\u003Cp class=\\\"reg-email__text\\\"\\u003EHover \\u002F Focus\\u003C\\u002Fp\\u003E\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Email\\\" value=\\\"This is pretty awesome\\\"\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/focus-field.pug?");
+
+/***/ }),
+
+/***/ "./pug/form-element/first-block-element.pug":
+/*!**************************************************!*\
+  !*** ./pug/form-element/first-block-element.pug ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cdiv class=\\\"form-element__first-block\\\"\\u003E\\n  \\u003Cdiv class=\\\"text-field\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/default-field.pug */ \"./pug/form-element/fields/default-field.pug\").call(this, locals)) ? \"\" : pug_interp) + (null == (pug_interp = __webpack_require__(/*! ./fields/focus-field.pug */ \"./pug/form-element/fields/focus-field.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n\\u003C\\u002Fdiv\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/first-block-element.pug?");
+
+/***/ }),
+
 /***/ "./pug/form-element/form-element.pug":
 /*!*******************************************!*\
   !*** ./pug/form-element/form-element.pug ***!
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + (null == (pug_interp = __webpack_require__(/*! ./text-field/default.pug */ \"./pug/form-element/text-field/default.pug\").call(this, locals)) ? \"\" : pug_interp);;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/form-element.pug?");
-
-/***/ }),
-
-/***/ "./pug/form-element/text-field/default.pug":
-/*!*************************************************!*\
-  !*** ./pug/form-element/text-field/default.pug ***!
-  \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"form-element rg-email\\\"\\u003E\\n  \\u003Cinput class=\\\"rg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Email\\\"\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/text-field/default.pug?");
+eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + (null == (pug_interp = __webpack_require__(/*! ./first-block-element.pug */ \"./pug/form-element/first-block-element.pug\").call(this, locals)) ? \"\" : pug_interp);;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/form-element.pug?");
 
 /***/ }),
 
@@ -87,7 +117,7 @@ eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index
   \**********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\n\\u003Chtml lang=\\\"en\\\"\\u003E\\n  \\u003Chead\\u003E\\n    \\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\n    \\u003Cmeta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\"\\u003E\\n    \\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\n    \\u003Ctitle\\u003EDocument\\u003C\\u002Ftitle\\u003E\\n  \\u003C\\u002Fhead\\u003E\\n  \\u003Cbody\\u003E\\n    \\u003Cdiv class=\\\"wrapper\\\"\\u003E\\u003C!-- header-ui start --\\u003E\\n      \\u003Cheader class=\\\"header\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./header/header_ui.pug */ \"./pug/header/header_ui.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n      \\u003C\\u002Fheader\\u003E\\u003C!-- header-ui end --\\u003E\\n      \\u003Cmain class=\\\"main\\\"\\u003E\\u003C!-- colors and type start --\\u003E\\n        \\u003Cdiv class=\\\"main__colors-type colors-type\\\"\\u003E\\n          \\u003Cdiv class=\\\"colors-type__container _container\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./colors&type/colors.pug */ \"./pug/colors&type/colors.pug\").call(this, locals)) ? \"\" : pug_interp) + (null == (pug_interp = __webpack_require__(/*! ./colors&type/text.pug */ \"./pug/colors&type/text.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n          \\u003C\\u002Fdiv\\u003E\\n        \\u003C\\u002Fdiv\\u003E\\u003C!-- colors and type end --\\u003E\\n        \\u003Cdiv class=\\\"main__form-element form-element\\\"\\u003E\\n          \\u003Cdiv class=\\\"form-element__container _container\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./form-element/form-element.pug */ \"./pug/form-element/form-element.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n          \\u003C\\u002Fdiv\\u003E\\n        \\u003C\\u002Fdiv\\u003E\\n      \\u003C\\u002Fmain\\u003E\\n    \\u003C\\u002Fdiv\\u003E\\n  \\u003C\\u002Fbody\\u003E\\n\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/main.pug?");
+eval("var pug = __webpack_require__(/*! !../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\n\\u003Chtml lang=\\\"en\\\"\\u003E\\n  \\u003Chead\\u003E\\n    \\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\n    \\u003Cmeta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\"\\u003E\\n    \\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\n    \\u003Ctitle\\u003EDocument\\u003C\\u002Ftitle\\u003E\\n  \\u003C\\u002Fhead\\u003E\\n  \\u003Cbody\\u003E\\n    \\u003Cdiv class=\\\"wrapper\\\"\\u003E\\u003C!-- header-ui start --\\u003E\\n      \\u003Cheader class=\\\"header\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./header/header_ui.pug */ \"./pug/header/header_ui.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n      \\u003C\\u002Fheader\\u003E\\u003C!-- header-ui end --\\u003E\\n      \\u003Cmain class=\\\"main\\\"\\u003E\\u003C!-- colors and type start --\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./colors&type/colors&type.pug */ \"./pug/colors&type/colors&type.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\u003C!-- colors and type end --\\u003E\\n        \\u003Cdiv class=\\\"main__form-element form-element\\\"\\u003E\\n          \\u003Cdiv class=\\\"form-element__container _container\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./form-element/form-element.pug */ \"./pug/form-element/form-element.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n          \\u003C\\u002Fdiv\\u003E\\n        \\u003C\\u002Fdiv\\u003E\\n      \\u003C\\u002Fmain\\u003E\\n    \\u003C\\u002Fdiv\\u003E\\n  \\u003C\\u002Fbody\\u003E\\n\\u003C\\u002Fhtml\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/main.pug?");
 
 /***/ }),
 
