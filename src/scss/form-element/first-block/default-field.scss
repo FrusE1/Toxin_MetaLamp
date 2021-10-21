@@ -1,6 +1,6 @@
 /* style start default-field */
-.text-field {
-	margin-top: 30px;
+.reg-email > *:not(:last-child) {
+	margin-bottom: 20px;
 }
 .reg-email {
 	box-sizing: border-box;

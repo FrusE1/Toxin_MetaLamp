@@ -61,13 +61,23 @@ eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index
 
 /***/ }),
 
+/***/ "./pug/form-element/fields/date-field.pug":
+/*!************************************************!*\
+  !*** ./pug/form-element/fields/date-field.pug ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cinput type=\\\"date\\\" data-date=\\\"\\\" data-date-format=\\\"DD MMMM YYYY\\\" value=\\\"2015-08-09\\\"\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/date-field.pug?");
+
+/***/ }),
+
 /***/ "./pug/form-element/fields/default-field.pug":
 /*!***************************************************!*\
   !*** ./pug/form-element/fields/default-field.pug ***!
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"text-field__reg reg-email\\\"\\u003E\\n  \\u003Cdiv class=\\\"reg-email__title\\\"\\u003E\\n    \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n    \\u003Cp class=\\\"reg-email__text\\\"\\u003EDefault\\u003C\\u002Fp\\u003E\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Email\\\"\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/default-field.pug?");
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cdiv class=\\\"reg-email__title\\\"\\u003E\\n  \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n  \\u003Cp class=\\\"reg-email__text\\\"\\u003EDefault\\u003C\\u002Fp\\u003E\\n\\u003C\\u002Fdiv\\u003E\\n\\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Email\\\"\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/default-field.pug?");
 
 /***/ }),
 
@@ -77,7 +87,7 @@ eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/in
   \**********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"dropdown__main dropdown-guests\\\"\\u003E\\n  \\u003Ch3 class=\\\"dropdown-guests__title\\\"\\u003EDropdown\\u003C\\u002Fh3\\u003E\\n  \\u003Cdiv class=\\\"dropdown-guests__select\\\"\\u003E\\n    \\u003Cselect class=\\\"dropdown-guests__list\\\" name=\\\"guests\\\" id=\\\"guest\\\"\\u003E\\n      \\u003Coption selected disable\\u003EСколько гостей\\u003C\\u002Foption\\u003E\\n    \\u003C\\u002Fselect\\u003E\\n  \\u003C\\u002Fdiv\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/dropdown-first-block.pug?");
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Ch3 class=\\\"dropdown-guests__title\\\"\\u003EDropdown\\u003C\\u002Fh3\\u003E\\n\\u003Cdiv class=\\\"dropdown-guests__select\\\"\\u003E\\n  \\u003Cselect class=\\\"dropdown-guests__list\\\" name=\\\"guests\\\" id=\\\"guest\\\"\\u003E\\n    \\u003Coption selected disable\\u003EСколько гостей\\u003C\\u002Foption\\u003E\\n  \\u003C\\u002Fselect\\u003E\\n\\u003C\\u002Fdiv\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/dropdown-first-block.pug?");
 
 /***/ }),
 
@@ -87,7 +97,7 @@ eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/in
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"text-field__reg reg-email\\\"\\u003E\\n  \\u003Cdiv class=\\\"reg-email__title margin-reg\\\"\\u003E\\n    \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n    \\u003Cp class=\\\"reg-email__text\\\"\\u003EHover \\u002F Focus\\u003C\\u002Fp\\u003E\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Text\\\" value=\\\"This is pretty awesome\\\"\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/focus-field.pug?");
+eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cdiv class=\\\"reg-email__title\\\"\\u003E\\n  \\u003Ch3 class=\\\"reg-email__text-main\\\"\\u003EText Field\\u003C\\u002Fh3\\u003E\\n  \\u003Cp class=\\\"reg-email__text\\\"\\u003EHover \\u002F Focus\\u003C\\u002Fp\\u003E\\n\\u003C\\u002Fdiv\\u003E\\n\\u003Cinput class=\\\"reg-email__input\\\" type=\\\"text\\\" name=\\\"user-email\\\" placeholder=\\\"Text\\\" value=\\\"This is pretty awesome\\\"\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/fields/focus-field.pug?");
 
 /***/ }),
 
@@ -97,7 +107,7 @@ eval("var pug = __webpack_require__(/*! !../../../../node_modules/pug-runtime/in
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cdiv class=\\\"form-element__first-block\\\"\\u003E\\n  \\u003Cdiv class=\\\"text-field\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/default-field.pug */ \"./pug/form-element/fields/default-field.pug\").call(this, locals)) ? \"\" : pug_interp) + (null == (pug_interp = __webpack_require__(/*! ./fields/focus-field.pug */ \"./pug/form-element/fields/focus-field.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cdiv class=\\\"dropdown\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/dropdown-first-block.pug */ \"./pug/form-element/fields/dropdown-first-block.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n\\u003C\\u002Fdiv\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/first-block-element.pug?");
+eval("var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ \"../node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;var pug_indent = [];\npug_html = pug_html + \"\\n\\u003Cform class=\\\"form-element__first-block\\\"\\u003E\\n  \\u003Cdiv class=\\\"reg-email\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/default-field.pug */ \"./pug/form-element/fields/default-field.pug\").call(this, locals)) ? \"\" : pug_interp) + (null == (pug_interp = __webpack_require__(/*! ./fields/focus-field.pug */ \"./pug/form-element/fields/focus-field.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cdiv class=\\\"dropdown-guests\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/dropdown-first-block.pug */ \"./pug/form-element/fields/dropdown-first-block.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n  \\u003Cdiv class=\\\"date-field\\\"\\u003E\" + (null == (pug_interp = __webpack_require__(/*! ./fields/date-field.pug */ \"./pug/form-element/fields/date-field.pug\").call(this, locals)) ? \"\" : pug_interp) + \"\\n  \\u003C\\u002Fdiv\\u003E\\n\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./pug/form-element/first-block-element.pug?");
 
 /***/ }),
 

@@ -1,11 +1,9 @@
-.dropdown__main {
-	margin-top: 20px;
-}
 .dropdown-guests {
 	position: relative;
 	box-sizing: border-box;
 	width: 320px;
 	text-transform: uppercase;
+	margin-top: 20px;
 	&__title {
 		font-size: $h3;
 		line-height: $lh_h3;
