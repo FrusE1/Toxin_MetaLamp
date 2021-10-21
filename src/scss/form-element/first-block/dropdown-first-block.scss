@@ -1,0 +1,29 @@
+.dropdown__main {
+	margin-top: 20px;
+}
+.dropdown-guests {
+	position: relative;
+	box-sizing: border-box;
+	width: 320px;
+	text-transform: uppercase;
+	&__title {
+		font-size: $h3;
+		line-height: $lh_h3;
+		font-weight: 700;
+		color: $dark-100;
+		margin-bottom: 5px;
+	}
+	&__list {
+		width: 100%;
+		height: 44px;
+		padding-left: 15px;
+		color: $dark-75;
+		font-size: $fz_body;
+		line-height: $lh_body;
+		appearance: none;
+		-webkit-appearance: none;
+		background: url("../images/icons/expand_more.svg") no-repeat right 15px center;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		border-radius: 4px;
+	}
+}
