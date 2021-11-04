@@ -1,3 +1,4 @@
+@import "@variables";
 html,
 body {
 	font-family: Montserrat, sans-serif;
@@ -14,7 +15,7 @@ body {
 	box-sizing: content-box;
 }
 ._container {
-	max-width: 1132px;
+	max-width: $dekstop-width;
 	margin: 0 auto;
 	padding: 0 10px;
 }

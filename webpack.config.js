@@ -1,104 +1,119 @@
+const fs = require('fs');
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { TRUE } = require('node-sass');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-// const ImageminPlugin = require('imagemin-webpack');
-const isDev = process.env.NODE_ENV === 'development';
-const isProd = !isDev;
+const webpack = require('webpack');
 
-const fileName = (ext) => isDev ? `[name].${ext}` : `[name].[hash].${ext}`;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
+
+const PATHS = {
+	src: path.join(__dirname, './src'),
+	dist: path.join(__dirname, './dist')
+};
+
+const PAGES_ROOT = PATHS.src + '/pages/';
+const PAGES_DIRNAMES = [
+	'index/',
+	'__form-elements/',
+	'__colors-type/'
+];
+
+const PAGES_DIR = PAGES_DIRNAMES.map(dirName => PAGES_ROOT + dirName);
+const PAGES = PAGES_DIR.map(
+	dir => fs.readdirSync(dir).find(fileName => fileName.endsWith('.pug'))
+);
 
 module.exports = {
-	context: path.resolve(__dirname, 'src'),
 	mode: 'development',
-	entry: './js/bundle.js',
-	output: {
-		clean: true,
-		path: path.resolve(__dirname, 'dist'),
-		filename: `./js/bundle.js`,
-		// assetModuleFilename: 'fonts/[name].[ext][query]',
-		publicPath: '',
-	},
+
 	devServer: {
-		historyApiFallback: true,
-		static: path.resolve(__dirname, 'bundle'),
-		open: true,
+		static: {
+			directory: path.join(__dirname, 'dist'),
+		},
 		compress: true,
-		hot: true,
-		port: 3000,
+		port: 9000,
 	},
-	plugins: [
-		new HTMLWebpackPlugin({
-			template: path.resolve(__dirname, 'src/pug/main.pug'),
-			filename: 'index.html',
-			minify: {
-				collapseWhitespace: isProd,
-			}
-		}),
-		new MiniCssExtractPlugin({
-			filename: `./css/${fileName('css')}`,
-		}),
-		new CopyWebpackPlugin({
-			patterns: [
-				{
-					from: path.resolve(__dirname, './src/images'), to: path.resolve(__dirname, './dist/images'),
-					// from: path.resolve(__dirname, './src/fonts'), to: path.resolve(__dirname, './dist/fonts'),
-				},
-			],
-		}),
-	],
-	// devtool: isProd ? false : 'source-map',
-	// plugins: plugins(),
+
+	externals: {
+		paths: PATHS
+	},
+
+	entry: {
+		app: PATHS.src,
+	},
+
+	output: {
+		filename: 'index.js',
+		path: PATHS.dist
+	},
+
 	module: {
 		rules: [
-			{
-				test: /\.html$/,
-				loader: 'html-loader',
-			},
 			{
 				test: /\.pug$/,
 				loader: 'pug-loader',
 				options: {
-					pretty: true,
+					root: path.resolve(__dirname, 'src'),
+					pretty: false
 				}
 			},
 			{
-				test: /\.css$/i,
+				test: /\.(s*)css$/,
 				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-					},
-					'css-loader'
-				],
-			},
-			{
-				test: /\.s[ac]ss$/i,
-				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-						options: {
-							publicPath: (resourcePath, context) => {
-								return path.relative(path.dirname(resourcePath), context) + '/';
-							},
-						},
-					},
+					MiniCssExtractPlugin.loader,
 					'css-loader',
-					'sass-loader',
-				],
+					'sass-loader'
+				]
 			},
 			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: ['babel-loader'],
-			},
-			{
-				test: /\.(?:|woff2|woff|eot|ttf|svg|gif|png|jpg|jpeg)$/i,
+				test: /\.(ttf|woff|svg)$/i,
 				type: 'asset/resource',
+				exclude: [/images/],
 				generator: {
-					filename: `fonts/[name][ext][query]`,
-				},
+					filename: 'fonts/[name][ext][query]'
+				}
 			},
+			{
+				test: /\.(png|svg|gif|jpe?g)$/i,
+				type: 'asset/resource',
+				include: [/images/],
+				generator: {
+					filename: 'images/[name][ext][query]'
+				}
+			}
 		]
 	},
-};
+
+	plugins: [
+		...PAGES.map((page, index) => new HtmlWebpackPlugin({
+			template: `${PAGES_DIR[index]}/${page}`,
+			filename: `./${page.replace(/\.pug/, '.html')}`
+		})),
+		new MiniCssExtractPlugin({
+			filename: 'index.css',
+		}),
+		new CssMinimizerPlugin(),
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			'window.$': 'jquery',
+			'window.jQuery': 'jquery'
+		}),
+		//new CleanWebpackPlugin()
+	],
+
+	optimization: {
+		minimizer: [
+			new CssMinimizerPlugin(),
+		],
+	},
+
+	resolve: {
+		alias: {
+			'@variables': path.resolve(__dirname, 'src/variables/variables.scss'),
+			// '@images': path.resolve(__dirname, 'src/assets/images/')
+		}
+	}
+}

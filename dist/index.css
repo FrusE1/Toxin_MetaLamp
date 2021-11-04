@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/date-of-birth/date-of-birth.scss ***!
+  \******************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/default-field/default-field.scss ***!
+  \******************************************************************************************************************************************/.reg-email>:not(:last-child){margin-bottom:20px}.reg-email{box-sizing:border-box;max-width:320px}.reg-email__title{display:flex;justify-content:space-between;margin-bottom:5px;text-transform:uppercase}.reg-email__text-main{color:#1f2041;font-size:12px;font-weight:700;line-height:125%}.reg-email__text{color:rgba(31,32,65,.5);font-size:12px;line-height:125%}.reg-email__input{border:1px solid rgba(31,32,65,.25);border-radius:4px;height:44px;padding-left:15px;width:100%}.reg-email__input::placeholder{color:rgba(31,32,65,.25)}.reg-email__input:focus,.reg-email__input:hover{border:1px solid rgba(31,32,65,.5)}
+
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown-first-block/dropdown-first-block.scss ***!
+  \********************************************************************************************************************************************************/.dropdown-guests{box-sizing:border-box;margin-bottom:20px;margin-top:20px;position:relative;text-transform:uppercase;width:320px}.dropdown-guests__title{color:#1f2041;font-size:12px;font-weight:700;line-height:125%;margin-bottom:5px}.dropdown-guests__list{appearance:none;-webkit-appearance:none;background:url(images/expand_more.svg) no-repeat right 15px center;border:1px solid rgba(31,32,65,.25);border-radius:4px;color:rgba(31,32,65,.75);font-size:14px;height:44px;line-height:171.42857%;padding-left:15px;width:100%}.dropdown-guests__list:focus,.dropdown-guests__list:hover{border:1px solid rgba(31,32,65,.5)}
+
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/focus-field/focus-field.scss ***!
+  \**************************************************************************************************************************************/.margin-reg{margin-top:20px}
+
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/__colors-type/colors-type.scss ***!
+  \***********************************************************************************************************************************/.colors-type__container{display:flex;justify-content:space-between}.main__colors-type{margin-top:37px}.colors{color:#1f2041;display:flex;flex-direction:column;font-size:19px;line-height:146.26316%;min-width:281px}.colors__block{align-items:center;display:flex}.colors__block:not(:last-child){margin-bottom:20px}.colors__rectangle{border-radius:8px;height:70px;margin-right:40px;width:70px}.colors_black-100{background-color:#1f2041}.colors_black-75{background-color:rgba(31,32,65,.25)}.colors_black-50{background-color:rgba(31,32,65,.5)}.colors_black-25{background-color:rgba(31,32,65,.25)}.colors_black-5{background-color:rgba(31,32,65,.05)}.colors_purple{background-color:#bc9cff}.colors_green{background-color:#6fcf97}.colors_title{font-weight:700}.main__text>*{grid-column-gap:30px;display:grid;grid-template-columns:repeat(2,1fr);margin-bottom:50px}.text__title{color:rgba(31,32,65,.25);text-align:right}.text__subtitle{color:#1f2041;font-weight:700;max-width:370px}.text__h1{font-size:24px;line-height:120.83333%}.text__h2{font-size:19px;line-height:121.05263%}.text__h3{font-size:12px;line-height:125%}.subtitle-h3{text-transform:uppercase}.subtitle-body{font-weight:400}
+
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/__form-elements/form-element.scss ***!
+  \**************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/header/header-ui.scss ***!
+  \**************************************************************************************************************************/.header-ui__container{align-items:center;display:grid;min-height:108px;padding:0 30px;width:100%}
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/index/index.scss ***!
+  \*********************************************************************************************************************/.page{grid-column-gap:20px;display:grid;grid-template-columns:repeat(3,1fr);margin-bottom:40px}.page__link{color:#1f2041;font-size:24px;line-height:121.05263%}
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/fonts.scss ***!
+  \**************************************************************************************************************/@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local("☺"),url(fonts/Montserrat-Regular.woff) format("woff"),url(fonts/Montserrat-Regular.ttf) format("truetype"),url(fonts/Montserrat-Regular.svg) format("svg")}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local("☺"),url(fonts/Montserrat-Bold.woff) format("woff"),url(fonts/Montserrat-Bold.ttf) format("truetype"),url(fonts/Montserrat-Bold.svg) format("svg")}
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/null.scss ***!
+  \*************************************************************************************************************/*{border:0;margin:0;padding:0}*,:before,after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus,a:active,a:focus{outline:none}aside,footer,header,nav{display:block}body,html{-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:100%;height:100%;line-height:1;width:100%}button,input,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{border:0;padding:0}a,a:hover,a:visited{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/total.scss ***!
+  \**************************************************************************************************************/body,html{background-color:#fff;color:rgba(31,32,65,.75);font-family:Montserrat,sans-serif;font-size:14px;line-height:171.42857%}.wrapper{box-sizing:content-box;display:flex;flex-direction:column;min-height:100%;overflow:hidden}._container{margin:0 auto;max-width:1160px;padding:0 10px}
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/variables/variables.scss ***!
+  \***********************************************************************************************************************/

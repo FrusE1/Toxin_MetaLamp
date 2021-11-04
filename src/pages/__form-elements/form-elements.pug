@@ -1,0 +1,15 @@
+extends /pages/base.pug
+
+block head
+	title Form-Element
+block content
+	include /pages/header/header_ui.pug
+	.form-element__container._container
+		form.form-element__first-block
+			.reg-email
+				include /components/default-field/default-field.pug
+				include /components/focus-field/focus-field.pug
+			.dropdown-guests
+				include /components/dropdown-first-block/dropdown-first-block.pug
+			.date-of-birth
+				include /components/date-of-birth/date-of-birth.pug
