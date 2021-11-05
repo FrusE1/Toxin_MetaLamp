@@ -1,13 +1,10 @@
 @import "@variables";
-// @import "../../scss/null.scss";
-// @import "../../scss/fonts.scss";
-// @import "../../scss/total.scss";
 .page {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 20px;
 	margin-bottom: 40px;
-	&__link{
+	&__link {
 		font-size: $h1;
 		line-height: $lh_h2;
 		color: $dark-100;

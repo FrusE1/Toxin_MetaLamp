@@ -3,12 +3,13 @@ extends /pages/base.pug
 block head
 	title Form-Element
 block content
+	include /components/text-field/text-field.pug
 	include /pages/header/header_ui.pug
 	.form-element__container._container
 		form.form-element__first-block
-			.reg-email
-				include /components/default-field/default-field.pug
-				include /components/focus-field/focus-field.pug
+			.text-field__container
+				+textField('Text Field', 'Default', 'Email')
+				+textField('Text Field', 'Hover / Focus', 'This is pretty awesome')
 			.dropdown-guests
 				include /components/dropdown-first-block/dropdown-first-block.pug
 			.date-of-birth

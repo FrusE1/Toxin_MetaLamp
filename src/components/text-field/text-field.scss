@@ -1,11 +1,16 @@
 /* style start default-field */
 @import "@variables";
-.reg-email > *:not(:last-child) {
-	margin-bottom: 20px;
-}
-.reg-email {
-	box-sizing: border-box;
+// .text-field > *:not(:last-child) {
+// 	margin-bottom: 20px;
+// }
+.text-field__container {
 	max-width: $df_width;
+	& > *:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+.text-field {
+	box-sizing: border-box;
 	&__title {
 		display: flex;
 		justify-content: space-between;

@@ -6,6 +6,9 @@
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	&__select {
+		position: relative;
+	}
 	&__title {
 		font-size: $h3;
 		line-height: $lh_h3;
@@ -22,7 +25,7 @@
 		line-height: $lh_body;
 		appearance: none;
 		-webkit-appearance: none;
-		background: url("../../images/expand_more.svg") no-repeat right 15px center;
+		// background: url("../../images/expand_more.svg") no-repeat right 15px center;
 		border: 1px solid rgba(31, 32, 65, 0.25);
 		border-radius: 4px;
 		&:hover {
@@ -32,4 +35,16 @@
 			border: 1px solid $dark-50;
 		}
 	}
+	&__label {
+		position: absolute;
+		top: 11px;
+		right: 15px;
+		&:active {
+			transform: rotate(-180deg);
+			transition: 0.5s;
+		}
+	}
+}
+.icon-more {
+	font-size: 9px;
 }

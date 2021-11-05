@@ -1,0 +1,12 @@
+mixin textField(title, text, placeholder)
+	.text-field
+		.text-field__title
+			h3.text-field__text-main= title
+			p.text-field__text= text
+		input(type = "text", class = "text-field__input", name = "user-email", placeholder=placeholder)
+
+//- .text-field
+//- 	.text-field__title
+//- 		h3.text-field__text-main Text Field
+//- 		p.text-field__text Default
+//- 	input(type = "text", class = "text-field__input", name = "user-email", placeholder="Email")
