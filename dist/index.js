@@ -41,6 +41,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/buttons/checkbox/checkbox.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/buttons/checkbox/checkbox.scss ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/components/buttons/checkbox/checkbox.scss?");
+
+/***/ }),
+
 /***/ "./src/components/date-of-birth/date-of-birth.scss":
 /*!*********************************************************!*\
   !*** ./src/components/date-of-birth/date-of-birth.scss ***!
@@ -210,7 +221,7 @@ eval("const omniImport = resolve => resolve.keys().forEach(resolve);\r\n\r\nomni
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./components/date-of-birth/air-datepicker.js\": \"./src/components/date-of-birth/air-datepicker.js\",\n\t\"./components/date-of-birth/date-of-birth.scss\": \"./src/components/date-of-birth/date-of-birth.scss\",\n\t\"./components/dropdown-first-block/dropdown-first-block.js\": \"./src/components/dropdown-first-block/dropdown-first-block.js\",\n\t\"./components/dropdown-first-block/dropdown-first-block.scss\": \"./src/components/dropdown-first-block/dropdown-first-block.scss\",\n\t\"./components/text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/__colors-type/colors-type.scss\": \"./src/pages/__colors-type/colors-type.scss\",\n\t\"./pages/__form-elements/form-element.scss\": \"./src/pages/__form-elements/form-element.scss\",\n\t\"./pages/header/header-ui.scss\": \"./src/pages/header/header-ui.scss\",\n\t\"./pages/index/index.scss\": \"./src/pages/index/index.scss\",\n\t\"./scss/fonts.scss\": \"./src/scss/fonts.scss\",\n\t\"./scss/icon-fonts.scss\": \"./src/scss/icon-fonts.scss\",\n\t\"./scss/null.scss\": \"./src/scss/null.scss\",\n\t\"./scss/total.scss\": \"./src/scss/total.scss\",\n\t\"./variables/variables.scss\": \"./src/variables/variables.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js$|\\\\.scss$\";\n\n//# sourceURL=webpack://Webpack-three/./src/_sync_\\.js$%7C\\.scss$?");
+eval("var map = {\n\t\"./components/buttons/checkbox/checkbox.scss\": \"./src/components/buttons/checkbox/checkbox.scss\",\n\t\"./components/date-of-birth/air-datepicker.js\": \"./src/components/date-of-birth/air-datepicker.js\",\n\t\"./components/date-of-birth/date-of-birth.scss\": \"./src/components/date-of-birth/date-of-birth.scss\",\n\t\"./components/dropdown-first-block/dropdown-first-block.js\": \"./src/components/dropdown-first-block/dropdown-first-block.js\",\n\t\"./components/dropdown-first-block/dropdown-first-block.scss\": \"./src/components/dropdown-first-block/dropdown-first-block.scss\",\n\t\"./components/text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/__colors-type/colors-type.scss\": \"./src/pages/__colors-type/colors-type.scss\",\n\t\"./pages/__form-elements/form-element.scss\": \"./src/pages/__form-elements/form-element.scss\",\n\t\"./pages/header/header-ui.scss\": \"./src/pages/header/header-ui.scss\",\n\t\"./pages/index/index.scss\": \"./src/pages/index/index.scss\",\n\t\"./scss/fonts.scss\": \"./src/scss/fonts.scss\",\n\t\"./scss/icon-fonts.scss\": \"./src/scss/icon-fonts.scss\",\n\t\"./scss/null.scss\": \"./src/scss/null.scss\",\n\t\"./scss/total.scss\": \"./src/scss/total.scss\",\n\t\"./variables/variables.scss\": \"./src/variables/variables.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js$|\\\\.scss$\";\n\n//# sourceURL=webpack://Webpack-three/./src/_sync_\\.js$%7C\\.scss$?");
 
 /***/ })
 

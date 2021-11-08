@@ -1,0 +1,24 @@
+@import "@variables";
+.checkbox {
+	width: 320px;
+	&__title {
+		font-size: $h3;
+		line-height: $lh_h3;
+		color: $dark-100;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+	&__list > *:not(:last-child) {
+		padding-bottom: 11px;
+	}
+	&__item {
+		color: $dark-50;
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			border: 1px solid $dark-25;
+		}
+	}
+}
