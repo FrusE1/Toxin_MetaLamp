@@ -1,5 +1,20 @@
-h3.dropdown-guests__title Dropdown
-.dropdown-guests__select
-	select(name="guests" id="guest" class="dropdown-guests__list")
-		option(selected disable) Сколько гостей
-	label(class="dropdown-guests__label icon-more", for="guest")
+.dropdown-guests
+	h3.dropdown-guests__title Dropdown
+	input(class="dropdown-guests__input" type="text" value="Сколько гостей")
+	.dropdown-guests__hidden(hidden)
+		.dropdown-guests__list
+			p.dropdown-guests__text взрослые
+			.dropdown-guests__counter
+				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus")
+				input(type="text" class="dropdown-guests__value" value="0")
+				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus")
+			p.dropdown-guests__text дети
+			.dropdown-guests__counter
+				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus")
+				input(type="text" class="dropdown-guests__value" value="0")
+				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus")
+			p.dropdown-guests__text младенцы
+			.dropdown-guests__counter
+				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus")
+				input(type="text" class="dropdown-guests__value" value="0")
+				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus")
