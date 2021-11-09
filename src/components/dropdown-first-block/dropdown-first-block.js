@@ -37,4 +37,5 @@ function list(event) {
 	if (!event.target.closest('.dropdown-guests')) {
 		listDrop.classList.remove('_active-dropdown');
 	}
+	event.preventDefault();
 }

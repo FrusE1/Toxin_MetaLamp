@@ -6,9 +6,6 @@
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	// &__select {
-	// 	position: relative;
-	// }
 	&__title {
 		font-size: $h3;
 		line-height: $lh_h3;
@@ -17,15 +14,14 @@
 		margin-bottom: 5px;
 	}
 	&__input {
+		position: relative;
 		width: 100%;
 		height: 44px;
 		padding-left: 15px;
 		color: $dark-75;
-		font-size: $fz_body;
-		line-height: $lh_body;
-		// background: url("../../images/expand_more.svg") no-repeat right 15px center;
+		background-color: #fff;
 		border: 1px solid rgba(31, 32, 65, 0.25);
-		border-radius: 4px 4px 0 0;
+		border-radius: 4px;
 		&:hover {
 			border: 1px solid $dark-50;
 		}
@@ -33,11 +29,16 @@
 			border: 1px solid $dark-50;
 		}
 	}
+	&__label {
+		position: absolute;
+		font-size: 8px;
+		right: 15px;
+		top: 50%;
+		text-align: center;
+		transition: 0.4s;
+	}
 	&__list {
-		// position: absolute;
-		display: none;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		position: absolute;
 		color: $dark-100;
 		font-size: $h3;
 		line-height: $lh_h3;
@@ -45,14 +46,15 @@
 		background-color: #fff;
 		font-weight: 700;
 		width: 100%;
-		padding: 11px 15px;
+		padding: 6px 15px;
 		border: 1px solid $dark-50;
-		// & > li:not(:last-child) {
-		// 	margin-bottom: 22px;
-		// }
+	}
+	&__item {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 7px;
 	}
 	&__counter {
-		// display: flex;
 		width: 92px;
 		justify-self: end;
 		align-self: center;
@@ -64,36 +66,38 @@
 		width: 32px;
 		text-align: center;
 		font-size: $h3;
+		line-height: $lh_h3;
 		font-weight: 700;
 	}
 	&__btn {
 		width: 30px;
 		height: 30px;
-		border: 1px solid $dark-75;
+		border: 1px solid $dark-50;
 		border-radius: 50%;
-		border-color: $dark-50;
+		background-color: #fff;
+		font-size: 20px;
+		&_minus {
+			border-color: $dark-25;
+			border: 1px solid $dark-25;
+		}
 		&_minus::after {
 			content: "-";
-			color: $dark-50;
+			color: $dark-25;
 		}
 		&_plus::after {
 			content: "+";
 			color: $dark-50;
 		}
 	}
-	// &__label {
-	// 	position: absolute;
-	// 	top: 11px;
-	// 	right: 15px;
-	// 	&:active {
-	// 		transform: rotate(-180deg);
-	// 		transition: 0.5s;
-	// 	}
-	// }
+	&._active-dropdown .dropdown-guests__input {
+		border-radius: 4px 4px 0 0;
+	}
+	&._active-dropdown .dropdown-guests__list {
+		display: block;
+	}
+	&._active-dropdown .dropdown-guests__label {
+		transform: rotateX(180deg);
+		top: 45%;
+		transition: 0.4s;
+	}
 }
-.dropdown-guests.dropdown-guests__hidden._active-dropdown {
-	display: block;
-}
-// .icon-more {
-// 	font-size: 9px;
-// }
