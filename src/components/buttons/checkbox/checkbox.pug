@@ -1,6 +1,15 @@
 .checkbox
 	.checkbox__title Checkbox Buttons
-	ul.checkbox__list
-		li.checkbox__item Можно курить
-		li.checkbox__item Можно с питомцами
-		li.checkbox__item Можно пригласить гостей (до 10 человек)
+	.checkbox__list
+		label(class="checkbox__label")
+			input(class="checkbox__input" type="checkbox")
+			span(class="checkbox__check")
+			| Можно курить
+		label.checkbox__label
+			input(class="checkbox__input" type="checkbox")
+			span(class="checkbox__check")
+			| Можно с питомцами
+		label.checkbox__label
+			input(class="checkbox__input" type="checkbox")
+			span(class="checkbox__check")
+			| Можно пригласить гостей (до 10 человек)

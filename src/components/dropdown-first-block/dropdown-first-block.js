@@ -20,8 +20,16 @@ const counter = function () {
 		})
 	})
 }
-
 counter();
+
+const counterBtn = document.querySelectorAll('.dropdown-guests__btn_plus');
+const counterValue = document.querySelectorAll('.dropdown-guests__value');
+
+const dropdownForm = document.forms.firstForm;
+const dropdownValue = dropdownForm.grownValue;
+const dropdownInput = dropdownForm.dropdownValue;
+
+
 
 
 // expading the list
@@ -37,5 +45,9 @@ function list(event) {
 	if (!event.target.closest('.dropdown-guests')) {
 		listDrop.classList.remove('_active-dropdown');
 	}
-	event.preventDefault();
 }
+
+
+// ......
+
+
