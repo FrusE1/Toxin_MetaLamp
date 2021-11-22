@@ -14,6 +14,3 @@ for (let checkboxInputElement of checkboxInput) {
 		}
 	})
 }
-
-
-// if ()

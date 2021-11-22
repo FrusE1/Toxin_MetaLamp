@@ -1,36 +1,52 @@
-const counter = function () {
-	const btns = document.querySelectorAll('.dropdown-guests__btn');
+// const counter = function () {
+// 	const btns = document.querySelectorAll('.dropdown-guests__btn');
 
+// 	btns.forEach(btn => {
+// 		btn.addEventListener('click', function (event) {
+// 			const direction = this.dataset.direction;
+// 			const inp = this.parentElement.querySelector('.dropdown-guests__value');
+// 			const currentValue = +inp.value;
+// 			let newValue;
+// 			if (direction === 'plus') {
+// 				newValue = currentValue + 1;
+// 			} else {
+// 				newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+// 			}
+// 			inp.value = newValue;
+// 			event.preventDefault();
+// 		})
+// 	})
+// }
+// counter();
 
-	btns.forEach(btn => {
-		btn.addEventListener('click', function (event) {
-			const direction = this.dataset.direction;
-			const inp = this.parentElement.querySelector('.dropdown-guests__value');
-			const currentValue = +inp.value;
-			let newValue;
+const btnPlus = document.querySelector('.dropdown-guests__btn_plus');
+const btnMinus = document.querySelector('.dropdown-guests__btn_minus');
 
-			if (direction === 'plus') {
-				newValue = currentValue + 1;
-			} else {
-				newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
-			}
+const valueSpan = document.querySelector('.dropdown-guests__value');
 
-			inp.value = newValue;
-			event.preventDefault();
-		})
-	})
-}
-counter();
+let spanVar = +valueSpan.innerText;
 
-const counterBtn = document.querySelectorAll('.dropdown-guests__btn_plus');
-const counterValue = document.querySelectorAll('.dropdown-guests__value');
+console.log(spanVar);
 
-const dropdownForm = document.forms.firstForm;
-const dropdownValue = dropdownForm.grownValue;
-const dropdownInput = dropdownForm.dropdownValue;
+btnPlus.addEventListener("click", function (event) {
+	spanVar++;
+	valueSpan.innerHTML = `${spanVar}`;
+	event.preventDefault();
+})
 
+btnMinus.addEventListener("click", function (event) {
+	spanVar--;
+	valueSpan.innerHTML = `${spanVar}`;
+	if (spanVar <= 0) {
+		valueSpan.innerHTML = `0`;
+	}
+	event.preventDefault();
+})
+// const valueInput = document.querySelector('.dropdown-guests__value');
 
+// let valueVar = valueInput.value;
 
+// console.log(valueVar);
 
 // expading the list
 

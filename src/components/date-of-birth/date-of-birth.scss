@@ -5,11 +5,6 @@
 	flex-direction: column;
 	width: 320px;
 	&__text {
-		font-size: $h3;
-		line-height: $lh_h3;
-		font-weight: 700;
-		color: $dark-100;
-		text-transform: uppercase;
 		margin-bottom: 5px;
 	}
 	&__input {

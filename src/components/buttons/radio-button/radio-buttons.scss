@@ -1,0 +1,46 @@
+@import "@variables";
+.radio-button {
+	width: 220px;
+	&__text {
+		margin-bottom: 16px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__label {
+		position: relative;
+		padding-left: 30px;
+		color: $dark-50;
+	}
+	&__input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		&:checked,
+		&::after {
+			position: absolute;
+			top: 6px;
+			left: 4px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		}
+		&:checked ~ .radio-button__check {
+			border-color: $purple;
+		}
+	}
+	&__check {
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		border: 1.5px solid $dark-25;
+		border-radius: 50%;
+	}
+}
+.input-checked {
+	color: $dark-75;
+}

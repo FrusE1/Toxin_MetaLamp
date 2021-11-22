@@ -1,3 +1,4 @@
+@import "@variables";
 .form-element__container {
 	display: flex;
 	justify-content: space-between;
@@ -7,4 +8,11 @@
 }
 .form-element__second-block {
 	margin-top: 32px;
+}
+.title-style {
+	font-size: $h3;
+	line-height: $lh_h3;
+	font-weight: 700;
+	color: $dark-100;
+	text-transform: uppercase;
 }

@@ -1,21 +1,20 @@
 @import "@variables";
+.checkbox-container {
+	margin-bottom: 40px;
+}
 .checkbox {
 	width: $df_width;
 	&__list > *:not(:last-child) {
 		margin-bottom: 6px;
 	}
 	&__title {
-		font-size: $h3;
-		line-height: $lh_h3;
-		font-weight: 700;
-		color: $dark-100;
-		text-transform: uppercase;
 		margin-bottom: 16px;
 	}
 	&__label {
 		display: block;
 		position: relative;
 		padding-left: 30px;
+		color: $dark-50;
 	}
 	&__input {
 		-webkit-appearance: none;
@@ -38,8 +37,8 @@
 	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	left: 0.48em;
-	top: 0.56em;
+	left: 5px;
+	top: 5.5px;
 }
 .check-purple {
 	border: 1.5px solid $purple;
