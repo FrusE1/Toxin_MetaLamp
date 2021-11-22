@@ -19,28 +19,27 @@
 // }
 // counter();
 
-const btnPlus = document.querySelector('.dropdown-guests__btn_plus');
-const btnMinus = document.querySelector('.dropdown-guests__btn_minus');
+const btnPlus = document.querySelectorAll('.dropdown-guests__btn_plus');
+const btnMinus = document.querySelectorAll('.dropdown-guests__btn_minus');
 
 const valueSpan = document.querySelector('.dropdown-guests__value');
 
 let spanVar = +valueSpan.innerText;
 
 console.log(spanVar);
-
-btnPlus.addEventListener("click", function (event) {
-	spanVar++;
-	valueSpan.innerHTML = `${spanVar}`;
-	event.preventDefault();
+btnPlus.forEach(btnsPlusElement => {
+	btnsPlusElement.addEventListener("click", function (event) {
+		spanVar++;
+		valueSpan.innerHTML = `${spanVar}`;
+		event.preventDefault();
+	})
 })
-
-btnMinus.addEventListener("click", function (event) {
-	spanVar--;
-	valueSpan.innerHTML = `${spanVar}`;
-	if (spanVar <= 0) {
-		valueSpan.innerHTML = `0`;
-	}
-	event.preventDefault();
+btnMinus.forEach(btnMinusElement => {
+	btnMinusElement.addEventListener("click", function (event) {
+		spanVar = spanVar - 1 > 0 ? spanVar - 1 : 0;
+		valueSpan.innerHTML = `${spanVar}`;
+		event.preventDefault();
+	})
 })
 // const valueInput = document.querySelector('.dropdown-guests__value');
 
