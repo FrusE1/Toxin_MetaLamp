@@ -1,4 +1,7 @@
 @import "@variables";
+.radio-buttons-container {
+	margin-bottom: 37px;
+}
 .radio-button {
 	width: 220px;
 	&__text {
@@ -28,6 +31,7 @@
 			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 		}
 		&:checked ~ .radio-button__check {
+			transition: 0.5s;
 			border-color: $purple;
 		}
 	}
