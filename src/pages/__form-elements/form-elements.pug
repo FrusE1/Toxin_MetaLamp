@@ -6,11 +6,11 @@ block content
 	include /components/text-field/text-field.pug
 	include /pages/header/header_ui.pug
 	.form-element__container._container
-		form(class="form-element__first-block" name="main")
+		form.form-element__first-block
 			.text-field__container
 				+textField('Text Field', 'Default', 'Email')
 				+textField('Text Field', 'Hover / Focus', 'This is pretty awesome')
-			include /components/dropdown-first-block/dropdown-first-block.pug
+			include /components/dropdown/dropdown.pug
 			.date-of-birth
 				include /components/date-of-birth/date-of-birth.pug
 		form.form-element__second-block

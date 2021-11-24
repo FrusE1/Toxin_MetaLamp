@@ -1,26 +1,23 @@
 .dropdown-guests
-	h3.dropdown-guests__title.title-style Dropdown
-	input(type="text" name="dropdownValue" class="dropdown-guests__input" value="Сколько гостей" id="more")
+	h3.dropdown-guests__title.title-style(id="title") Dropdown
+	input(type="text" class="dropdown-guests__input" value="Сколько гостей" id="more")
 	label(class="dropdown-guests__label icon-more" for="more")
 	ul.dropdown-guests__list(hidden)
 		li.dropdown-guests__item
 			p.dropdown-guests__text взрослые
 			.dropdown-guests__counter
 				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus" id="minus")
-				//- input(type="text" name="adultValue" class="dropdown-guests__value" value="0")
-				span(class="dropdown-guests__value") 0
+				input(type="text" class="dropdown-guests__value" value="0" id="text")
 				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus" id="plus")
 		li.dropdown-guests__item
 			p.dropdown-guests__text дети
 			.dropdown-guests__counter
 				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus")
-				//- input(type="text" name="childValue" class="dropdown-guests__value" value="0")
-				span(class="dropdown-guests__value") 0
+				input(type="text" class="dropdown-guests__value" value="0")
 				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus")
 		li.dropdown-guests__item
 			p.dropdown-guests__text младенцы
 			.dropdown-guests__counter
 				button(class="dropdown-guests__btn dropdown-guests__btn_minus" data-direction="minus")
-				//- input(type="text" name="babyChild" class="dropdown-guests__value" value="0")
-				span(class="dropdown-guests__value") 0
+				input(type="text" class="dropdown-guests__value" value="0")
 				button(class="dropdown-guests__btn dropdown-guests__btn_plus" data-direction="plus")
