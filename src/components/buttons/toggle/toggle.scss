@@ -1,4 +1,7 @@
 @import "@variables";
+.toggle-container {
+	margin-bottom: 40px;
+}
 .toggle {
 	width: $df_width;
 	& > label:not(:last-child) {
@@ -16,7 +19,7 @@
 	&__input {
 		position: absolute;
 		left: 0;
-		top: 0;
+		bottom: 2.2px;
 		&[type="checkbox"] {
 			cursor: pointer;
 			width: 40px;
