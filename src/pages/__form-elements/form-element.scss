@@ -5,9 +5,15 @@
 }
 .form-element__first-block {
 	margin-top: 32px;
+	width: $form_width;
 }
 .form-element__second-block {
 	margin-top: 32px;
+	width: $form_width;
+}
+.form-element__third-block {
+	margin-top: 32px;
+	width: $form_width;
 }
 .title-style {
 	font-size: $h3;

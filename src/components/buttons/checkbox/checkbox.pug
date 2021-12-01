@@ -1,15 +1,5 @@
-.checkbox
-	.checkbox__title.title-style Checkbox Buttons
-	.checkbox__list
-		label.checkbox__label
-			input(class="checkbox__input" type="checkbox")
+mixin checkbox(name)
+	label.checkbox__label
+			input(class="checkbox__input" type="checkbox" checked)
 			span(class="checkbox__check")
-			| Можно курить
-		label.checkbox__label
-			input(class="checkbox__input" type="checkbox")
-			span(class="checkbox__check")
-			| Можно с питомцами
-		label.checkbox__label
-			input(class="checkbox__input" type="checkbox")
-			span(class="checkbox__check")
-			| Можно пригласить гостей (до 10 человек)
+			=name

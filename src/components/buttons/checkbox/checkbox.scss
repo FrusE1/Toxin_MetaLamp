@@ -2,45 +2,43 @@
 .checkbox-container {
 	margin-bottom: 40px;
 }
-.checkbox {
-	width: $df_width;
-	&__list > *:not(:last-child) {
-		margin-bottom: 6px;
-	}
-	&__title {
-		margin-bottom: 15px;
-	}
-	&__label {
-		display: block;
-		position: relative;
-		padding-left: 30px;
-		color: $dark-50;
-		cursor: pointer;
-	}
-	&__input {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-	}
-	&__check {
-		position: absolute;
-		top: 0.08em;
-		left: 0;
-		width: 20px;
-		height: 20px;
-		border: 1.5px solid $dark-25;
-		border-radius: 4px;
-	}
+.checkbox__list > *:not(:last-child) {
+	margin-bottom: 6px;
+}
+.checkbox__title {
+	margin-bottom: 15px;
+}
+.checkbox__label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	color: $dark-50;
+	// line-height: 120%;
+	cursor: pointer;
+}
+.checkbox__input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.checkbox__check {
+	position: absolute;
+	top: 0.08em;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid $dark-25;
+	border-radius: 4px;
 }
 .icon-vector {
 	position: absolute;
-	font-size: 10px;
+	font-size: 11px;
 	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	left: 5px;
-	top: 5.5px;
+	left: 4.5px;
+	top: 6px;
 }
 .check-purple {
-	border: 1.5px solid $purple;
+	border: 1px solid $purple;
 }

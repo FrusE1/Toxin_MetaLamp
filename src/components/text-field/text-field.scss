@@ -1,13 +1,7 @@
 /* style start default-field */
 @import "@variables";
-// .text-field > *:not(:last-child) {
-// 	margin-bottom: 20px;
-// }
-.text-field__container {
-	max-width: $df_width;
-	& > *:not(:last-child) {
-		margin-bottom: 20px;
-	}
+.text-field__container > *:not(:last-child) {
+	margin-bottom: 20px;
 }
 .text-field {
 	box-sizing: border-box;

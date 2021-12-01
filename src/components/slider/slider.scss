@@ -1,0 +1,35 @@
+@import "@variables";
+.slider__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.slider__filter {
+	max-width: 266px;
+}
+.noUi-handle {
+	background-color: $green;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	box-shadow: none;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+	display: none;
+}
+.noUi-horizontal .noUi-handle {
+	top: -4px;
+	right: -6px;
+	width: 12px;
+	height: 12px;
+}
+.noUi-target {
+	background: none;
+	box-shadow: none;
+	border: 1px solid $dark-25;
+	height: 6px;
+}
+.noUi-connect {
+	height: 6px;
+	background-color: $green;
+}
