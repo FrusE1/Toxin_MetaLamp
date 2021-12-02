@@ -1,4 +1,5 @@
 @import "@variables";
+/* start rate style */
 .rate > *:not(:last-child) {
 	margin-right: 25px;
 }
@@ -43,3 +44,4 @@
 .icon-star {
 	display: none;
 }
+/* end rate style */
