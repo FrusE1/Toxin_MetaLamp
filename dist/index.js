@@ -266,7 +266,7 @@ eval("(function (global, factory) {\n     true ? factory(exports) :\n    0;\n}(t
   \*****************************************************/
 /***/ (() => {
 
-eval("const checkboxInput = document.querySelectorAll('.checkbox__input');\r\n\r\nconst checkboxBorder = document.querySelectorAll('.checkbox__check');\r\n\r\nfor (let checkboxInputElement of checkboxInput) {\r\n\tcheckboxInputElement.addEventListener(\"click\", function () {\r\n\t\tif (checkboxInputElement.classList.contains('icon-vector')) {\r\n\t\t\tcheckboxInputElement.classList.remove('icon-vector');\r\n\t\t\tcheckboxInputElement.nextSibling.classList.remove('check-purple');\r\n\t\t}\r\n\t\telse {\r\n\t\t\tcheckboxInputElement.classList.add('icon-vector');\r\n\t\t\tcheckboxInputElement.nextSibling.classList.add('check-purple');\r\n\t\t}\r\n\t})\r\n}\n\n//# sourceURL=webpack://Webpack-three/./src/components/buttons/checkbox/checkbox.js?");
+eval("// const checkboxInput = document.querySelectorAll('.checkbox__input');\r\n\r\n// const checkboxBorder = document.querySelectorAll('.checkbox__check');\r\n\r\n// for (let checkboxInputElement of checkboxInput) {\r\n// \tcheckboxInputElement.addEventListener(\"click\", function () {\r\n// \t\tif (checkboxInputElement.classList.contains('icon-vector')) {\r\n// \t\t\tcheckboxInputElement.classList.remove('icon-vector');\r\n// \t\t\tcheckboxInputElement.nextSibling.classList.remove('check-purple');\r\n// \t\t}\r\n// \t\telse {\r\n// \t\t\tcheckboxInputElement.classList.add('icon-vector');\r\n// \t\t\tcheckboxInputElement.nextSibling.classList.add('check-purple');\r\n// \t\t}\r\n// \t})\r\n// }\n\n//# sourceURL=webpack://Webpack-three/./src/components/buttons/checkbox/checkbox.js?");
 
 /***/ }),
 
