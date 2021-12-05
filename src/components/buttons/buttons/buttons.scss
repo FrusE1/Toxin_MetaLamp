@@ -1,3 +1,4 @@
+/* start buttons style */
 @import "@variables";
 .button__title {
 	margin-bottom: 15px;
@@ -16,6 +17,7 @@
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 700;
+	transition: 0.5s;
 	&_active {
 		padding: 15px 19px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -24,7 +26,6 @@
 	&_default {
 		padding: 15px 19px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		opacity: 1;
 		&:hover {
 			opacity: 0.8;
 		}
@@ -55,9 +56,6 @@
 	&-no-border {
 		background: none;
 		color: $purple;
-		&:hover {
-			color: #b1b1be;
-		}
 		&:active {
 			color: $dark-50;
 		}
@@ -81,4 +79,9 @@
 	top: 13px;
 	right: 14px;
 	font-size: 18px;
+	transition: 0.5s;
+	&:active {
+		right: 12px;
+	}
 }
+/* end buttons style */
