@@ -1,0 +1,84 @@
+@import "@variables";
+.button__title {
+	margin-bottom: 15px;
+}
+.buttom__items:not(:last-child) {
+	margin-bottom: 30px;
+}
+.buttom__items > *:not(:last-child) {
+	margin-right: 20px;
+}
+.button__item {
+	position: relative;
+	border-radius: 22px;
+	font-size: $h3;
+	line-height: $lh_h3;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	&_active {
+		padding: 15px 19px;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		opacity: 0.5;
+	}
+	&_default {
+		padding: 15px 19px;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		opacity: 1;
+		&:hover {
+			opacity: 0.8;
+		}
+		&:active,
+		&:focus {
+			opacity: 0.5;
+		}
+	}
+	&-border {
+		color: $purple;
+		padding: 13px 17px;
+		border: 2px solid transparent;
+		background: linear-gradient(#fff, #fff) padding-box,
+			linear-gradient(180deg, rgba(#bc9cff, 1) 0%, rgba(#8ba4f9, 1) 100%) border-box;
+		&:hover {
+			background: linear-gradient(#fff, #fff) padding-box,
+				linear-gradient(180deg, rgba(#bc9cff, 0.8) 0%, rgba(#8ba4f9, 0.8) 100%) border-box;
+		}
+		&:active {
+			background: linear-gradient(#fff, #fff) padding-box,
+				linear-gradient(180deg, rgba(#bc9cff, 0.5) 0%, rgba(#8ba4f9, 0.5) 100%) border-box;
+		}
+		&_active {
+			background: linear-gradient(#fff, #fff) padding-box,
+				linear-gradient(180deg, rgba(#bc9cff, 0.5) 0%, rgba(#8ba4f9, 0.5) 100%) border-box;
+		}
+	}
+	&-no-border {
+		background: none;
+		color: $purple;
+		&:hover {
+			color: #b1b1be;
+		}
+		&:active {
+			color: $dark-50;
+		}
+		&_active {
+			color: $dark-50;
+		}
+	}
+	&-price {
+		padding: 15px 94px;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		&:hover {
+			opacity: 0.8;
+		}
+		&:active {
+			opacity: 0.5;
+		}
+	}
+}
+.button__span {
+	position: absolute;
+	top: 13px;
+	right: 14px;
+	font-size: 18px;
+}
