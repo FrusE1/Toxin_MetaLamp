@@ -1,5 +1,8 @@
 /* start buttons style */
 @import "@variables";
+.buttons-container {
+	margin-bottom: 40px;
+}
 .button__title {
 	margin-bottom: 15px;
 }
@@ -17,7 +20,7 @@
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 700;
-	transition: 0.5s;
+	transition: 0.3s;
 	&_active {
 		padding: 15px 19px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -26,11 +29,11 @@
 	&_default {
 		padding: 15px 19px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		&:hover {
+		&:hover,
+		&:focus {
 			opacity: 0.8;
 		}
-		&:active,
-		&:focus {
+		&:active {
 			opacity: 0.5;
 		}
 	}
@@ -40,7 +43,8 @@
 		border: 2px solid transparent;
 		background: linear-gradient(#fff, #fff) padding-box,
 			linear-gradient(180deg, rgba(#bc9cff, 1) 0%, rgba(#8ba4f9, 1) 100%) border-box;
-		&:hover {
+		&:hover,
+		&:focus {
 			background: linear-gradient(#fff, #fff) padding-box,
 				linear-gradient(180deg, rgba(#bc9cff, 0.8) 0%, rgba(#8ba4f9, 0.8) 100%) border-box;
 		}
@@ -66,7 +70,8 @@
 	&-price {
 		padding: 15px 94px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		&:hover {
+		&:hover,
+		&:focus {
 			opacity: 0.8;
 		}
 		&:active {
@@ -79,7 +84,7 @@
 	top: 13px;
 	right: 14px;
 	font-size: 18px;
-	transition: 0.5s;
+	transition: 0.3s;
 	&:active {
 		right: 12px;
 	}

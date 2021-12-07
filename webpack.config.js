@@ -89,7 +89,8 @@ module.exports = {
 	plugins: [
 		...PAGES.map((page, index) => new HtmlWebpackPlugin({
 			template: `${PAGES_DIR[index]}/${page}`,
-			filename: `./${page.replace(/\.pug/, '.html')}`
+			filename: `./${page.replace(/\.pug/, '.html')}`,
+			inject: 'body'
 		})),
 		new MiniCssExtractPlugin({
 			filename: 'index.css',
