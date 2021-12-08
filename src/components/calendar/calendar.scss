@@ -1,6 +1,6 @@
 @import "@variables";
 /* start calendar style */
-.date-of-birth {
+.calendar {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +30,27 @@
 		}
 	}
 }
+.air-datepicker {
+	width: 320px;
+	background: #fff;
+	border: 1px solid $dark-25;
+	box-shadow: none;
+}
+.air-datepicker-body {
+	font-family: "Montserrat";
+	font-size: $h3;
+	line-height: $lh_h3;
+	color: $dark-50;
+}
+.air-datepicker-body--day-names {
+	grid-template-columns: repeat(7, 40px);
+	margin: 0;
+}
+.air-datepicker-body--day-name {
+	font-family: "Montserrat";
+	color: $purple;
+	font-weight: 700;
+}
 .air-datepicker-nav {
 	border-bottom: none;
 }
@@ -40,37 +61,20 @@
 	color: $dark-100;
 	font-weight: 700;
 }
-.air-datepicker-body {
-	font-family: "Montserrat";
-	font-size: $h3;
-	line-height: $lh_h3;
-	color: $dark-50;
-}
-.air-datepicker-body--day-names {
-	grid-template-columns: repeat(7, 40px);
-}
-.air-datepicker-body--day-name {
-	font-family: "Montserrat";
-	color: $purple;
-	font-weight: 700;
-}
 .air-datepicker-cell.-selected-,
-.air-datepicker-cell.-selected-.-current- {
-	background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+.air-datepicker-cell.-selected-.-focus- {
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 	font-weight: 700;
 	border-radius: 50%;
 }
-.air-datepicker-cell.-selected-.-focus- {
-	background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+.air-datepicker-cell.-in-range- {
+	background: linear-gradient(180deg, rgba(#bc9cff, 0.25) 0%, rgba(#8ba4f9, 0.25) 100%);
+}
+.air-datepicker-cell.-day-.-focus-.-in-range- {
+	border-radius: 0;
 }
 .air-datepicker-cell.-focus- {
 	border-radius: 50%;
-}
-.air-datepicker {
-	width: 320px;
-	background: #fff;
-	border: 1px solid $dark-25;
-	box-shadow: none;
 }
 .air-datepicker-body--cells.-days- {
 	grid-auto-rows: 40px;
@@ -78,5 +82,26 @@
 }
 .air-datepicker--content {
 	padding: 0;
+}
+.air-datepicker-cell.-current- {
+	color: #fff;
+	background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+	border-radius: 50%;
+	font-weight: 700;
+}
+.air-datepicker-cell.-current-.-focus- {
+	color: #fff;
+}
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-selected-.-current- {
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+.calender__arrow {
+	font-size: 15px;
+	color: $purple;
+}
+.calender__arrow_prev {
+	transform: rotate(180deg);
 }
 /* end calendar style */

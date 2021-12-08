@@ -1,51 +1,51 @@
 @import "@variables";
 /* start toggle style */
-.toggle-container {
-	margin-bottom: 42px;
-}
 .toggle > label:not(:last-child) {
 	margin-bottom: 10px;
 }
-.toggle__title {
-	margin-bottom: 14px;
-}
-.toggle__label {
-	display: block;
-	position: relative;
-	padding-left: 50px;
-	cursor: pointer;
-}
-.toggle__input {
-	position: absolute;
-	left: 0;
-	bottom: 2.2px;
-	&[type="checkbox"] {
+.toggle {
+	margin-bottom: 42px;
+	&__title {
+		margin-bottom: 14px;
+	}
+	&__label {
+		display: block;
+		position: relative;
+		padding-left: 50px;
 		cursor: pointer;
-		width: 40px;
-		height: 20px;
-		-webkit-appearance: none;
-		outline: none;
-		border: 1px solid $dark-25;
-		border-radius: 10px;
-		transition: 0.5s;
 	}
-	&[type="checkbox"]::before {
-		content: "";
+	&__input {
 		position: absolute;
-		top: 3px;
-		left: 4px;
-		width: 12px;
-		height: 12px;
-		background-color: $dark-25;
-		border-radius: 50%;
-		transition: 0.5s;
-	}
-	&:checked[type="checkbox"] {
-		border-color: $purple;
-	}
-	&:checked[type="checkbox"]::before {
-		background-color: $purple;
-		left: 22px;
+		left: 0;
+		bottom: 2.2px;
+		&[type="checkbox"] {
+			cursor: pointer;
+			width: 40px;
+			height: 20px;
+			-webkit-appearance: none;
+			outline: none;
+			border: 1px solid $dark-25;
+			border-radius: 10px;
+			transition: 0.5s;
+		}
+		&[type="checkbox"]::before {
+			content: "";
+			position: absolute;
+			top: 3px;
+			left: 4px;
+			width: 12px;
+			height: 12px;
+			background-color: $dark-25;
+			border-radius: 50%;
+			transition: 0.5s;
+		}
+		&:checked[type="checkbox"] {
+			border-color: $purple;
+		}
+		&:checked[type="checkbox"]::before {
+			background-color: $purple;
+			left: 22px;
+		}
 	}
 }
 /* end toggle style */
