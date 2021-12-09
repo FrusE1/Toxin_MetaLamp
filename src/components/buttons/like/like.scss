@@ -17,7 +17,7 @@
 		appearance: none;
 		width: 40px;
 		height: 20px;
-		border: 1.5px solid $dark-25;
+		border: 1px solid $dark-25;
 		border-radius: 10px;
 		transition: 0.5s;
 		&:checked {
@@ -32,12 +32,17 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
+		&:checked ~ .like__check {
+			color: $purple;
+		}
 	}
 	&__check {
 		position: absolute;
 		font-size: 10px;
-		left: 22px;
+		color: $dark-25;
+		left: 21px;
 		bottom: 1.4px;
+		transition: 0.5s;
 	}
 	&__span {
 		position: absolute;
