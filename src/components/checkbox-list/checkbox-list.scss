@@ -1,0 +1,28 @@
+@import "@variables";
+.checkbox-list {
+	position: relative;
+	height: 300px;
+	&__input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+	&__icon {
+		font-size: 13px;
+		position: absolute;
+		top: 6px;
+		right: 70px;
+		transition: 0.5s;
+	}
+	&.dropdown-list_active .checkbox-list__items {
+		display: block;
+		margin-top: 16px;
+	}
+	&.dropdown-list_active .checkbox-list__icon {
+		top: 5px;
+		transform: rotateX(180deg);
+	}
+	&__items > label:not(:last-child) {
+		margin-bottom: 12px;
+	}
+}

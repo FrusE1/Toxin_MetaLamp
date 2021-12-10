@@ -4,18 +4,22 @@ block head
 	title Form-Element
 block content
 	include /pages/header/header_ui.pug
-	.form-element__container._container
-		form.form-element__first-block
-			include /components/text-field/text-field-block.pug
-			include /components/dropdown/dropdown.pug
-			include /components/calendar/calendar.pug
-		form.form-element__second-block
-			include /components/buttons/checkbox/checkbox-block.pug
-			include /components/buttons/radio-button/radio-button-block.pug
-			include /components/buttons/toggle/toggle-block.pug
-			include /components/buttons/like/like-block.pug
-			include /components/buttons/rate/rate-block.pug
-		form.form-element__third-block
-			include /components/slider/slider-block.pug
-			include /components/buttons/buttons/buttons.pug
-			include /components/buttons/paginator/paginator.pug
+	.container-total._container
+		.form-element__container-one._container-form
+			form.form-element__first-block
+				include /components/text-field/text-field-block.pug
+				include /components/dropdown/dropdown.pug
+				include /components/calendar/calendar.pug
+			form.form-element__second-block
+				include /components/buttons/checkbox/checkbox-block.pug
+				include /components/buttons/radio-button/radio-button-block.pug
+				include /components/buttons/toggle/toggle-block.pug
+				include /components/buttons/like/like-block.pug
+				include /components/buttons/rate/rate-block.pug
+			form.form-element__third-block
+				include /components/slider/slider-block.pug
+				include /components/buttons/buttons/buttons.pug
+				include /components/buttons/paginator/paginator.pug
+		.form-element__container-three._container-form
+			form.form-element__first-block
+				include /components/checkbox-list/checkbox-list.pug

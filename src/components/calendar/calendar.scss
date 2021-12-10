@@ -193,6 +193,23 @@
 	border: none;
 	padding: 0;
 }
+.air-datepicker-button {
+	color: $purple;
+	font-size: $h3;
+	line-height: $lh_h3;
+	text-transform: uppercase;
+	font-weight: 700;
+	& span {
+		display: inline-block;
+		width: 0%;
+		height: 15px;
+		padding-left: 20px;
+	}
+	& .custom-button-classname {
+		padding-left: 0;
+		justify-self: end;
+	}
+}
 
 .calender__arrow {
 	font-size: 15px;
