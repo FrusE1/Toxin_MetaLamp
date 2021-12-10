@@ -1,6 +1,7 @@
 const listDropList = document.querySelector('.checkbox-list');
 
-document.addEventListener("click", dropList);
+listDropList.addEventListener("click", dropList);
+
 
 function dropList(event) {
 	if (event.target.closest('.checkbox-list__input')) {

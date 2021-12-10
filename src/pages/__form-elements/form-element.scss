@@ -16,6 +16,12 @@
 .form-element__third-block {
 	width: $form_width;
 }
+.form-element__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .title-style {
 	font-size: $h3;
 	line-height: $lh_h3;

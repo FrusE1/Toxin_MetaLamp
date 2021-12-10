@@ -1,0 +1,8 @@
+include /components/checkbox-list/checkbox-list.pug
+.checkbox-list__container
+	.checkbox-list__ui
+		label(class="checkbox-list__label title-style")
+			input(type="checkbox" class="checkbox-list__input")
+			span(class="checkbox-list__icon icon-more")
+			| expandable checkbox list
+	+checkboxList("expandable checkbox list", "dropdown-list_active")

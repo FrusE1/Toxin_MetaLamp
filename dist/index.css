@@ -37,7 +37,11 @@
 
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
-  \******************************************************************************************************************************************/.checkbox-list{height:300px;position:relative}.checkbox-list__input{-webkit-appearance:none;-moz-appearance:none;appearance:none}.checkbox-list__icon{font-size:13px;position:absolute;right:70px;top:6px;transition:.5s}.checkbox-list.dropdown-list_active .checkbox-list__items{display:block;margin-top:16px}.checkbox-list.dropdown-list_active .checkbox-list__icon{top:5px;transform:rotateX(180deg)}.checkbox-list__items>label:not(:last-child){margin-bottom:12px}
+  \******************************************************************************************************************************************/.checkbox-list__container{width:320px}.checkbox-list__ui{margin-bottom:20px;position:relative}.checkbox-list{position:relative}.checkbox-list__label{cursor:pointer}.checkbox-list__input{-webkit-appearance:none;-moz-appearance:none;appearance:none}.checkbox-list__icon{font-size:13px;position:absolute;right:70px;top:6px;transition:.5s}.checkbox-list.dropdown-list_active .checkbox-list__items{display:block;margin-top:16px}.checkbox-list.dropdown-list_active .checkbox-list__icon{top:5px;transform:rotateX(180deg)}.checkbox-list__items>label:not(:last-child){margin-bottom:12px}
+
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-rich/checkbox-rich.scss ***!
+  \******************************************************************************************************************************************/.checkbox-rich__title{margin-bottom:16px}.checkbox-rich__container>label:not(:last-child){margin-bottom:7px}.checkbox-rich__subtitle{color:rgba(31,32,65,.5);font-size:12px;font-weight:400;line-height:125%}.checkbox-rich__label{color:rgba(31,32,65,.75);font-size:14px;font-weight:700;line-height:171.42857%}.checkbox-rich__input{top:1.5px}.checkbox-rich__check{top:.5px}
 
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
@@ -61,7 +65,7 @@
 
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/__form-elements/form-element.scss ***!
-  \**************************************************************************************************************************************/.form-element__container-one{margin-bottom:100px;margin-top:32px}._container-form{display:flex;justify-content:space-between}.form-element__first-block,.form-element__second-block,.form-element__third-block{width:320px}.title-style{color:#1f2041;font-size:12px;font-weight:700;line-height:125%;text-transform:uppercase}
+  \**************************************************************************************************************************************/.form-element__container-one{margin-bottom:100px;margin-top:32px}._container-form{display:flex;justify-content:space-between}.form-element__first-block,.form-element__second-block,.form-element__third-block{width:320px}.form-element__list{display:flex;justify-content:space-between;width:100%}.title-style{color:#1f2041;font-size:12px;font-weight:700;line-height:125%;text-transform:uppercase}
 
 /*!**************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/header/header-ui.scss ***!

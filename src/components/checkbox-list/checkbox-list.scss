@@ -1,7 +1,16 @@
 @import "@variables";
+.checkbox-list__container {
+	width: $form_width;
+}
+.checkbox-list__ui {
+	position: relative;
+	margin-bottom: 20px;
+}
 .checkbox-list {
 	position: relative;
-	height: 300px;
+	&__label {
+		cursor: pointer;
+	}
 	&__input {
 		-webkit-appearance: none;
 		-moz-appearance: none;

@@ -1,15 +1,16 @@
 include /components/buttons/checkbox/checkbox.pug
-.checkbox-list
-	label(class="checkbox-list__label title-style")
-		input(type="checkbox" class="checkbox-list__input")
-		span(class="checkbox-list__icon icon-more")
-		| expandable checkbox list
-	.checkbox-list__items(hidden)
-		+checkbox("Завтрак")
-		+checkbox("Письменный стол", true)
-		+checkbox("Стул для кормления", true)
-		+checkbox("Кроватка", true)
-		+checkbox("Телевизор")
-		+checkbox("Шампунь")
-		+checkbox("Телевизор")
-		+checkbox("Шампунь")
+mixin checkboxList(title, classDrop)
+	.checkbox-list
+		label(class="checkbox-list__label title-style")
+			input(type="checkbox" class="checkbox-list__input")
+			span(class="checkbox-list__icon icon-more")
+			| expandable checkbox list
+		.checkbox-list__items( class=classDrop hidden)
+			+checkbox("Завтрак")
+			+checkbox("Письменный стол", true)
+			+checkbox("Стул для кормления", true)
+			+checkbox("Кроватка", true)
+			+checkbox("Телевизор")
+			+checkbox("Шампунь")
+			+checkbox("Телевизор")
+			+checkbox("Шампунь")

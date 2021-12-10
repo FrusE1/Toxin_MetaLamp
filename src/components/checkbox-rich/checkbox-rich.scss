@@ -1,0 +1,27 @@
+@import "@variables";
+.checkbox-rich {
+	&__title {
+		margin-bottom: 16px;
+	}
+	&__container > label:not(:last-child) {
+		margin-bottom: 7px;
+	}
+	&__subtitle {
+		font-weight: 400;
+		color: $dark-50;
+		font-size: $h3;
+		line-height: $lh_h3;
+	}
+	&__label {
+		font-size: $fz_body;
+		line-height: $lh_body;
+		color: $dark-75;
+		font-weight: 700;
+	}
+	&__input {
+		top: 1.5px;
+	}
+	&__check {
+		top: 0.5px;
+	}
+}
