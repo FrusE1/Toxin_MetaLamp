@@ -1,0 +1,23 @@
+@import "@variables";
+.bullet-list {
+	&__title {
+		margin-bottom: 13px;
+	}
+	&__item {
+		position: relative;
+		padding-left: 20px;
+		&:not(:last-child) {
+			margin-bottom: 9px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.47em;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $dark-25;
+		}
+	}
+}
