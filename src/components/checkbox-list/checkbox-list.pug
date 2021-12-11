@@ -4,7 +4,7 @@ mixin checkboxList(title, classDrop)
 		label(class="checkbox-list__label title-style")
 			input(type="checkbox" class="checkbox-list__input")
 			span(class="checkbox-list__icon icon-more")
-			| expandable checkbox list
+			=title
 		.checkbox-list__items( class=classDrop hidden)
 			+checkbox("Завтрак")
 			+checkbox("Письменный стол", true)

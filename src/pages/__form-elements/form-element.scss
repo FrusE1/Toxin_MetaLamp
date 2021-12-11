@@ -3,6 +3,7 @@
 	margin-top: 32px;
 	margin-bottom: 100px;
 }
+
 ._container-form {
 	display: flex;
 	justify-content: space-between;
@@ -17,9 +18,16 @@
 	width: $form_width;
 }
 .form-element__list {
+	margin-bottom: 40px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+.form-element__other {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
 .title-style {

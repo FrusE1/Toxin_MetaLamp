@@ -1,0 +1,33 @@
+@import "@variables";
+.benefits {
+	&__container {
+		display: flex;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&:not(:first-child) {
+			margin-top: 19px;
+		}
+	}
+	&-border {
+		width: 280px;
+		height: 1px;
+		background: $dark-10;
+	}
+	&__icon {
+		vertical-align: middle;
+		padding: 4px 14px 0 4px;
+		font-size: 40px;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		&-city {
+			font-size: 38px;
+			padding-right: 15px;
+		}
+	}
+	&-desc__title {
+		color: $dark-75;
+		font-weight: 700;
+	}
+}
