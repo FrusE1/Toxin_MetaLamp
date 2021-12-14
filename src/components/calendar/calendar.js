@@ -15,7 +15,7 @@ const save = (but) => {
 
 let button = {
 	content: 'Применить',
-	className: 'custom-button-classname',
+	className: 'custom-button',
 	onClick: save,
 }
 
@@ -29,4 +29,5 @@ new AirDatepicker('#calendar', {
 	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
 	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
 	multipleDatesSeparator: ' - ',
+	inline: true,
 });

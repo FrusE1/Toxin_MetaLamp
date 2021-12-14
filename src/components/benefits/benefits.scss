@@ -1,7 +1,8 @@
 /* start benefits style */
 @import "@variables";
 .benefits {
-	&__container {
+	width: $form_width;
+	&-container {
 		display: flex;
 		&:not(:last-child) {
 			margin-bottom: 20px;

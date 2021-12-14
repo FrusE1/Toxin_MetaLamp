@@ -1,6 +1,7 @@
 /* start checkbox-rich style */
 @import "@variables";
 .checkbox-rich {
+	width: $form_width;
 	&__title {
 		margin-bottom: 16px;
 	}

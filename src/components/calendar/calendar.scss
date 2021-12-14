@@ -17,7 +17,7 @@
 		line-height: $lh_body;
 		text-transform: uppercase;
 		border-radius: 4px;
-		color: $dark-25;
+		color: $dark-75;
 		border: 1px solid rgba(31, 32, 65, 0.25);
 		&::-webkit-calendar-picker-indicator {
 			opacity: 0;
@@ -27,6 +27,18 @@
 		}
 		&:focus {
 			border: 1px solid $dark-50;
+		}
+		&::-webkit-input-placeholder {
+			color: $dark-25;
+		}
+		&::-moz-placeholder {
+			color: $dark-25;
+		} /* Firefox 19+ */
+		&:-moz-placeholder {
+			color: $dark-25;
+		} /* Firefox 18- */
+		&:-ms-input-placeholder {
+			color: $dark-25;
 		}
 	}
 }
@@ -47,8 +59,13 @@
 	display: none;
 }
 .air-datepicker-body--day-names {
+	display: inline-grid;
 	grid-template-columns: repeat(7, 40px);
-	margin: 10px auto;
+	padding: 2px 20px 10px 20px;
+}
+.air-datepicker-body--cells.-days- {
+	display: inline-grid;
+	padding: 0 20px 11px 20px;
 }
 .air-datepicker-body--day-name {
 	font-family: "Montserrat";
@@ -57,7 +74,7 @@
 }
 .air-datepicker-nav {
 	border-bottom: none;
-	padding: 20px 20px;
+	padding: 17px 24px 32px 24px;
 }
 .air-datepicker-nav--title {
 	font-family: "Montserrat";
@@ -92,6 +109,14 @@
 }
 .air-datepicker-cell.-day-.-focus-.-range-to- {
 	border: none;
+}
+.-selected-.air-datepicker-cell.-day-.-other-month-,
+.-selected-.air-datepicker-cell.-year-.-other-decade- {
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.-in-range-.air-datepicker-cell.-day-.-other-month-,
+.-in-range-.air-datepicker-cell.-year-.-other-decade- {
+	background: linear-gradient(180deg, rgba(#bc9cff, 0.25) 0%, rgba(#8ba4f9, 0.25) 100%);
 }
 .air-datepicker-cell.-range-from- {
 	&::before {
@@ -193,29 +218,33 @@
 	border: none;
 	padding: 0;
 }
+.air-datepicker-buttons {
+	grid-column-gap: 69px;
+	margin-bottom: 10px;
+}
 .air-datepicker-button {
 	color: $purple;
 	font-size: $h3;
 	line-height: $lh_h3;
 	text-transform: uppercase;
 	font-weight: 700;
-	& span {
-		display: inline-block;
-		width: 0%;
-		height: 15px;
-		padding-left: 20px;
+	letter-spacing: 0.5px;
+	& > span {
+		padding-right: 17px;
 	}
-	& .custom-button-classname {
-		padding-left: 0;
-		justify-self: end;
+}
+.custom-button > span {
+	padding: 0;
+}
+.calender__arrow {
+	font-size: 18px;
+	color: $purple;
+	&_prev {
+		transform: rotate(180deg);
+	}
+	&_next {
+		padding-top: 3px;
 	}
 }
 
-.calender__arrow {
-	font-size: 15px;
-	color: $purple;
-}
-.calender__arrow_prev {
-	transform: rotate(180deg);
-}
 /* end calendar style */

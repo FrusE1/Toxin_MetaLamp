@@ -1,6 +1,7 @@
 /* start bullet-lis style */
 @import "@variables";
 .bullet-list {
+	max-width: $form_width;
 	&__title {
 		margin-bottom: 13px;
 	}
