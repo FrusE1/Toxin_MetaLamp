@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	width: 320px;
+	margin-bottom: 40px;
 	&__text {
 		margin-bottom: 5px;
 	}
@@ -15,7 +15,6 @@
 		padding-left: 15px;
 		font-size: $fz_body;
 		line-height: $lh_body;
-		text-transform: uppercase;
 		border-radius: 4px;
 		color: $dark-75;
 		border: 1px solid rgba(31, 32, 65, 0.25);
@@ -30,14 +29,18 @@
 		}
 		&::-webkit-input-placeholder {
 			color: $dark-25;
+			text-transform: uppercase;
 		}
 		&::-moz-placeholder {
 			color: $dark-25;
+			text-transform: uppercase;
 		} /* Firefox 19+ */
 		&:-moz-placeholder {
+			text-transform: uppercase;
 			color: $dark-25;
 		} /* Firefox 18- */
 		&:-ms-input-placeholder {
+			text-transform: uppercase;
 			color: $dark-25;
 		}
 	}

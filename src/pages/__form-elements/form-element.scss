@@ -9,13 +9,13 @@
 	justify-content: space-between;
 }
 .form-element__first-block {
-	width: $form_width;
+	max-width: $form_width;
 }
 .form-element__second-block {
-	width: $form_width;
+	max-width: $form_width;
 }
 .form-element__third-block {
-	width: $form_width;
+	max-width: $form_width;
 }
 .form-element__list {
 	margin-bottom: 40px;

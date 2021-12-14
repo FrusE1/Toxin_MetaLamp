@@ -29,5 +29,45 @@ new AirDatepicker('#calendar', {
 	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
 	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
 	multipleDatesSeparator: ' - ',
-	inline: true,
+});
+new AirDatepicker('#calendar-drop-one', {
+	navTitles: {
+		days: 'MMMM yyyy',
+	},
+	range: true,
+	dynamicRange: true,
+	buttons: ['clear', button],
+	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
+	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
+	multipleDatesSeparator: ' - ',
+});
+
+new AirDatepicker('#calendar-drop-two', {
+	navTitles: {
+		days: 'MMMM yyyy',
+	},
+	range: true,
+	dynamicRange: true,
+	buttons: ['clear', button],
+	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
+	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
+	multipleDatesSeparator: ' - ',
+});
+
+new AirDatepicker('#calendar-filter', {
+	navTitles: {
+		days: 'MMMM yyyy',
+	},
+	range: true,
+	dynamicRange: true,
+	buttons: ['clear', button],
+	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
+	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
+	multipleDatesSeparator: ' - ',
+	dateFormat(date) {
+		return date.toLocaleString('ru', {
+			day: '2-digit',
+			month: 'short'
+		});
+	}
 });
