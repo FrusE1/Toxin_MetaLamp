@@ -1,11 +1,15 @@
 /* header-ui style start*/
 @import "@variables";
+.header-ui {
+	max-width: 1380px;
+	margin: 0 auto;
+}
 .header-ui__container {
-	display: grid;
-	align-items: center;
-	min-height: $hg_icon;
-	width: 100%;
-	padding: 0 30px;
+	padding: 30px 30px;
+}
+.header-ui__link {
+	font-size: 48px;
+	color: $dark-25;
 }
 
 /* header style end */
