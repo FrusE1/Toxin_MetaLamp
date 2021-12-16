@@ -16,11 +16,11 @@
 	}
 }
 .paginator__number {
-	font-weight: 700;
 	line-height: 40px;
 	border-radius: 50%;
 	&_active,
 	&:hover {
+		font-weight: 700;
 		color: #fff;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 	}

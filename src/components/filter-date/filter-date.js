@@ -32,5 +32,6 @@ new AirDatepicker('#calendar-filter', {
 			month: 'short'
 		});
 	},
+	selectedDates: [],
 	classes: "calendar-filter",
 });

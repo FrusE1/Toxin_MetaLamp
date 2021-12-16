@@ -71,9 +71,11 @@
 	padding: 0 20px 11px 20px;
 }
 .air-datepicker-body--day-name {
+	font-size: 12px;
 	font-family: "Montserrat";
 	color: $purple;
 	font-weight: 700;
+	text-transform: none;
 }
 .air-datepicker-nav {
 	border-bottom: none;

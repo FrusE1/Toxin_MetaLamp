@@ -27,6 +27,5 @@ new AirDatepicker('#calendar', {
 	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
 	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
 	multipleDatesSeparator: ' - ',
-	selectedDates: [],
-	classes: "calendar-birth",
+	classes: 'calendar-birth',
 });

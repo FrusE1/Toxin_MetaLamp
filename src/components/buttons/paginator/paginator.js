@@ -1,7 +1,6 @@
 const ulTag = document.querySelector('.paginator__list');
-const liPrev = document.querySelector('.paginator__li-prev');
 
-let totalPages = 20;
+let totalPages = 15;
 function element(totalPages, page) {
 	let liTag = '';
 	let activeLi;
