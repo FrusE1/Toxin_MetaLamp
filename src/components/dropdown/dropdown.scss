@@ -43,16 +43,21 @@
 		background-color: #fff;
 		font-weight: 700;
 		width: 100%;
-		padding: 6px 15px;
+		padding: 4px 6px 12px 15px;
 		border: 1px solid $dark-50;
 		border-radius: 0 0 4px 4px;
+	}
+	&__list {
+		padding-bottom: 14px;
 	}
 	&__item {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		margin-bottom: 7px;
+		vertical-align: middle;
 	}
 	&__counter {
+		display: table;
 		width: 92px;
 		justify-self: end;
 		align-self: center;
@@ -61,14 +66,16 @@
 		align-self: center;
 	}
 	&__value {
-		display: inline-block;
+		display: table-cell;
 		width: 32px;
 		text-align: center;
+		vertical-align: middle;
 		font-size: $h3;
 		line-height: $lh_h3;
 		font-weight: 700;
 	}
 	&__btn {
+		position: relative;
 		width: 30px;
 		height: 30px;
 		border: 1px solid $dark-50;
@@ -76,16 +83,23 @@
 		background-color: #fff;
 		font-size: 20px;
 		&_minus {
-			border-color: $dark-25;
 			border: 1px solid $dark-25;
+			color: $dark-25;
+		}
+		&_plus {
+			color: $dark-50;
 		}
 		&_minus::after {
 			content: "-";
-			color: $dark-25;
+			position: absolute;
+			top: 0;
+			left: 10px;
 		}
 		&_plus::after {
 			content: "+";
-			color: $dark-50;
+			position: absolute;
+			top: 1.5px;
+			left: 8.5px;
 		}
 	}
 	&._active-dropdown .dropdown-guests__input {

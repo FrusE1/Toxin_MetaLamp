@@ -30,6 +30,10 @@ btnPlusOne.addEventListener("click", function (event) {
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
 	}
+	if (inputVarOne >= 1) {
+		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.5)";
+		btnMinusOne.style.color = "rgba(31, 32, 65, 0.5)";
+	}
 	event.preventDefault();
 });
 
@@ -55,6 +59,10 @@ btnMinusOne.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
+	}
+	if (inputVarOne == 0) {
+		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.25)";
+		btnMinusOne.style.color = "rgba(31, 32, 65, 0.25)";
 	}
 	event.preventDefault();
 })
@@ -86,6 +94,10 @@ btnPlusTwo.addEventListener("click", function (event) {
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
 	}
+	if (inputVarTwo >= 1) {
+		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.5)";
+		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.5)";
+	}
 	event.preventDefault();
 });
 
@@ -111,6 +123,10 @@ btnMinusTwo.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
+	}
+	if (inputVarTwo == 0) {
+		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.25)";
+		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.25)";
 	}
 	event.preventDefault();
 })
@@ -141,6 +157,10 @@ btnPlusThree.addEventListener("click", function (event) {
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
 	}
+	if (inputVarThree >= 1) {
+		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.5)";
+		btnMinusThree.style.color = "rgba(31, 32, 65, 0.5)";
+	}
 	event.preventDefault();
 });
 
@@ -166,6 +186,10 @@ btnMinusThree.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
+	}
+	if (inputVarThree == 0) {
+		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.25)";
+		btnMinusThree.style.color = "rgba(31, 32, 65, 0.25)";
 	}
 	event.preventDefault();
 })
