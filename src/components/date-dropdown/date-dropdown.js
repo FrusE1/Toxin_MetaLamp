@@ -3,12 +3,13 @@ import 'air-datepicker/air-datepicker.css';
 
 const saveCalendarDrop = () => {
 	const parentCalendarDrop = document.querySelector('.calendar-drop');
-	const inputCalendarDrop = document.querySelector('.date-dropdown__input-dropdown');
+	const inputCalendarDrop = document.querySelector('.date-dropdown__input-one');
 	parentCalendarDrop.style.display = "none";
 	inputCalendarDrop.addEventListener("click", function () {
 		parentCalendarDrop.style.display = "block";
 	})
-}
+};
+
 
 let buttonDrop = {
 	content: 'Применить',

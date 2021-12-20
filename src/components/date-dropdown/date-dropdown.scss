@@ -1,6 +1,7 @@
 /* start date-dropdown style */
 @import "@variables";
 .date-dropdown {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
@@ -16,6 +17,24 @@
 		border: 1px solid $dark-25;
 		border-radius: 4px;
 		padding-left: 15px;
+		&:focus,
+		&:hover {
+			border: 1px solid $dark-50;
+		}
+	}
+	&__label-one {
+		position: absolute;
+		font-size: 14px;
+		right: 15px;
+		top: 50%;
+		transition: 0.4s;
+	}
+	&__label-two {
+		position: absolute;
+		font-size: 14px;
+		left: 37%;
+		top: 50%;
+		transition: 0.4s;
 	}
 }
 /* end date-dropdown style */

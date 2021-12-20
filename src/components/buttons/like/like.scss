@@ -6,6 +6,7 @@
 		margin-bottom: 16px;
 	}
 	&__label {
+		cursor: pointer;
 		position: relative;
 		&:not(:last-child) {
 			padding-right: 10px;

@@ -15,6 +15,7 @@
 		line-height: $lh_h3;
 	}
 	&__label {
+		cursor: pointer;
 		font-size: $fz_body;
 		line-height: $lh_body;
 		color: $dark-75;
