@@ -4,14 +4,27 @@
 	position: relative;
 	margin-bottom: 40px;
 	&__input {
-		width: 100%;
+		width: 266px;
 		height: 44px;
 		border: 1px solid $dark-25;
 		border-radius: 4px;
 		padding-left: 15px;
+		text-transform: lowercase;
 		&:focus,
 		&:hover {
 			border: 1px solid $dark-50;
+		}
+		&::-webkit-input-placeholder {
+			text-transform: uppercase;
+		}
+		&::-moz-placeholder {
+			text-transform: uppercase;
+		} /* Firefox 19+ */
+		&:-moz-placeholder {
+			text-transform: uppercase;
+		} /* Firefox 18- */
+		&:-ms-input-placeholder {
+			text-transform: uppercase;
 		}
 	}
 	&__text {
@@ -19,8 +32,8 @@
 	}
 	&__label {
 		position: absolute;
-		font-size: 14px;
-		right: 15px;
+		font-size: 12px;
+		right: 69px;
 		top: 50%;
 		transition: 0.4s;
 	}

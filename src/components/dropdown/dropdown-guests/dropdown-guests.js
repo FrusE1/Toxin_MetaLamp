@@ -7,6 +7,9 @@ const btnPlusOne = valueDropGuest[0].nextElementSibling;
 let inputVarOne = +valueDropGuest[0].textContent;
 const inputDropGuest = document.querySelector('.dropdown-guests__input');
 const btnDropClear = document.querySelector('.dropdown-guests-btn__clear');
+let dropClearVar = btnDropClear.innerHTML;
+
+btnDropClear.innerHTML = "";
 
 btnPlusOne.addEventListener("click", function (event) {
 	valueDropGuest[0].textContent = ++inputVarOne;
@@ -19,7 +22,7 @@ btnPlusOne.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -29,11 +32,16 @@ btnPlusOne.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarOne >= 1) {
 		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.5)";
 		btnMinusOne.style.color = "rgba(31, 32, 65, 0.5)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 });
 
@@ -49,7 +57,7 @@ btnMinusOne.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -59,11 +67,16 @@ btnMinusOne.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarOne == 0) {
 		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.25)";
 		btnMinusOne.style.color = "rgba(31, 32, 65, 0.25)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 })
 
@@ -83,7 +96,7 @@ btnPlusTwo.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -93,11 +106,16 @@ btnPlusTwo.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarTwo >= 1) {
 		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.5)";
 		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.5)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 });
 
@@ -113,7 +131,7 @@ btnMinusTwo.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -123,11 +141,16 @@ btnMinusTwo.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarTwo == 0) {
 		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.25)";
 		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.25)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 })
 
@@ -146,7 +169,7 @@ btnPlusThree.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -156,11 +179,16 @@ btnPlusThree.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarThree >= 1) {
 		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.5)";
 		btnMinusThree.style.color = "rgba(31, 32, 65, 0.5)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 });
 
@@ -176,7 +204,7 @@ btnMinusThree.addEventListener("click", function (event) {
 		babyVar = `, ${inputVarThree} младенца`;
 	} else if (inputVarThree > 4) {
 		babyVar = `, ${inputVarThree} младенцев`;
-	}
+	};
 	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
 	if (inputVarSumm == 0) {
 		inputDropGuest.value = "Сколько гостей";
@@ -186,11 +214,16 @@ btnMinusThree.addEventListener("click", function (event) {
 		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
 	} else if (inputVarSumm > 4) {
 		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	}
+	};
 	if (inputVarThree == 0) {
 		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.25)";
 		btnMinusThree.style.color = "rgba(31, 32, 65, 0.25)";
-	}
+	};
+	if (inputVarSumm == 0) {
+		btnDropClear.innerHTML = "";
+	} else if (inputVarSumm > 0) {
+		btnDropClear.innerHTML = dropClearVar;
+	};
 	event.preventDefault();
 })
 
@@ -204,6 +237,13 @@ btnDropClear.addEventListener("click", function (event) {
 	inputVarTwo = 0;
 	valueDropGuest[2].textContent = "0";
 	inputVarThree = 0;
+	btnDropClear.innerHTML = "";
+	btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.25)";
+	btnMinusOne.style.color = "rgba(31, 32, 65, 0.25)";
+	btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.25)";
+	btnMinusTwo.style.color = "rgba(31, 32, 65, 0.25)";
+	btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.25)";
+	btnMinusThree.style.color = "rgba(31, 32, 65, 0.25)";
 	event.preventDefault();
 })
 
@@ -216,19 +256,17 @@ const btnDropReady = document.querySelector('.dropdown-guests-btn__ready');
 
 
 btnDropReady.addEventListener("click", function (event) { // apply button
-	listDrop.classList.remove('_active-dropdown');
+	listDrop.classList.remove('_active-dropdown-guests');
 	event.preventDefault();
-})
+});
 
 document.addEventListener("click", list);
 
 function list(event) {
 	if (event.target.closest('.dropdown-guests__input')) {
-		listDrop.classList.toggle('_active-dropdown');
-	}
+		listDrop.classList.toggle('_active-dropdown-guests');
+	};
 	if (!event.target.closest('.dropdown-guests')) {
-		listDrop.classList.remove('_active-dropdown');
-	}
-}
-
-// .........................................
+		listDrop.classList.remove('_active-dropdown-guests');
+	};
+};

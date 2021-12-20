@@ -1,0 +1,24 @@
+.dropdown-room
+	h3.dropdown-room__title.title-style Dropdown
+	input(type="text" class="dropdown-room__input" value="Сколько комнат и кроватей" id="more-room")
+	label(class="dropdown-room__label icon-more" for="more-room")
+	.dropdown-room__block(hidden)
+		ul.dropdown-room__list
+			li.dropdown-room__item
+				p.dropdown-room__text спальни
+				.dropdown-room__counter
+					button(class="dropdown-room__btn dropdown-room__btn_minus")
+					span(class="dropdown-room__value") 0
+					button(class="dropdown-room__btn dropdown-room__btn_plus")
+			li.dropdown-room__item
+				p.dropdown-room__text кровати
+				.dropdown-room__counter
+					button(class="dropdown-room__btn dropdown-room__btn_minus")
+					span(class="dropdown-room__value") 0
+					button(class="dropdown-room__btn dropdown-room__btn_plus")
+			li.dropdown-room__item
+				p.dropdown-room__text ванные комнаты
+				.dropdown-room__counter
+					button(class="dropdown-room__btn dropdown-room__btn_minus")
+					span(class="dropdown-room__value") 0
+					button(class="dropdown-room__btn dropdown-room__btn_plus")

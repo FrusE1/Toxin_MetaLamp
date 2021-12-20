@@ -6,7 +6,7 @@
 		margin-bottom: 5px;
 	}
 	&__input {
-		width: 100%;
+		width: 266px;
 		height: 44px;
 		border: 1px solid $dark-25;
 		border-radius: 4px;
@@ -16,13 +16,25 @@
 			border: 1px solid $dark-50;
 		}
 		&:hover ~ .sub-field__label {
-			right: 10px;
+			right: 65px;
+		}
+		&::-webkit-input-placeholder {
+			color: $dark-25;
+		}
+		&::-moz-placeholder {
+			color: $dark-25;
+		} /* Firefox 19+ */
+		&:-moz-placeholder {
+			color: $dark-25;
+		} /* Firefox 18- */
+		&:-ms-input-placeholder {
+			color: $dark-25;
 		}
 	}
 	&__label {
 		position: absolute;
 		font-size: 18px;
-		right: 12px;
+		right: 66px;
 		top: 50%;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 		-webkit-background-clip: text;

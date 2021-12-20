@@ -26,12 +26,13 @@ new AirDatepicker('#calendar-filter', {
 	prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
 	nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
 	multipleDatesSeparator: ' - ',
-	dateFormat(date) {
-		return date.toLocaleString('ru', {
-			day: '2-digit',
-			month: 'short'
-		});
-	},
+	// dateFormat(date) {
+	// 	return date.toLocaleString('ru', {
+	// 		day: '2-digit',
+	// 		month: 'short'
+	// 	});
+	// },
+	dateFormat: "dd MMM",
 	selectedDates: [],
 	classes: "calendar-filter",
 });

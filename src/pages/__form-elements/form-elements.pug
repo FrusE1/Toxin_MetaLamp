@@ -8,7 +8,7 @@ block content
 		.form-element__container-one._container-form
 			form.form-element__first-block
 				include /components/text-field/text-field-block.pug
-				include /components/dropdown/dropdown.pug
+				include /components/dropdown/dropdown-guests/dropdown-guests.pug
 				include /components/calendar/calendar.pug
 				include /components/date-dropdown/date-dropdown.pug
 				include /components/filter-date/filter-date.pug
@@ -23,6 +23,9 @@ block content
 				include /components/slider/slider-block.pug
 				include /components/buttons/buttons/buttons.pug
 				include /components/buttons/paginator/paginator.pug
+		.form-element__container-two._container-form
+			form.form-element__dropdown
+				include /components/dropdown/dropdown-room/dropdown-room.pug
 		.form-element__container-three._container-form
 			form.form-element__list
 				include /components/checkbox-list/checkbox-list-block.pug
