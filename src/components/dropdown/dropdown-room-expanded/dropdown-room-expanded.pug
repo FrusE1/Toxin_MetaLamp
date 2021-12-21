@@ -1,0 +1,26 @@
+.dropdown-room-expanded
+	.dropdown-room-expanded__title-block
+		h3.dropdown-room-expanded__title.title-style Dropdown
+		.dropdown-room-expanded__subtitle expanded
+	input(type="text" class="dropdown-room-expanded__input" value="2 спальни, 2 кровати...")
+	label(class="dropdown-room-expanded__label icon-more")
+	.dropdown-room-expanded__block
+		ul.dropdown-room-expanded__list
+			li.dropdown-room-expanded__item
+				p.dropdown-room-expanded__text спальни
+				.dropdown-room-expanded__counter
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_minus")
+					span(class="dropdown-room-expanded__value") 2
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_plus")
+			li.dropdown-room-expanded__item
+				p.dropdown-room-expanded__text кровати
+				.dropdown-room-expanded__counter
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_minus")
+					span(class="dropdown-room-expanded__value") 2
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_plus")
+			li.dropdown-room-expanded__item
+				p.dropdown-room-expanded__text ванные комнаты
+				.dropdown-room-expanded__counter
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_minus btn-minus-zero")
+					span(class="dropdown-room-expanded__value") 0
+					button(class="dropdown-room-expanded__btn dropdown-room-expanded__btn_plus")

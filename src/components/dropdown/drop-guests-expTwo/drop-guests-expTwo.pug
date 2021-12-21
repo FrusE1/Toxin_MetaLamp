@@ -1,0 +1,27 @@
+.dropdown-guests-expanded
+	h3.dropdown-guests-expanded__title.title-style(id="title") Dropdown
+	input(type="text" class="dropdown-guests-expanded__input" value="3 гостя")
+	label(class="dropdown-guests-expanded__label icon-more")
+	.dropdown-guests-expanded__block
+		ul.dropdown-guests-expanded__list
+			li.dropdown-guests-expanded__item
+				p.dropdown-guests-expanded__text взрослые
+				.dropdown-guests-expanded__counter
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_minus minus-expanded")
+					span(class="dropdown-guests-expanded__value") 2
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_plus")
+			li.dropdown-guests-expanded__item
+				p.dropdown-guests-expanded__text дети
+				.dropdown-guests-expanded__counter
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_minus minus-expanded")
+					span(class="dropdown-guests-expanded__value") 1
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_plus")
+			li.dropdown-guests-expanded__item
+				p.dropdown-guests-expanded__text младенцы
+				.dropdown-guests-expanded__counter
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_minus")
+					span(class="dropdown-guests-expanded__value") 0
+					button(class="dropdown-guests-expanded__btn dropdown-guests-expanded__btn_plus")
+		.dropdown-guests-expanded-btns
+			button(class="dropdown-guests-expanded-btn dropdown-guests-btn__clear") очистить
+			button(class="dropdown-guests-expanded-btn dropdown-guests-expanded-btn__ready") применить

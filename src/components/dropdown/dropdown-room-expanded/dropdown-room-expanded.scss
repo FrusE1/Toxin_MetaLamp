@@ -1,6 +1,6 @@
-/* start dropdown-room style */
+/* start dropdown-room-expanded style */
 @import "@variables";
-.dropdown-room {
+.dropdown-room-expanded {
 	position: relative;
 	box-sizing: border-box;
 	width: 320px;
@@ -25,14 +25,8 @@
 		padding-left: 15px;
 		color: $dark-75;
 		background-color: #fff;
-		border: 1px solid rgba(31, 32, 65, 0.25);
-		border-radius: 4px;
-		&:hover {
-			border: 1px solid $dark-50;
-		}
-		&:focus {
-			border: 1px solid $dark-50;
-		}
+		border: 1px solid $dark-50;
+		border-radius: 4px 4px 0 0;
 	}
 	&__label {
 		position: absolute;
@@ -46,7 +40,7 @@
 		color: $dark-100;
 		font-size: $h3;
 		line-height: $lh_h3;
-		z-index: 10;
+		z-index: 8;
 		background-color: #fff;
 		font-weight: 700;
 		width: 100%;
@@ -87,8 +81,8 @@
 		background-color: #fff;
 		font-size: 20px;
 		&_minus {
-			border: 1px solid $dark-25;
-			color: $dark-25;
+			border: 1px solid $dark-50;
+			color: $dark-50;
 		}
 		&_plus {
 			color: $dark-50;
@@ -106,16 +100,9 @@
 			left: 8.5px;
 		}
 	}
-	&._active-dropdown-room .dropdown-room__input {
-		border-radius: 4px 4px 0 0;
-	}
-	&._active-dropdown-room .dropdown-room__block {
-		display: block;
-	}
-	&._active-dropdown-room .dropdown-room__label {
-		transform: rotateX(180deg);
-		top: 45%;
-		transition: 0.4s;
-	}
 }
-/* end dropdown-room style */
+.btn-minus-zero {
+	border: 1px solid $dark-25;
+	color: $dark-25;
+}
+/* end dropdown-room-expanded style */
