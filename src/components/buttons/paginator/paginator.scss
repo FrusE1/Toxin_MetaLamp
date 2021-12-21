@@ -1,9 +1,16 @@
 /* start paginator style */
 @import "@variables";
+.paginator-container {
+	width: 241px;
+}
 .paginator__title {
 	margin-bottom: 16px;
 }
+.paginator__subtitle {
+	text-align: center;
+}
 .paginator__list {
+	margin-bottom: 7px;
 	display: flex;
 	cursor: pointer;
 	text-align: center;
@@ -44,8 +51,8 @@
 	color: #fff;
 	position: absolute;
 	top: 2.5px;
-	left: 14px;
-	font-size: 14px;
+	left: 11px;
+	font-size: 18px;
 	&-prev {
 		transform: rotate(180deg);
 		left: 12px;

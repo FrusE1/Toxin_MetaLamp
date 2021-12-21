@@ -1,9 +1,12 @@
 /* start bullet-lis style */
 @import "@variables";
 .bullet-list {
-	max-width: $form_width;
+	width: $form_width;
 	&__title {
 		margin-bottom: 13px;
+	}
+	&__items {
+		max-width: 266px;
 	}
 	&__item {
 		position: relative;

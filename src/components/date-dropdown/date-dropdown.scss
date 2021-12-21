@@ -22,19 +22,18 @@
 			border: 1px solid $dark-50;
 		}
 	}
-	&__label-one {
+	&__label {
 		position: absolute;
-		font-size: 14px;
-		right: 15px;
-		top: 50%;
+		font-size: 13px;
 		transition: 0.4s;
-	}
-	&__label-two {
-		position: absolute;
-		font-size: 14px;
-		left: 37%;
-		top: 50%;
-		transition: 0.4s;
+		&-one {
+			right: 15px;
+			top: 50%;
+		}
+		&-two {
+			left: 38%;
+			top: 50%;
+		}
 	}
 }
 /* end date-dropdown style */

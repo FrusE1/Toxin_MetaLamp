@@ -1,37 +1,9 @@
+/* start total style form-element */
 @import "@variables";
-.form-element__container-one {
-	margin-top: 32px;
-	margin-bottom: 100px;
-}
-.form-element__container-two {
-	margin-bottom: 150px;
-}
 ._container-form {
 	display: flex;
 	justify-content: space-between;
 }
-.form-element__first-block {
-	max-width: $form_width;
-}
-.form-element__second-block {
-	max-width: $form_width;
-}
-.form-element__third-block {
-	max-width: $form_width;
-}
-.form-element__list {
-	margin-bottom: 40px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-.form-element__other {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 50px;
-}
-
 .title-style {
 	font-size: $h3;
 	line-height: $lh_h3;
@@ -39,3 +11,37 @@
 	color: $dark-100;
 	text-transform: uppercase;
 }
+.form-element {
+	&__container-one {
+		margin-top: 32px;
+		margin-bottom: 100px;
+	}
+	&__container-two {
+		margin-bottom: 168px;
+	}
+	&__drop-rooms {
+		width: $form_width;
+	}
+	&__first-block {
+		max-width: $form_width;
+	}
+	&__second-block {
+		max-width: $form_width;
+	}
+	&__third-block {
+		max-width: $form_width;
+	}
+	&__list {
+		margin-bottom: 40px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__other {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+}
+/* end total style form-element */

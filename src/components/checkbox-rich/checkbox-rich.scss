@@ -3,12 +3,16 @@
 .checkbox-rich {
 	width: $form_width;
 	&__title {
-		margin-bottom: 16px;
+		margin-bottom: 14px;
+	}
+	&__container {
+		max-width: 266px;
 	}
 	&__container > label:not(:last-child) {
-		margin-bottom: 7px;
+		margin-bottom: 6px;
 	}
 	&__subtitle {
+		padding-top: 2px;
 		font-weight: 400;
 		color: $dark-50;
 		font-size: $h3;

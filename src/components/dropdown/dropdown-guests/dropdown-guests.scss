@@ -28,7 +28,7 @@
 	}
 	&__label {
 		position: absolute;
-		font-size: 14px;
+		font-size: 13px;
 		right: 15px;
 		top: 50%;
 		transition: 0.4s;
@@ -50,8 +50,8 @@
 		padding-bottom: 14px;
 	}
 	&__item {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		justify-content: space-between;
 		margin-bottom: 7px;
 		vertical-align: middle;
 	}
