@@ -1,4 +1,4 @@
-// КОД ПОДСЧЕТА КОЛИЧЕСТВА ГОСТЕЙ
+// --- Подсчет количества гостей
 const dropGuests = document.querySelector('.dropdown-guests__block');
 const inputDropGuests = document.querySelector('.dropdown-guests__input');
 const valueDropGuests = document.querySelectorAll('.dropdown-guests__value');
@@ -106,7 +106,7 @@ dropGuests.addEventListener("click", function (event) {
 	event.preventDefault();
 })
 
-// КОД ВЫПАДАЮЩЕГО СПИСКА ГОСТЕЙ
+// --- Выпадаюший список гостей
 const listDrop = document.querySelector('.dropdown-guests');
 const btnDropReady = document.querySelector('.dropdown-guests-btn__ready');
 

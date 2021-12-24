@@ -1,13 +1,15 @@
-const listDropList = document.querySelector('.checkbox-list');
+if (document.querySelector('.checkbox-list')) { // проверка наличия checkbox-list
+	const listDropList = document.querySelector('.checkbox-list');
 
-document.addEventListener("click", dropList);
+	document.addEventListener("click", dropList);
 
 
-function dropList(event) {
-	if (event.target.closest('.checkbox-list__input')) {
-		listDropList.classList.toggle('dropdown-list_active');
-	}
-	if (!event.target.closest('.checkbox-list')) {
-		listDropList.classList.remove('dropdown-list_active');
-	}
+	function dropList(event) {
+		if (event.target.closest('.checkbox-list__input')) {
+			listDropList.classList.toggle('dropdown-list_active');
+		};
+		if (!event.target.closest('.checkbox-list')) {
+			listDropList.classList.remove('dropdown-list_active');
+		};
+	};
 }

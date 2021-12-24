@@ -29,3 +29,6 @@ new AirDatepicker('#calendar-drop', {
 	multipleDatesSeparator: ' - ',
 	classes: "calendar-drop",
 });
+
+// const inputCalendarDropOne = document.querySelector(".date-dropdown__input-one");
+// const inputCalendarDropTWo = document.querySelector(".date-dropdown__input-two");
