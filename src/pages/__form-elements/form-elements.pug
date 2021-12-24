@@ -3,6 +3,7 @@ extends /pages/base.pug
 block head
 	title Form-Element
 block content
+	include /components/date-dropdown/date-dropdown.pug
 	include /pages/header/header_ui.pug
 	.container-total._container
 		.form-element__container-one._container-form
@@ -12,7 +13,7 @@ block content
 					include /components/dropdown/dropdown-guests/dropdown-guests-block.pug
 				include /components/calendar/calendar.pug
 				.date-dropdown-container
-					include /components/date-dropdown/date-dropdown.pug
+					+dateDropdown("date Dropdown", "date Dropdown")
 				include /components/filter-date/filter-date.pug
 				include /components/sub-field/sub-field.pug
 			form.form-element__second-block

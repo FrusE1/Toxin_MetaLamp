@@ -1,10 +1,11 @@
 include /components/buttons/buttons/button-price.pug
 include /components/dropdown/dropdown-guests/dropdown-guests.pug
+include /components/date-dropdown/date-dropdown.pug
 .room-select
 	.room-select__container
 		h1.room-select__title Найдём номера под ваши пожелания
 		.room-select__date-container
-			include /components/date-dropdown/date-dropdown.pug
+			+dateDropdown("прибытие", "выезд")
 		.room-select__drop-container
-			+dropGuests("Гость", "0", "0", "0")
+			+dropGuests("гости", "0", "0", "0")
 		+buttonPrice("подобрать номер")
