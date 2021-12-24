@@ -1,0 +1,24 @@
+/* start room-select form-element */
+@import "@variables";
+.room-select {
+	max-width: 380px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	&__container {
+		padding: 40px 30px 30px 30px;
+	}
+	&__title {
+		font-size: $h1;
+		line-height: $lh_h1;
+		font-weight: 700;
+		color: $dark-100;
+		margin-bottom: 21px;
+	}
+	&__date-container {
+		margin-bottom: 20px;
+	}
+	&__drop-container {
+		margin-bottom: 30px;
+	}
+}
+/* end room-select form-element */

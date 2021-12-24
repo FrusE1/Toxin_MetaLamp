@@ -1,10 +1,12 @@
 /* start date-dropdown style */
 @import "@variables";
+.date-dropdown-container {
+	margin-bottom: 40px;
+}
 .date-dropdown {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	& > *:not(:last-child) {
 		margin-right: 20px;
 	}

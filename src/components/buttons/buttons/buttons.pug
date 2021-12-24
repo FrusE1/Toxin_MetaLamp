@@ -1,3 +1,4 @@
+include /components/buttons/buttons/button-price.pug
 .button
 	h3.button__title.title-style buttons
 	.button__items
@@ -9,6 +10,4 @@
 	.button__items
 		button.button__item.button__item-no-border click me
 		button.button__item.button__item-no-border.button__item-no-border_active click me
-	.button__items
-		button.button__item.button__item-price перейти к оплате
-			span.button__span.icon-arrow
+	+buttonPrice("перейти к оплате")

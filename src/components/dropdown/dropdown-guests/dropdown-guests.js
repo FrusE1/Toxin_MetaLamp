@@ -1,261 +1,116 @@
-// guest counter
+// КОД ПОДСЧЕТА КОЛИЧЕСТВА ГОСТЕЙ
+const dropGuests = document.querySelector('.dropdown-guests__block');
+const inputDropGuests = document.querySelector('.dropdown-guests__input');
+const valueDropGuests = document.querySelectorAll('.dropdown-guests__value');
+const btnDropMinus = document.querySelectorAll('.dropdown-guests__btn_minus')
+let inputDropVar = inputDropGuests.value;
 
-const valueDropGuest = document.querySelectorAll('.dropdown-guests__value');
+// Значения установленные заранее
+let valueDropOnePrev = +valueDropGuests[0].textContent;
+let valueDropTwoPrev = +valueDropGuests[1].textContent;
+let valueDropThreePrev = +valueDropGuests[2].textContent;
+let valueDropSummPrev = valueDropOnePrev + valueDropTwoPrev + valueDropThreePrev;
+let babyDropPrev;
+if (valueDropThreePrev == 0) {
+	babyDropPrev = ``;
+} else if (valueDropThreePrev == 1) {
+	babyDropPrev = `, ${valueDropThreePrev} младенец`;
+}
+else if (valueDropThreePrev <= 4) {
+	babyDropPrev = `, ${valueDropThreePrev} младенца`;
+}
+else if (valueDropThreePrev > 4) {
+	babyDropPrev = `, ${valueDropThreePrev} младенцев`;
+};
+if (valueDropSummPrev == 0) {
+	inputDropGuests.value = inputDropVar;
+} else if (valueDropSummPrev == 1) {
+	inputDropGuests.value = `${valueDropSummPrev} гость${babyDropPrev}`;
+} else if (valueDropSummPrev <= 4) {
+	inputDropGuests.value = `${valueDropSummPrev} гостя${babyDropPrev}`;
+} else if (valueDropSummPrev > 4) {
+	inputDropGuests.value = `${valueDropSummPrev} гостей${babyDropPrev}`;
+};
 
-const btnMinusOne = valueDropGuest[0].previousElementSibling;
-const btnPlusOne = valueDropGuest[0].nextElementSibling;
-let inputVarOne = +valueDropGuest[0].textContent;
-const inputDropGuest = document.querySelector('.dropdown-guests__input');
-const btnDropClear = document.querySelector('.dropdown-guests-btn__clear');
-let dropClearVar = btnDropClear.innerHTML;
+if (valueDropOnePrev >= 1) {
+	btnDropMinus[0].style.color = "rgba(31, 32, 65, 0.5)";
+	btnDropMinus[0].style.borderColor = "rgba(31, 32, 65, 0.5)";
+}
+if (valueDropTwoPrev >= 1) {
+	btnDropMinus[1].style.color = "rgba(31, 32, 65, 0.5)";
+	btnDropMinus[1].style.borderColor = "rgba(31, 32, 65, 0.5)";
+}
+if (valueDropThreePrev >= 1) {
+	btnDropMinus[2].style.color = "rgba(31, 32, 65, 0.5)";
+	btnDropMinus[2].style.borderColor = "rgba(31, 32, 65, 0.5)";
+}
 
-btnDropClear.innerHTML = "";
+// Основной код подсчета гостей
+dropGuests.addEventListener("click", function (event) {
+	let targetDrop = event.target;
+	let dropSpan;
+	if (targetDrop.dataset.direction == "plus") {
+		dropSpan = +targetDrop.previousElementSibling.textContent;
+		targetDrop.previousElementSibling.textContent = ++dropSpan;
+		if (dropSpan >= 1) {
+			targetDrop.parentNode.firstElementChild.style.color = "rgba(31, 32, 65, 0.5)";
+			targetDrop.parentNode.firstElementChild.style.borderColor = "rgba(31, 32, 65, 0.5)";
+		}
 
-btnPlusOne.addEventListener("click", function (event) {
-	valueDropGuest[0].textContent = ++inputVarOne;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
+	}
+	if (targetDrop.dataset.direction == "minus") {
+		dropSpan = +targetDrop.nextElementSibling.textContent;
+		dropSpan = dropSpan > 0 ? --dropSpan : 0;
+		if (dropSpan == 0) {
+			targetDrop.style.color = "rgba(31, 32, 65, 0.25)";
+			targetDrop.style.borderColor = "rgba(31, 32, 65, 0.25)";
+		}
+		targetDrop.nextElementSibling.textContent = dropSpan;
+	}
+	let valueDropOne = +valueDropGuests[0].textContent;
+	let valueDropTwo = +valueDropGuests[1].textContent;
+	let valueDropThree = +valueDropGuests[2].textContent;
+	let valueSumm = valueDropOne + valueDropTwo + valueDropThree;
+	let babyDrop;
+	if (valueDropThree == 0) {
+		babyDrop = ``;
+	} else if (valueDropThree == 0) {
+		babyDrop = `, ${valueDropThree} младенец`;
+	}
+	else if (valueDropThree <= 4) {
+		babyDrop = `, ${valueDropThree} младенца`;
+	}
+	else if (valueDropThree > 4) {
+		babyDrop = `, ${valueDropThree} младенцев`;
 	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
+	if (valueSumm == 0) {
+		inputDropGuests.value = inputDropVar;
+	} else if (valueSumm == 1) {
+		inputDropGuests.value = `${valueSumm} гость${babyDrop}`;
+	} else if (valueSumm <= 4) {
+		inputDropGuests.value = `${valueSumm} гостя${babyDrop}`;
+	} else if (valueSumm > 4) {
+		inputDropGuests.value = `${valueSumm} гостей${babyDrop}`;
 	};
-	if (inputVarOne >= 1) {
-		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.5)";
-		btnMinusOne.style.color = "rgba(31, 32, 65, 0.5)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
-	};
-	event.preventDefault();
-});
-
-btnMinusOne.addEventListener("click", function (event) {
-	inputVarOne = inputVarOne > 0 ? --inputVarOne : 0
-	valueDropGuest[0].textContent = inputVarOne;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
-	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	};
-	if (inputVarOne == 0) {
-		btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.25)";
-		btnMinusOne.style.color = "rgba(31, 32, 65, 0.25)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
-	};
-	event.preventDefault();
-})
-
-
-const btnMinusTwo = valueDropGuest[1].previousElementSibling;
-const btnPlusTwo = valueDropGuest[1].nextElementSibling;
-let inputVarTwo = +valueDropGuest[1].textContent;
-
-btnPlusTwo.addEventListener("click", function (event) {
-	valueDropGuest[1].textContent = ++inputVarTwo;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
-	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	};
-	if (inputVarTwo >= 1) {
-		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.5)";
-		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.5)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
-	};
-	event.preventDefault();
-});
-
-btnMinusTwo.addEventListener("click", function (event) {
-	inputVarTwo = inputVarTwo > 0 ? --inputVarTwo : 0;
-	valueDropGuest[1].textContent = inputVarTwo;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
-	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	};
-	if (inputVarTwo == 0) {
-		btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.25)";
-		btnMinusTwo.style.color = "rgba(31, 32, 65, 0.25)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
+	if (targetDrop.dataset.clear == 'clear') {
+		valueDropGuests[0].textContent = 0;
+		valueDropGuests[1].textContent = 0;
+		valueDropGuests[2].textContent = 0;
+		inputDropGuests.value = inputDropVar;
+		let clearBtn = targetDrop.parentNode.previousElementSibling.querySelectorAll('.dropdown-guests__btn_minus');
+		clearBtn.forEach(clearBtnElem => {
+			clearBtnElem.style.borderColor = "rgba(31, 32, 65, 0.25)";
+			clearBtnElem.style.color = "rgba(31, 32, 65, 0.25)";
+		});
 	};
 	event.preventDefault();
 })
 
-const btnMinusThree = valueDropGuest[2].previousElementSibling;
-const btnPlusThree = valueDropGuest[2].nextElementSibling;
-let inputVarThree = +valueDropGuest[2].textContent;
-
-btnPlusThree.addEventListener("click", function (event) {
-	valueDropGuest[2].textContent = ++inputVarThree;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
-	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	};
-	if (inputVarThree >= 1) {
-		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.5)";
-		btnMinusThree.style.color = "rgba(31, 32, 65, 0.5)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
-	};
-	event.preventDefault();
-});
-
-btnMinusThree.addEventListener("click", function (event) {
-	inputVarThree = inputVarThree > 0 ? --inputVarThree : 0;
-	valueDropGuest[2].textContent = inputVarThree;
-	let babyVar;
-	if (inputVarThree == 0) {
-		babyVar = ``;
-	} else if (inputVarThree == 1) {
-		babyVar = `, ${inputVarThree} младенец`;
-	} else if (inputVarThree <= 4) {
-		babyVar = `, ${inputVarThree} младенца`;
-	} else if (inputVarThree > 4) {
-		babyVar = `, ${inputVarThree} младенцев`;
-	};
-	let inputVarSumm = inputVarOne + inputVarTwo + inputVarThree;
-	if (inputVarSumm == 0) {
-		inputDropGuest.value = "Сколько гостей";
-	} else if (inputVarSumm == 1) {
-		inputDropGuest.value = `${inputVarSumm} гость${babyVar}`;
-	} else if (inputVarSumm <= 4) {
-		inputDropGuest.value = `${inputVarSumm} гостя${babyVar}`;
-	} else if (inputVarSumm > 4) {
-		inputDropGuest.value = `${inputVarSumm} гостей${babyVar}`;
-	};
-	if (inputVarThree == 0) {
-		btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.25)";
-		btnMinusThree.style.color = "rgba(31, 32, 65, 0.25)";
-	};
-	if (inputVarSumm == 0) {
-		btnDropClear.innerHTML = "";
-	} else if (inputVarSumm > 0) {
-		btnDropClear.innerHTML = dropClearVar;
-	};
-	event.preventDefault();
-})
-
-// clear button
-
-btnDropClear.addEventListener("click", function (event) {
-	inputDropGuest.value = 'Сколько гостей';
-	valueDropGuest[0].textContent = "0";
-	inputVarOne = 0;
-	valueDropGuest[1].textContent = "0";
-	inputVarTwo = 0;
-	valueDropGuest[2].textContent = "0";
-	inputVarThree = 0;
-	btnDropClear.innerHTML = "";
-	btnMinusOne.style.borderColor = "rgba(31, 32, 65, 0.25)";
-	btnMinusOne.style.color = "rgba(31, 32, 65, 0.25)";
-	btnMinusTwo.style.borderColor = "rgba(31, 32, 65, 0.25)";
-	btnMinusTwo.style.color = "rgba(31, 32, 65, 0.25)";
-	btnMinusThree.style.borderColor = "rgba(31, 32, 65, 0.25)";
-	btnMinusThree.style.color = "rgba(31, 32, 65, 0.25)";
-	event.preventDefault();
-})
-
-// expading the list
-
+// КОД ВЫПАДАЮЩЕГО СПИСКА ГОСТЕЙ
 const listDrop = document.querySelector('.dropdown-guests');
-
 const btnDropReady = document.querySelector('.dropdown-guests-btn__ready');
 
-
-
-btnDropReady.addEventListener("click", function (event) { // apply button
+btnDropReady.addEventListener("click", function (event) { // Кнопка "применить"
 	listDrop.classList.remove('_active-dropdown-guests');
 	event.preventDefault();
 });

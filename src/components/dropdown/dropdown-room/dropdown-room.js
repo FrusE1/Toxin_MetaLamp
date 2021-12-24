@@ -6,6 +6,7 @@ const roomMinusOne = valueDropRoom[0].previousElementSibling;
 const roomPlusOne = valueDropRoom[0].nextElementSibling;
 let inputRoomOne = +valueDropRoom[0].textContent;
 const inputDropRoom = document.querySelector('.dropdown-room__input');
+let inputRoomVar = inputDropRoom.value;
 
 roomPlusOne.addEventListener("click", function (event) {
 	valueDropRoom[0].textContent = ++inputRoomOne;
@@ -13,11 +14,11 @@ roomPlusOne.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -41,7 +42,7 @@ roomPlusOne.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	}
@@ -59,11 +60,11 @@ roomMinusOne.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -87,7 +88,7 @@ roomMinusOne.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	}
@@ -109,11 +110,11 @@ roomPlusTwo.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -137,7 +138,7 @@ roomPlusTwo.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	};
@@ -155,11 +156,11 @@ roomMinusTwo.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -183,7 +184,7 @@ roomMinusTwo.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	};
@@ -204,11 +205,11 @@ roomPlusThree.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -232,7 +233,7 @@ roomPlusThree.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	};
@@ -250,11 +251,11 @@ roomMinusThree.addEventListener("click", function (event) {
 	if (inputRoomOne == 0) {
 		bedroomVar = `0 спален`;
 	} else if (inputRoomOne == 1) {
-		bedroomVar = `${inputRoomOne} спальня `;
+		bedroomVar = `${inputRoomOne} спальня`;
 	} else if (inputRoomOne <= 4) {
-		bedroomVar = `${inputRoomOne} спальни `;
+		bedroomVar = `${inputRoomOne} спальни`;
 	} else if (inputRoomOne > 4) {
-		bedroomVar = `${inputRoomOne} спален `;
+		bedroomVar = `${inputRoomOne} спален`;
 	};
 	let bedVar;
 	if (inputRoomTwo == 0) {
@@ -278,7 +279,7 @@ roomMinusThree.addEventListener("click", function (event) {
 	};
 	let inputRoomSumm = inputRoomOne + inputRoomTwo + inputRoomThree;
 	if (inputRoomSumm == 0) {
-		inputDropRoom.value = "Сколько комнат и кроватей";
+		inputDropRoom.value = inputRoomVar;
 	} else {
 		inputDropRoom.value = `${bedroomVar + bedVar + bathroomsVar}`
 	};

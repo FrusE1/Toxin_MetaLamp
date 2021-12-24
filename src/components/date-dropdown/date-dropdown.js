@@ -1,6 +1,7 @@
 import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
 
+
 const saveCalendarDrop = () => {
 	const parentCalendarDrop = document.querySelector('.calendar-drop');
 	const inputCalendarDrop = document.querySelector('.date-dropdown__input-one');
@@ -9,7 +10,6 @@ const saveCalendarDrop = () => {
 		parentCalendarDrop.style.display = "block";
 	})
 };
-
 
 let buttonDrop = {
 	content: 'Применить',

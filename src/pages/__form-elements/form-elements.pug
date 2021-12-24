@@ -8,9 +8,11 @@ block content
 		.form-element__container-one._container-form
 			form.form-element__first-block
 				include /components/text-field/text-field-block.pug
-				include /components/dropdown/dropdown-guests/dropdown-guests.pug
+				.dropdown-guests-container
+					include /components/dropdown/dropdown-guests/dropdown-guests-block.pug
 				include /components/calendar/calendar.pug
-				include /components/date-dropdown/date-dropdown.pug
+				.date-dropdown-container
+					include /components/date-dropdown/date-dropdown.pug
 				include /components/filter-date/filter-date.pug
 				include /components/sub-field/sub-field.pug
 			form.form-element__second-block
