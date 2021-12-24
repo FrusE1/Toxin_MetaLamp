@@ -12,4 +12,4 @@ if (document.querySelector('.checkbox-list')) { // проверка наличи
 			listDropList.classList.remove('dropdown-list_active');
 		};
 	};
-}
+};

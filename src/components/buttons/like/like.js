@@ -1,4 +1,4 @@
-if (document.querySelectorAll('.like__label')) { // проверка наличия like-button
+if (document.querySelector('.like__label')) { // проверка наличия like-button
 	const likeInput = document.querySelectorAll('.like__input');
 
 	likeInput.forEach(likeElem => {

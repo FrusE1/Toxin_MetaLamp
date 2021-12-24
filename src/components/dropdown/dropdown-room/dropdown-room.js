@@ -5,7 +5,6 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 	const valueDropRoom = document.querySelectorAll('.dropdown-room__value');
 	const btnDropRoomMinus = document.querySelectorAll('.dropdown-room__btn_minus')
 	let inputDropRoomVar = inputDropRoom.value;
-
 	// Значения установленные заранее
 	let valueDropRoomOnePrev = +valueDropRoom[0].textContent;
 	let valueDropRoomTwoPrev = +valueDropRoom[1].textContent;
@@ -17,7 +16,7 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 	} else if (valueDropRoomOnePrev == 1) {
 		bedroomsPrev = `${valueDropRoomOnePrev} спальня`;
 	}
-	else if (valueDropRoomTwoPrev <= 4) {
+	else if (valueDropRoomOnePrev <= 4) {
 		bedroomsPrev = `${valueDropRoomOnePrev} спальни`;
 	}
 	else if (valueDropRoomOnePrev > 4) {
@@ -50,15 +49,16 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 		bathroomsDropPrev = `, ${valueDropRoomThreePrev} ванных комнат`;
 	};
 
-	let valueDropRoomSummPrev = bedroomsPrev + bedDropPrev + bathroomsDropPrev;
+	let valueDropRoomSummPrev = valueDropRoomOnePrev + valueDropRoomTwoPrev + valueDropRoomThreePrev;
+	let inputDropRoomSummPrev = bedroomsPrev + bedDropPrev + bathroomsDropPrev;
 	if (valueDropRoomSummPrev == 0) {
 		inputDropRoom.value = inputDropRoomVar;
 	} else if (valueDropRoomSummPrev == 1) {
-		inputDropRoom.value = `${valueDropRoomSummPrev}`;
+		inputDropRoom.value = `${inputDropRoomSummPrev}`;
 	} else if (valueDropRoomSummPrev <= 4) {
-		inputDropRoom.value = `${valueDropRoomSummPrev}`;
+		inputDropRoom.value = `${inputDropRoomSummPrev}`;
 	} else if (valueDropRoomSummPrev > 4) {
-		inputDropRoom.value = `${valueDropRoomSummPrev}`;
+		inputDropRoom.value = `${inputDropRoomSummPrev}`;
 	};
 
 	if (valueDropRoomOnePrev >= 1) {
@@ -138,15 +138,16 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 			bathroomsDrop = `, ${valueDropRoomThree} ванных комнат`;
 		};
 
-		let valueDropRoomSumm = bedrooms + bedDrop + bathroomsDrop;
+		let valueDropRoomSumm = valueDropRoomOne + valueDropRoomTwo + valueDropRoomThree;
+		let inputDropRoomSumm = bedrooms + bedDrop + bathroomsDrop;
 		if (valueDropRoomSumm == 0) {
 			inputDropRoom.value = inputDropRoomVar;
 		} else if (valueDropRoomSumm == 1) {
-			inputDropRoom.value = `${valueDropRoomSumm}`;
+			inputDropRoom.value = `${inputDropRoomSumm}`;
 		} else if (valueDropRoomSumm <= 4) {
-			inputDropRoom.value = `${valueDropRoomSumm}`;
+			inputDropRoom.value = `${inputDropRoomSumm}`;
 		} else if (valueDropRoomSumm > 4) {
-			inputDropRoom.value = `${valueDropRoomSumm}`;
+			inputDropRoom.value = `${inputDropRoomSumm}`;
 		};
 		event.preventDefault();
 	})
