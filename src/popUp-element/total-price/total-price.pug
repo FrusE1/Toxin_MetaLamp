@@ -1,0 +1,16 @@
+include /components/date-dropdown/date-dropdown.pug
+include /components/dropdown/dropdown-guests/dropdown-guests.pug
+.total-price
+	.total-price__container
+		.total-price__head.price-head
+			.price-head__number
+				span(class="price-head__span-symbol") №
+				| 888
+				span(class="price-head__span-text") люкс
+			.price-head__price
+				span(class="price-head__span-number") 9 990₽
+				| в сутки
+		.total-price__date-container
+			+dateDropdown("прибытие", "выезд")
+		.total-price__drop-container
+			+dropGuests("гости", "0", "0", "0")

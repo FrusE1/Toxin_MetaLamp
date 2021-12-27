@@ -1,0 +1,39 @@
+/* start total-price block style */
+@import "@variables";
+.total-price {
+	max-width: 380px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	&__container {
+		padding: 40px 30px 30px 30px;
+	}
+}
+.price-head {
+	display: flex;
+	justify-content: space-between;
+	&__number {
+		font-size: $h1;
+		line-height: $lh_h1;
+		font-weight: 700;
+		color: $dark-100;
+	}
+	&__span-symbol {
+		font-size: $fz_body;
+		line-height: $lh_body;
+	}
+	&__span-text {
+		font-size: $h3;
+		line-height: $lh_h3;
+		color: $purple;
+	}
+	&__price {
+		font-size: $h3;
+		line-height: $lh_h3;
+		color: $dark-50;
+	}
+	&__span-number {
+		font-weight: 700;
+		color: $dark-50;
+	}
+}
+/* end total-price block style */
