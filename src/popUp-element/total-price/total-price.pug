@@ -1,6 +1,7 @@
 include /components/date-dropdown/date-dropdown.pug
 include /components/dropdown/dropdown-guests/dropdown-guests.pug
-.total-price
+include /components/buttons/buttons/button-price.pug
+.total-price.cards-element
 	.total-price__container
 		.total-price__head.price-head
 			.price-head__number
@@ -14,3 +15,22 @@ include /components/dropdown/dropdown-guests/dropdown-guests.pug
 			+dateDropdown("прибытие", "выезд")
 		.total-price__drop-container
 			+dropGuests("гости", "0", "0", "0")
+		.total-price__bill-top.bill-top
+			.bill-top__item
+				.bill-service__text 9 990₽ х 4 суток
+				.bill-top__price 39 960₽
+			.bill-top__item
+				.bill-service
+					.bill-service__text Сбор за услуги: скидка 2 179₽
+					.info-icon
+				.bill-top__price 0₽
+			.bill-top__item
+				.bill-service
+					.bill-service__text Сбор за дополнительные услуги
+					.info-icon
+				.bill-top__price 300₽
+		.total-price__bill-bottom.bill-bottom
+			.bill-bottom__text Итого
+			.bill-bottom__dots
+			.bill-bottom__price 38 081₽
+		+buttonPrice("забронировать")

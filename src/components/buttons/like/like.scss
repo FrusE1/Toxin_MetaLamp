@@ -24,10 +24,10 @@
 		&:checked {
 			border-color: $purple;
 		}
-		&:checked ~ .icon-favorite-border {
+		&:checked ~ .like__span-icon_border {
 			display: none;
 		}
-		&:checked ~ .icon-favorite {
+		&:checked ~ .like__span-icon {
 			display: inline-block;
 			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 			-webkit-background-clip: text;
@@ -51,7 +51,7 @@
 		bottom: 0.5px;
 		&-icon {
 			display: none;
-			font-size: 8px;
+			font-size: 10px;
 		}
 		&-icon_border {
 			font-size: 10px;

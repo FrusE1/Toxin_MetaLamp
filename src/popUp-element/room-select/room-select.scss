@@ -1,9 +1,6 @@
 /* start room-select block style */
 @import "@variables";
 .room-select {
-	max-width: 380px;
-	border: 1px solid rgba(0, 0, 0, 0.12);
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 	&__container {
 		padding: 40px 30px 30px 30px;
 	}

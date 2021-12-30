@@ -1,16 +1,20 @@
 /* start total-price block style */
 @import "@variables";
 .total-price {
-	max-width: 380px;
-	border: 1px solid rgba(0, 0, 0, 0.12);
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 	&__container {
 		padding: 40px 30px 30px 30px;
+	}
+	&__date-container {
+		margin-bottom: 20px;
+	}
+	&__drop-container {
+		margin-bottom: 18px;
 	}
 }
 .price-head {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
 	&__number {
 		font-size: $h1;
 		line-height: $lh_h1;
@@ -18,22 +22,85 @@
 		color: $dark-100;
 	}
 	&__span-symbol {
+		padding-right: 4px;
 		font-size: $fz_body;
 		line-height: $lh_body;
 	}
 	&__span-text {
+		padding-left: 7px;
+		text-transform: uppercase;
 		font-size: $h3;
 		line-height: $lh_h3;
 		color: $purple;
 	}
 	&__price {
+		padding-top: 7px;
 		font-size: $h3;
 		line-height: $lh_h3;
 		color: $dark-50;
 	}
 	&__span-number {
+		padding-right: 3.5px;
+		font-size: $fz_body;
+		line-height: $lh_body;
 		font-weight: 700;
 		color: $dark-50;
+	}
+}
+.bill-top {
+	margin-bottom: 30px;
+	& > *:not(:last-child) {
+		margin-bottom: 16px;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__price {
+		line-height: 125%;
+	}
+}
+.info-icon {
+	position: relative;
+	bottom: 1px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid $dark-25;
+	border-radius: 50%;
+	&::after {
+		content: "i";
+		position: absolute;
+		cursor: pointer;
+		color: $dark-25;
+		top: 3px;
+		font-size: 12px;
+		line-height: 100%;
+		font-weight: 700;
+		padding-left: 7px;
+	}
+}
+.bill-service {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+	&__text {
+		max-width: 218px;
+		line-height: 125%;
+	}
+}
+.bill-bottom {
+	display: flex;
+	font-size: $h2;
+	line-height: $lh_h2;
+	color: $dark-100;
+	font-weight: 700;
+	margin-bottom: 20px;
+	&__dots {
+		position: relative;
+		bottom: 4px;
+		width: 181px;
+		border-bottom: 1px dotted $dark-25;
 	}
 }
 /* end total-price block style */

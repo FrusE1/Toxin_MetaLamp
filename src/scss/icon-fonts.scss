@@ -1,9 +1,9 @@
 /* Подключение иконочных шрифтов */
 @font-face {
 	font-family: "icons";
-	src: url("../fonts/icon-fonts/icons.ttf?tq1wj2") format("truetype"),
-		url("../fonts/icon-fonts/icons.woff?tq1wj2") format("woff"),
-		url("../fonts/icon-fonts/icons.svg?tq1wj2#icons") format("svg");
+	src: url("../fonts/icon-fonts/icons.ttf?qa4de4") format("truetype"),
+		url("../fonts/icon-fonts/icons.woff?qa4de4") format("woff"),
+		url("../fonts/icon-fonts/icons.svg?qa4de4#icons") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -25,34 +25,49 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-favorite:before {
-	content: "\e908";
-}
-.icon-star:before {
-	content: "\e909";
-}
-.icon-header:before {
-	content: "\e903";
-}
-.icon-arrow:before {
+.icon-info:before {
 	content: "\e900";
 }
-.icon-more:before {
+.icon-arrow:before {
 	content: "\e901";
 }
-.icon-favorite-border:before {
+.icon-more:before {
 	content: "\e902";
 }
-.icon-emoticon:before {
+.icon-facebook:before {
+	content: "\e903";
+}
+.icon-favorite:before {
 	content: "\e904";
 }
-.icon-city:before {
+.icon-favorite-border:before {
 	content: "\e905";
 }
-.icon-star-border:before {
+.icon-fire:before {
 	content: "\e906";
 }
-.icon-vector:before {
+.icon-header:before {
 	content: "\e907";
+}
+.icon-emoticon:before {
+	content: "\e908";
+}
+.icon-instagram:before {
+	content: "\e909";
+}
+.icon-city:before {
+	content: "\e90a";
+}
+.icon-star:before {
+	content: "\e90b";
+}
+.icon-star-border:before {
+	content: "\e90c";
+}
+.icon-twitter:before {
+	content: "\e90d";
+}
+.icon-vector:before {
+	content: "\e90e";
 }
 /* Конец иконочных шрифтов */
