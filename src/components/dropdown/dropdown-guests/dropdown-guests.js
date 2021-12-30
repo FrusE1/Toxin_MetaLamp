@@ -6,8 +6,9 @@ if (document.querySelector('.dropdown-guests')) { // проверка налич
 			const inputDropGuests = dropGuestsElem.querySelector('.dropdown-guests__input');
 			const valueDropGuests = dropGuestsElem.querySelectorAll('.dropdown-guests__value');
 			const btnDropMinus = dropGuestsElem.querySelectorAll('.dropdown-guests__btn_minus');
+			const btnClearGuests = dropGuestsElem.querySelector('.dropdown-guests-btn__clear');
+			let clearGuestsVar = "очистить";
 			let inputGuestsVar = "Сколько гостей";
-
 			// Значения установленные заранее
 			let valueDropOnePrev = +valueDropGuests[0].textContent;
 			let valueDropTwoPrev = +valueDropGuests[1].textContent;
@@ -92,17 +93,23 @@ if (document.querySelector('.dropdown-guests')) { // проверка налич
 			} else if (valueSumm > 4) {
 				inputDropGuests.value = `${valueSumm} гостей${babyDrop}`;
 			};
-			if (targetDrop.dataset.clear == 'clear') { // Кнопка "очистить"
+			if (valueSumm == 0) {
+				btnClearGuests.innerHTML = '';
+			} else if (valueSumm > 0) {
+				btnClearGuests.innerHTML = clearGuestsVar;
+			};
+			btnClearGuests.addEventListener("click", function () {		// Кнопка "очистить"
+				btnClearGuests.innerHTML = '';
 				valueDropGuests[0].textContent = 0;
 				valueDropGuests[1].textContent = 0;
 				valueDropGuests[2].textContent = 0;
 				inputDropGuests.value = inputGuestsVar;
-				let clearBtn = targetDrop.parentNode.previousElementSibling.querySelectorAll('.dropdown-guests__btn_minus');
+				let clearBtn = btnClearGuests.parentNode.previousElementSibling.querySelectorAll('.dropdown-guests__btn_minus');
 				clearBtn.forEach(clearBtnElem => {
 					clearBtnElem.style.borderColor = "rgba(31, 32, 65, 0.25)";
 					clearBtnElem.style.color = "rgba(31, 32, 65, 0.25)";
 				});
-			};
+			});
 			// --- Выпадаюший список гостей
 			const btnDropReady = dropGuestsElem.querySelector('.dropdown-guests-btn__ready');
 

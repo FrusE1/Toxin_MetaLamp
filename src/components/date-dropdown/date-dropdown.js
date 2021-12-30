@@ -8,7 +8,7 @@ if (document.querySelector('.date-dropdown__input')) { // проверка на�
 		parentCalendarDrop.style.display = "none";
 		inputCalendarDrop.addEventListener("click", function () {
 			parentCalendarDrop.style.display = "block";
-		})
+		});
 	};
 
 	let buttonDrop = {
@@ -28,6 +28,15 @@ if (document.querySelector('.date-dropdown__input')) { // проверка на�
 		nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
 		multipleDatesSeparator: ' - ',
 		classes: "calendar-drop",
+		// onSelect: function (fd, d, picker) {
+		// 	document.querySelector(".date-dropdown__input-one").value = fd.formattedDate[0];
+		// 	document.querySelector(".date-dropdown__input-two").value = fd.formattedDate[1];
+		// 	document.querySelectorAll(".date-dropdown").forEach(element => {
+		// 		if (element.value == 'undefined') {
+		// 			element.value = '';
+		// 		}
+		// 	})
+		// },
 	});
 };
 // const inputCalendarDropOne = document.querySelector(".date-dropdown__input-one");
