@@ -20,31 +20,31 @@
 		line-height: $lh_h1;
 		font-weight: 700;
 		color: $dark-100;
-	}
-	&__span-symbol {
-		padding-right: 4px;
-		font-size: $fz_body;
-		line-height: $lh_body;
-	}
-	&__span-text {
-		padding-left: 7px;
-		text-transform: uppercase;
-		font-size: $h3;
-		line-height: $lh_h3;
-		color: $purple;
+		&:first-child {
+			padding-right: 4px;
+			font-size: $fz_body;
+			line-height: $lh_body;
+		}
+		&:last-child {
+			padding-left: 7px;
+			text-transform: uppercase;
+			font-size: $h3;
+			line-height: $lh_h3;
+			color: $purple;
+		}
 	}
 	&__price {
 		padding-top: 7px;
 		font-size: $h3;
 		line-height: $lh_h3;
 		color: $dark-50;
-	}
-	&__span-number {
-		padding-right: 3.5px;
-		font-size: $fz_body;
-		line-height: $lh_body;
-		font-weight: 700;
-		color: $dark-50;
+		& span {
+			padding-right: 3.5px;
+			font-size: $fz_body;
+			line-height: $lh_body;
+			font-weight: 700;
+			color: $dark-50;
+		}
 	}
 }
 .bill-top {

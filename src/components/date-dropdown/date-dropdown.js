@@ -24,8 +24,8 @@ if (document.querySelector('.date-dropdown__input')) { // проверка на�
 		range: true,
 		dynamicRange: true,
 		buttons: ['clear', buttonDrop],
-		prevHtml: `<span class="calender__arrow calender__arrow_prev icon-arrow"></span>`,
-		nextHtml: `<span class="calender__arrow calender__arrow_next icon-arrow"></span>`,
+		prevHtml: `<span class="calendar__arrow calendar__arrow_prev icon-arrow"></span>`,
+		nextHtml: `<span class="calendar__arrow calendar__arrow_next icon-arrow"></span>`,
 		multipleDatesSeparator: ' - ',
 		classes: "calendar-drop",
 		onSelect: function (fd, d, picker) {
