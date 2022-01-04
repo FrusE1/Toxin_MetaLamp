@@ -1,11 +1,12 @@
 include /components/buttons/buttons/button-price.pug
+include /components/buttons/buttons/button-border.pug
 .button
 	h3.button__title.title-style buttons
 	.button__items
 		button.button__item.button__item_default click me
 		button.button__item.button__item_active click me
 	.button__items
-		button.button__item.button__item-border click me
+		+buttonBorder("click me")
 		button.button__item.button__item-border.button__item-border_active click me
 	.button__items
 		button.button__item.button__item-no-border click me

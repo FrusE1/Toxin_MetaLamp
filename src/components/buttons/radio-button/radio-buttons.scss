@@ -1,12 +1,12 @@
 @import "@variables";
 /* start radio-buttons style */
 .radio-button {
-	width: 220px;
 	margin-bottom: 39px;
 	&__text {
 		margin-bottom: 13px;
 	}
 	&__list {
+		width: 220px;
 		display: flex;
 		justify-content: space-between;
 	}

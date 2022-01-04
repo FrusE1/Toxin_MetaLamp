@@ -5,6 +5,10 @@ block head
 block content
 	include /pages/header/header_ui.pug
 	.cards._container
-		include /popUp-element/room-select/room-select.pug
-		include /popUp-element/total-price/total-price.pug
-		include /popUp-element/calendar-card/calendar-card.pug
+		.card
+			include /popUp/room-select/room-select.pug
+			include /popUp/reg-card/reg-card.pug
+		.card
+			include /popUp/total-price/total-price.pug
+		.card
+			include /popUp/calendar-card/calendar-card.pug

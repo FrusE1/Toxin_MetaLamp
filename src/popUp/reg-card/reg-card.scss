@@ -1,0 +1,46 @@
+/* start reg-card style */
+@import "@variables";
+.reg-card {
+	&__container {
+		padding: 40px 30px 30px 30px;
+	}
+	&__title {
+		font-size: $h1;
+		line-height: $lh_h1;
+		color: $dark-100;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+	&__field {
+		margin-bottom: 8px;
+		& > *:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+	&__radio-btn {
+		margin-bottom: 22px;
+	}
+	&__calendar {
+		margin-bottom: 20px;
+	}
+	&__mail {
+		margin-bottom: 8px;
+		& > *:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+	&__toggle {
+		margin-bottom: 20px;
+	}
+	&__button {
+		margin-bottom: 30px;
+	}
+}
+.login-reg {
+	display: flex;
+	justify-content: space-between;
+	&__text {
+		line-height: 44px;
+	}
+}
+/* end reg-card style */

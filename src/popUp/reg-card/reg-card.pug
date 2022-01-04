@@ -1,0 +1,27 @@
+include /components/text-field/text-field.pug
+include /components/buttons/radio-button/radio-button.pug
+include /components/calendar/calendar-mixin.pug
+include /components/buttons/toggle/toggle.pug
+include /components/buttons/buttons/button-price.pug
+include /components/buttons/buttons/button-border.pug
+.reg-card.cards-element
+	.reg-card__container
+		h1.reg-card__title Регистрация аккаунта
+		.reg-card__field
+			+textField('', '', 'Имя')
+			+textField('', '', 'Фамилия')
+		.reg-card__radio-btn
+			+radio-button()
+		.reg-card__calendar
+			+calendar("дата рождения")
+		.reg-card__mail
+			+textField('данные для входа в сервис', '', 'Email')
+			+textField('', '', 'Пароль')
+		.reg-card__toggle
+			+toggle('Получать спецпредложения')
+		.reg-card__button
+			+buttonPrice("перейти к оплате")
+		.reg-card__login.login-reg
+			.login-reg__text Уже есть аккаунт на Toxin
+			.login-reg__button
+				+buttonBorder("войти")
