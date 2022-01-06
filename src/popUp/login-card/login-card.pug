@@ -1,0 +1,14 @@
+include /components/text-field/text-field.pug
+include /components/buttons/buttons/button-price.pug
+.login-card.cards-element
+  .login-card__container._container-card
+    h1.login-card__title Войти
+    .login-card__field
+      +textField('', '', 'Имя')
+      +textField('', '', 'Фамилия')
+    .login-card__button
+      +buttonPrice("войти")
+    .login-card__reg.login-reg
+      .login-reg__text Нет аккаунта на Toxin?
+      .login-reg__button
+        +buttonBorder("создать")

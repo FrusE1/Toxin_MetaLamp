@@ -1,0 +1,28 @@
+/* start login-card style */
+@import "@variables";
+.login-card {
+  &__title {
+    font-size: $h1;
+		line-height: $lh_h1;
+		color: $dark-100;
+		font-weight: 700;
+    margin-bottom: 16px;
+  }
+  &__field {
+    margin-bottom: 20px;
+    & > *:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  &__button {
+    margin-bottom: 28px;
+  }
+}
+.login-reg {
+	display: flex;
+	justify-content: space-between;
+	&__text {
+		line-height: 44px;
+	}
+}
+/* end login-card style */

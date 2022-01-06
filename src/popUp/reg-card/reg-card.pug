@@ -5,11 +5,11 @@ include /components/buttons/toggle/toggle.pug
 include /components/buttons/buttons/button-price.pug
 include /components/buttons/buttons/button-border.pug
 .reg-card.cards-element
-	.reg-card__container
+	.reg-card__container._container-card
 		h1.reg-card__title Регистрация аккаунта
 		.reg-card__field
 			+textField('', '', 'Имя')
-			+textField('', '', 'Фамили')
+			+textField('', '', 'Фамилия')
 		.reg-card__radio-btn
 			+radio-button()
 		.reg-card__calendar
@@ -21,7 +21,7 @@ include /components/buttons/buttons/button-border.pug
 			+toggle('Получать спецпредложения')
 		.reg-card__button
 			+buttonPrice("перейти к оплате")
-		.reg-card__login.login-reg
-			.login-reg__text Уже есть аккаунт на Toxin
-			.login-reg__button
+		.reg-card__login.reg-login
+			.reg-login__text Уже есть аккаунт на Toxin
+			.reg-login__button
 				+buttonBorder("войти")

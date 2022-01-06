@@ -1,9 +1,6 @@
 /* start reg-card style */
 @import "@variables";
 .reg-card {
-	&__container {
-		padding: 40px 30px 30px 30px;
-	}
 	&__title {
 		font-size: $h1;
 		line-height: $lh_h1;
@@ -36,7 +33,7 @@
 		margin-bottom: 30px;
 	}
 }
-.login-reg {
+.reg-login {
 	display: flex;
 	justify-content: space-between;
 	&__text {

@@ -2,9 +2,6 @@
 @import "@variables";
 .room-select {
 	margin-bottom: 40px;
-	&__container {
-		padding: 40px 30px 30px 30px;
-	}
 	&__title {
 		font-size: $h1;
 		line-height: $lh_h1;
