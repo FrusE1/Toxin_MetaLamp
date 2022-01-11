@@ -1,0 +1,38 @@
+mixin cardSlider(pathImgOne, pathImgTwo, rate, number, title, price, review)
+  include /components/buttons/rate/rate.pug
+  .slider-card
+    .swiper
+      .swiper-wrapper
+        .swiper-slide
+          .slider-images__card
+            img(src=pathImgOne)
+        .swiper-slide
+          .slider-images__card
+            img(src=pathImgTwo)
+        .swiper-slide
+          .slider-images__card
+            img(src=pathImgOne)
+        .swiper-slide
+          .slider-images__card
+            img(src=pathImgTwo)
+      .swiper-pagination
+      .swiper-button-prev.swiper-button
+        .icon-more
+      .swiper-button-next.swiper-button
+        .icon-more
+    .slider-card__bottom
+      .slider-card__price.price-card
+        .price-card__number
+          span №
+          =number
+          span=title
+        .price-card__price
+          span=price
+          | в сутки
+      .slider-card__border
+      .slider-card__rate
+        +rate(rate)
+        .slider-card__amount.amount-card
+          .amount-card__number=review
+          .amount-card__text Отзывов
+

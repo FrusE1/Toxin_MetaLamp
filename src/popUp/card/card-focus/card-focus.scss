@@ -1,0 +1,12 @@
+/* start card-focus style */
+.swiper-btn-focus {
+  width: 42px;
+  height: 100%;
+  margin-top: 0;
+  top: 0;
+  & > .icon-more {
+    font-size: 13px;
+    color: #fff;
+  }
+}
+/* end card-focus style */

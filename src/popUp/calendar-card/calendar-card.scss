@@ -1,6 +1,7 @@
 /* start calendar-card style */
 @import "@variables";
 .calendar-card {
+	margin-bottom: 40px;
 	&__input {
 		display: none;
 	}

@@ -3,28 +3,29 @@ extends /pages/base.pug
 block head
 	title Colors and type
 block content
-	include /pages/header/header_ui.pug
-	include /pages/__colors-type/colors-mixin/colors-block.pug
-	.main__colors-type.colors-type
-		.colors-type__container._container
-			.main__colors.colors
-				+colorsBlock("colors_black-100", "Dark Shade 100%", "#1F2041")
-				+colorsBlock("colors_black-75", "Dark Shade 75%", "#1F2041")
-				+colorsBlock("colors_black-50", "Dark Shade 50%", "#1F2041")
-				+colorsBlock("colors_black-25", "Dark Shade 25%", "#1F2041")
-				+colorsBlock("colors_black-5", "Dark Shade 5%", "#1F2041")
-				+colorsBlock("colors_purple", "Purple", "#BC9CFF")
-				+colorsBlock("colors_green", "Green", "#6FCF97")
-			.main__text.text
-				.text__h1
-					.text__title.title-h1 H1
-					h1.text__subtitle.subtitle-h1 This one is the sub-section or widget title
-				.text__h2
-					.text__title.title-h2 H2
-					h1.text__subtitle.subtitle-h2 Next one is the item title inside widgets
-				.text__h3
-					.text__title.title-h3 H3
-					h1.text__subtitle.subtitle-h3 This is a label or CTA text
-				.text__body
-					.text__title.title-body Body
-					h1.text__subtitle.subtitle-body This is the body text which is used for most of the design, like paragraphs, lists, etc.
+	body.body-colors
+		include /pages/header/header_ui.pug
+		include /pages/__colors-type/colors-mixin/colors-block.pug
+		.main__colors-type.colors-type
+			.colors-type__container._container
+				.main__colors.colors
+					+colorsBlock("colors_black-100", "Dark Shade 100%", "#1F2041")
+					+colorsBlock("colors_black-75", "Dark Shade 75%", "#1F2041")
+					+colorsBlock("colors_black-50", "Dark Shade 50%", "#1F2041")
+					+colorsBlock("colors_black-25", "Dark Shade 25%", "#1F2041")
+					+colorsBlock("colors_black-5", "Dark Shade 5%", "#1F2041")
+					+colorsBlock("colors_purple", "Purple", "#BC9CFF")
+					+colorsBlock("colors_green", "Green", "#6FCF97")
+				.main__text.text
+					.text__h1
+						.text__title.title-h1 H1
+						h1.text__subtitle.subtitle-h1 This one is the sub-section or widget title
+					.text__h2
+						.text__title.title-h2 H2
+						h1.text__subtitle.subtitle-h2 Next one is the item title inside widgets
+					.text__h3
+						.text__title.title-h3 H3
+						h1.text__subtitle.subtitle-h3 This is a label or CTA text
+					.text__body
+						.text__title.title-body Body
+						h1.text__subtitle.subtitle-body This is the body text which is used for most of the design, like paragraphs, lists, etc.

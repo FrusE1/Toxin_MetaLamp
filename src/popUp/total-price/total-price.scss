@@ -8,22 +8,24 @@
 	&__drop-container {
 		margin-bottom: 18px;
 	}
+	&__head {
+		margin-bottom: 20px;
+	}
 }
 .price-head {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
 	&__number {
 		font-size: $h1;
 		line-height: $lh_h1;
 		font-weight: 700;
 		color: $dark-100;
-		&:first-child {
+		& > span:first-child {
 			padding-right: 4px;
 			font-size: $fz_body;
 			line-height: $lh_body;
 		}
-		&:last-child {
+		& > span:last-child {
 			padding-left: 7px;
 			text-transform: uppercase;
 			font-size: $h3;

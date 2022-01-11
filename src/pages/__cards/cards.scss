@@ -1,3 +1,9 @@
+/* start cards style */
+@import "@variables";
+.body-cards {
+	min-height: 100%;
+	background-color: #f0f0f0;
+}
 .cards {
 	display: flex;
 	justify-content: space-between;
@@ -7,7 +13,12 @@
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	background-color: #fff;
 }
 ._container-card {
 	padding: 40px 30px 30px 30px;
 }
+.card__item {
+	min-width: 0;
+}
+/* end cards style */

@@ -1,0 +1,37 @@
+mixin cardFocusSlider()
+  include /components/buttons/rate/rate.pug
+  .slider-card
+    .swiper
+      .swiper-wrapper
+        .swiper-slide
+          .slider-images__card
+            img(src="../src/images/card-1.jpg")
+        .swiper-slide
+          .slider-images__card
+            img(src="../src/images/card-2.jpg")
+        .swiper-slide
+          .slider-images__card
+            img(src="../src/images/card-1.jpg")
+        .swiper-slide
+          .slider-images__card
+            img(src="../src/images/card-2.jpg")
+      .swiper-pagination
+      .swiper-button-prev.swiper-btn-focus
+        .icon-more
+      .swiper-button-next.swiper-btn-focus
+        .icon-more
+    .slider-card__bottom
+      .slider-card__price.price-card
+        .price-card__number
+          span №
+          | 888
+          span люкс
+        .price-card__price
+          span 9 990₽
+          | в сутки
+      .slider-card__border
+      .slider-card__rate
+        +rate()
+        .slider-card__amount.amount-card
+          .amount-card__number 145
+          .amount-card__text Отзывов
