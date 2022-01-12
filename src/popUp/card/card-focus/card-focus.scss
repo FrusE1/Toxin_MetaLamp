@@ -1,12 +1,9 @@
 /* start card-focus style */
-.swiper-btn-focus {
-  width: 42px;
-  height: 100%;
-  margin-top: 0;
-  top: 0;
-  & > .icon-more {
-    font-size: 13px;
-    color: #fff;
-  }
+.swiper-button.swiper-button_focus {
+  opacity: 1;
+}
+.swiper-button.swiper-button_focus.swiper-button-next.swiper-button-disabled,
+.swiper-button.swiper-button_focus.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
 }
 /* end card-focus style */

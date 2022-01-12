@@ -4,8 +4,9 @@
   background-color: #fff;
   border-radius: 4px;
   width: 270px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   &__item:not(:last-child){
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
   &__rate {
     display: flex;
@@ -21,7 +22,7 @@
     background: $dark-10;
   }
   &__bottom {
-    padding: 20px 18px 20px 20px;
+    padding: 20px 18px 18px 20px;
   }
 }
 .swiper {
