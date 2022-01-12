@@ -1,9 +1,10 @@
-include /components/buttons/buttons/button-price.pug
-include /components/buttons/buttons/button-border.pug
+include /components/buttons/buttons/buttons-mixin/button-price.pug
+include /components/buttons/buttons/buttons-mixin/button-border.pug
+include /components/buttons/buttons/buttons-mixin/button.pug
 .button
 	h3.button__title.title-style buttons
 	.button__items
-		button.button__item.button__item_default click me
+		+button("click me")
 		button.button__item.button__item_active click me
 	.button__items
 		+buttonBorder("click me")

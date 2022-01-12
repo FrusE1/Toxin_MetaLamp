@@ -261,6 +261,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/headers/header-reg/header-reg.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/headers/header-reg/header-reg.scss ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/components/headers/header-reg/header-reg.scss?");
+
+/***/ }),
+
 /***/ "./src/components/review/review.scss":
 /*!*******************************************!*\
   !*** ./src/components/review/review.scss ***!
@@ -305,47 +316,58 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/pages/__cards/cards.scss":
-/*!**************************************!*\
-  !*** ./src/pages/__cards/cards.scss ***!
-  \**************************************/
+/***/ "./src/pages/cards/cards.scss":
+/*!************************************!*\
+  !*** ./src/pages/cards/cards.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/__cards/cards.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/cards/cards.scss?");
 
 /***/ }),
 
-/***/ "./src/pages/__colors-type/colors-type.scss":
-/*!**************************************************!*\
-  !*** ./src/pages/__colors-type/colors-type.scss ***!
-  \**************************************************/
+/***/ "./src/pages/colors-type/colors-type.scss":
+/*!************************************************!*\
+  !*** ./src/pages/colors-type/colors-type.scss ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/__colors-type/colors-type.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/colors-type/colors-type.scss?");
 
 /***/ }),
 
-/***/ "./src/pages/__form-elements/form-element.scss":
-/*!*****************************************************!*\
-  !*** ./src/pages/__form-elements/form-element.scss ***!
-  \*****************************************************/
+/***/ "./src/pages/form-elements/form-element.scss":
+/*!***************************************************!*\
+  !*** ./src/pages/form-elements/form-element.scss ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/__form-elements/form-element.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/form-elements/form-element.scss?");
 
 /***/ }),
 
-/***/ "./src/pages/header/header-ui.scss":
-/*!*****************************************!*\
-  !*** ./src/pages/header/header-ui.scss ***!
-  \*****************************************/
+/***/ "./src/pages/header-ui/header-ui.scss":
+/*!********************************************!*\
+  !*** ./src/pages/header-ui/header-ui.scss ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/header/header-ui.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/header-ui/header-ui.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/headers-footers/headers-footers.scss":
+/*!********************************************************!*\
+  !*** ./src/pages/headers-footers/headers-footers.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pages/headers-footers/headers-footers.scss?");
 
 /***/ }),
 
@@ -360,80 +382,80 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/popUp/calendar-card/calendar-card.scss":
+/***/ "./src/pop-up/calendar-card/calendar-card.scss":
+/*!*****************************************************!*\
+  !*** ./src/pop-up/calendar-card/calendar-card.scss ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/calendar-card/calendar-card.scss?");
+
+/***/ }),
+
+/***/ "./src/pop-up/card/card-focus/card-focus.scss":
 /*!****************************************************!*\
-  !*** ./src/popUp/calendar-card/calendar-card.scss ***!
+  !*** ./src/pop-up/card/card-focus/card-focus.scss ***!
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/calendar-card/calendar-card.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/card/card-focus/card-focus.scss?");
 
 /***/ }),
 
-/***/ "./src/popUp/card/card-focus/card-focus.scss":
-/*!***************************************************!*\
-  !*** ./src/popUp/card/card-focus/card-focus.scss ***!
-  \***************************************************/
+/***/ "./src/pop-up/card/card.scss":
+/*!***********************************!*\
+  !*** ./src/pop-up/card/card.scss ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/card/card-focus/card-focus.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/card/card.scss?");
 
 /***/ }),
 
-/***/ "./src/popUp/card/card.scss":
-/*!**********************************!*\
-  !*** ./src/popUp/card/card.scss ***!
-  \**********************************/
+/***/ "./src/pop-up/login-card/login-card.scss":
+/*!***********************************************!*\
+  !*** ./src/pop-up/login-card/login-card.scss ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/card/card.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/login-card/login-card.scss?");
 
 /***/ }),
 
-/***/ "./src/popUp/login-card/login-card.scss":
-/*!**********************************************!*\
-  !*** ./src/popUp/login-card/login-card.scss ***!
-  \**********************************************/
+/***/ "./src/pop-up/reg-card/reg-card.scss":
+/*!*******************************************!*\
+  !*** ./src/pop-up/reg-card/reg-card.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/login-card/login-card.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/reg-card/reg-card.scss?");
 
 /***/ }),
 
-/***/ "./src/popUp/reg-card/reg-card.scss":
-/*!******************************************!*\
-  !*** ./src/popUp/reg-card/reg-card.scss ***!
-  \******************************************/
+/***/ "./src/pop-up/room-select/room-select.scss":
+/*!*************************************************!*\
+  !*** ./src/pop-up/room-select/room-select.scss ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/reg-card/reg-card.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/room-select/room-select.scss?");
 
 /***/ }),
 
-/***/ "./src/popUp/room-select/room-select.scss":
-/*!************************************************!*\
-  !*** ./src/popUp/room-select/room-select.scss ***!
-  \************************************************/
+/***/ "./src/pop-up/total-price/total-price.scss":
+/*!*************************************************!*\
+  !*** ./src/pop-up/total-price/total-price.scss ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/room-select/room-select.scss?");
-
-/***/ }),
-
-/***/ "./src/popUp/total-price/total-price.scss":
-/*!************************************************!*\
-  !*** ./src/popUp/total-price/total-price.scss ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/total-price/total-price.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/total-price/total-price.scss?");
 
 /***/ }),
 
@@ -626,25 +648,25 @@ eval("const omniImport = resolve => resolve.keys().forEach(resolve);\r\n\r\nomni
 
 /***/ }),
 
-/***/ "./src/popUp/calendar-card/calendar-card.js":
-/*!**************************************************!*\
-  !*** ./src/popUp/calendar-card/calendar-card.js ***!
-  \**************************************************/
+/***/ "./src/pop-up/calendar-card/calendar-card.js":
+/*!***************************************************!*\
+  !*** ./src/pop-up/calendar-card/calendar-card.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n\r\n\r\n\r\nif (document.querySelector('.calendar-card__input')) { // проверка наличия calendar-card component\r\n\tconst saveCalendar = () => {\r\n\t\tconst parentCalendar = document.querySelector('.calendar__card');\r\n\t\tconst inputCalendar = document.querySelector('.calendar-card__input');\r\n\t\tparentCalendar.style.display = \"none\";\r\n\t\tinputCalendar.addEventListener(\"click\", function () {\r\n\t\t\tparentCalendar.style.display = \"block\";\r\n\t\t});\r\n\t};\r\n\r\n\tlet btnCard = {\r\n\t\tcontent: 'Применить',\r\n\t\tclassName: 'custom-button',\r\n\t\tonClick: saveCalendar,\r\n\t}\r\n\r\n\tnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__.default('#calendar-card', {\r\n\t\tnavTitles: {\r\n\t\t\tdays: 'MMMM yyyy',\r\n\t\t},\r\n\t\trange: true,\r\n\t\tdynamicRange: true,\r\n\t\tbuttons: ['clear', btnCard],\r\n\t\tprevHtml: `<span class=\"calendar__arrow calendar__arrow_prev icon-arrow\"></span>`,\r\n\t\tnextHtml: `<span class=\"calendar__arrow calendar__arrow_next icon-arrow\"></span>`,\r\n\t\tmultipleDatesSeparator: ' - ',\r\n\t\tclasses: 'calendar__card',\r\n\t\tinline: true,\r\n\t\tselectedDates: ['2019-08-19', '2019-08-23'],\r\n\t});\r\n};\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/calendar-card/calendar-card.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n\r\n\r\n\r\nif (document.querySelector('.calendar-card__input')) { // проверка наличия calendar-card component\r\n\tconst saveCalendar = () => {\r\n\t\tconst parentCalendar = document.querySelector('.calendar__card');\r\n\t\tconst inputCalendar = document.querySelector('.calendar-card__input');\r\n\t\tparentCalendar.style.display = \"none\";\r\n\t\tinputCalendar.addEventListener(\"click\", function () {\r\n\t\t\tparentCalendar.style.display = \"block\";\r\n\t\t});\r\n\t};\r\n\r\n\tlet btnCard = {\r\n\t\tcontent: 'Применить',\r\n\t\tclassName: 'custom-button',\r\n\t\tonClick: saveCalendar,\r\n\t}\r\n\r\n\tnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__.default('#calendar-card', {\r\n\t\tnavTitles: {\r\n\t\t\tdays: 'MMMM yyyy',\r\n\t\t},\r\n\t\trange: true,\r\n\t\tdynamicRange: true,\r\n\t\tbuttons: ['clear', btnCard],\r\n\t\tprevHtml: `<span class=\"calendar__arrow calendar__arrow_prev icon-arrow\"></span>`,\r\n\t\tnextHtml: `<span class=\"calendar__arrow calendar__arrow_next icon-arrow\"></span>`,\r\n\t\tmultipleDatesSeparator: ' - ',\r\n\t\tclasses: 'calendar__card',\r\n\t\tinline: true,\r\n\t\tselectedDates: ['2019-08-19', '2019-08-23'],\r\n\t});\r\n};\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/calendar-card/calendar-card.js?");
 
 /***/ }),
 
-/***/ "./src/popUp/card/card.js":
-/*!********************************!*\
-  !*** ./src/popUp/card/card.js ***!
-  \********************************/
+/***/ "./src/pop-up/card/card.js":
+/*!*********************************!*\
+  !*** ./src/pop-up/card/card.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ \"./node_modules/swiper/swiper-bundle.esm.js\");\n/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ \"./node_modules/swiper/swiper-bundle.min.css\");\n// import Swiper bundle with all modules installed\r\n\r\n\r\n// import styles bundle\r\n\r\n\r\nconst swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper', {\r\n  // If we need pagination\r\n  pagination: {\r\n    el: '.swiper-pagination',\r\n    clickable: true,\r\n  },\r\n\r\n  // Navigation arrows\r\n  navigation: {\r\n    nextEl: '.swiper-button-next',\r\n    prevEl: '.swiper-button-prev',\r\n  },\r\n});\n\n//# sourceURL=webpack://Webpack-three/./src/popUp/card/card.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ \"./node_modules/swiper/swiper-bundle.esm.js\");\n/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ \"./node_modules/swiper/swiper-bundle.min.css\");\n// import Swiper bundle with all modules installed\r\n\r\n\r\n// import styles bundle\r\n\r\n\r\nconst swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper', {\r\n  // If we need pagination\r\n  pagination: {\r\n    el: '.swiper-pagination',\r\n    clickable: true,\r\n  },\r\n\r\n  // Navigation arrows\r\n  navigation: {\r\n    nextEl: '.swiper-button-next',\r\n    prevEl: '.swiper-button-prev',\r\n  },\r\n});\n\n//# sourceURL=webpack://Webpack-three/./src/pop-up/card/card.js?");
 
 /***/ }),
 
@@ -654,7 +676,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./components/benefits/benefits.scss\": \"./src/components/benefits/benefits.scss\",\n\t\"./components/bullet-list/bullet-list.scss\": \"./src/components/bullet-list/bullet-list.scss\",\n\t\"./components/buttons/buttons/buttons.scss\": \"./src/components/buttons/buttons/buttons.scss\",\n\t\"./components/buttons/checkbox/checkbox.scss\": \"./src/components/buttons/checkbox/checkbox.scss\",\n\t\"./components/buttons/like/like.js\": \"./src/components/buttons/like/like.js\",\n\t\"./components/buttons/like/like.scss\": \"./src/components/buttons/like/like.scss\",\n\t\"./components/buttons/paginator/paginator.js\": \"./src/components/buttons/paginator/paginator.js\",\n\t\"./components/buttons/paginator/paginator.scss\": \"./src/components/buttons/paginator/paginator.scss\",\n\t\"./components/buttons/radio-button/radio-button.js\": \"./src/components/buttons/radio-button/radio-button.js\",\n\t\"./components/buttons/radio-button/radio-buttons.scss\": \"./src/components/buttons/radio-button/radio-buttons.scss\",\n\t\"./components/buttons/rate/rate.js\": \"./src/components/buttons/rate/rate.js\",\n\t\"./components/buttons/rate/rate.scss\": \"./src/components/buttons/rate/rate.scss\",\n\t\"./components/buttons/toggle/toggle.scss\": \"./src/components/buttons/toggle/toggle.scss\",\n\t\"./components/calendar/calendar.js\": \"./src/components/calendar/calendar.js\",\n\t\"./components/calendar/calendar.scss\": \"./src/components/calendar/calendar.scss\",\n\t\"./components/checkbox-list/checkbox-list.js\": \"./src/components/checkbox-list/checkbox-list.js\",\n\t\"./components/checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./components/checkbox-rich/checkbox-rich.scss\": \"./src/components/checkbox-rich/checkbox-rich.scss\",\n\t\"./components/date-dropdown/date-dropdown.js\": \"./src/components/date-dropdown/date-dropdown.js\",\n\t\"./components/date-dropdown/date-dropdown.scss\": \"./src/components/date-dropdown/date-dropdown.scss\",\n\t\"./components/dropdown/drop-guests-expanded/dropdown-expanded.scss\": \"./src/components/dropdown/drop-guests-expanded/dropdown-expanded.scss\",\n\t\"./components/dropdown/dropdown-guests/dropdown-guests.js\": \"./src/components/dropdown/dropdown-guests/dropdown-guests.js\",\n\t\"./components/dropdown/dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown/dropdown-guests/dropdown-guests.scss\",\n\t\"./components/dropdown/dropdown-room-expanded/dropdown-room-expanded.scss\": \"./src/components/dropdown/dropdown-room-expanded/dropdown-room-expanded.scss\",\n\t\"./components/dropdown/dropdown-room/dropdown-room.js\": \"./src/components/dropdown/dropdown-room/dropdown-room.js\",\n\t\"./components/dropdown/dropdown-room/dropdown-room.scss\": \"./src/components/dropdown/dropdown-room/dropdown-room.scss\",\n\t\"./components/filter-date/filter-date.js\": \"./src/components/filter-date/filter-date.js\",\n\t\"./components/filter-date/filter-date.scss\": \"./src/components/filter-date/filter-date.scss\",\n\t\"./components/review/review.scss\": \"./src/components/review/review.scss\",\n\t\"./components/slider/slider.js\": \"./src/components/slider/slider.js\",\n\t\"./components/slider/slider.scss\": \"./src/components/slider/slider.scss\",\n\t\"./components/sub-field/sub-field.scss\": \"./src/components/sub-field/sub-field.scss\",\n\t\"./components/text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/__cards/cards.scss\": \"./src/pages/__cards/cards.scss\",\n\t\"./pages/__colors-type/colors-type.scss\": \"./src/pages/__colors-type/colors-type.scss\",\n\t\"./pages/__form-elements/form-element.scss\": \"./src/pages/__form-elements/form-element.scss\",\n\t\"./pages/header/header-ui.scss\": \"./src/pages/header/header-ui.scss\",\n\t\"./pages/index/index.scss\": \"./src/pages/index/index.scss\",\n\t\"./popUp/calendar-card/calendar-card.js\": \"./src/popUp/calendar-card/calendar-card.js\",\n\t\"./popUp/calendar-card/calendar-card.scss\": \"./src/popUp/calendar-card/calendar-card.scss\",\n\t\"./popUp/card/card-focus/card-focus.scss\": \"./src/popUp/card/card-focus/card-focus.scss\",\n\t\"./popUp/card/card.js\": \"./src/popUp/card/card.js\",\n\t\"./popUp/card/card.scss\": \"./src/popUp/card/card.scss\",\n\t\"./popUp/login-card/login-card.scss\": \"./src/popUp/login-card/login-card.scss\",\n\t\"./popUp/reg-card/reg-card.scss\": \"./src/popUp/reg-card/reg-card.scss\",\n\t\"./popUp/room-select/room-select.scss\": \"./src/popUp/room-select/room-select.scss\",\n\t\"./popUp/total-price/total-price.scss\": \"./src/popUp/total-price/total-price.scss\",\n\t\"./scss/fonts.scss\": \"./src/scss/fonts.scss\",\n\t\"./scss/icon-fonts.scss\": \"./src/scss/icon-fonts.scss\",\n\t\"./scss/null.scss\": \"./src/scss/null.scss\",\n\t\"./scss/total.scss\": \"./src/scss/total.scss\",\n\t\"./variables/variables.scss\": \"./src/variables/variables.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js$|\\\\.scss$\";\n\n//# sourceURL=webpack://Webpack-three/./src/_sync_\\.js$%7C\\.scss$?");
+eval("var map = {\n\t\"./components/benefits/benefits.scss\": \"./src/components/benefits/benefits.scss\",\n\t\"./components/bullet-list/bullet-list.scss\": \"./src/components/bullet-list/bullet-list.scss\",\n\t\"./components/buttons/buttons/buttons.scss\": \"./src/components/buttons/buttons/buttons.scss\",\n\t\"./components/buttons/checkbox/checkbox.scss\": \"./src/components/buttons/checkbox/checkbox.scss\",\n\t\"./components/buttons/like/like.js\": \"./src/components/buttons/like/like.js\",\n\t\"./components/buttons/like/like.scss\": \"./src/components/buttons/like/like.scss\",\n\t\"./components/buttons/paginator/paginator.js\": \"./src/components/buttons/paginator/paginator.js\",\n\t\"./components/buttons/paginator/paginator.scss\": \"./src/components/buttons/paginator/paginator.scss\",\n\t\"./components/buttons/radio-button/radio-button.js\": \"./src/components/buttons/radio-button/radio-button.js\",\n\t\"./components/buttons/radio-button/radio-buttons.scss\": \"./src/components/buttons/radio-button/radio-buttons.scss\",\n\t\"./components/buttons/rate/rate.js\": \"./src/components/buttons/rate/rate.js\",\n\t\"./components/buttons/rate/rate.scss\": \"./src/components/buttons/rate/rate.scss\",\n\t\"./components/buttons/toggle/toggle.scss\": \"./src/components/buttons/toggle/toggle.scss\",\n\t\"./components/calendar/calendar.js\": \"./src/components/calendar/calendar.js\",\n\t\"./components/calendar/calendar.scss\": \"./src/components/calendar/calendar.scss\",\n\t\"./components/checkbox-list/checkbox-list.js\": \"./src/components/checkbox-list/checkbox-list.js\",\n\t\"./components/checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./components/checkbox-rich/checkbox-rich.scss\": \"./src/components/checkbox-rich/checkbox-rich.scss\",\n\t\"./components/date-dropdown/date-dropdown.js\": \"./src/components/date-dropdown/date-dropdown.js\",\n\t\"./components/date-dropdown/date-dropdown.scss\": \"./src/components/date-dropdown/date-dropdown.scss\",\n\t\"./components/dropdown/drop-guests-expanded/dropdown-expanded.scss\": \"./src/components/dropdown/drop-guests-expanded/dropdown-expanded.scss\",\n\t\"./components/dropdown/dropdown-guests/dropdown-guests.js\": \"./src/components/dropdown/dropdown-guests/dropdown-guests.js\",\n\t\"./components/dropdown/dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown/dropdown-guests/dropdown-guests.scss\",\n\t\"./components/dropdown/dropdown-room-expanded/dropdown-room-expanded.scss\": \"./src/components/dropdown/dropdown-room-expanded/dropdown-room-expanded.scss\",\n\t\"./components/dropdown/dropdown-room/dropdown-room.js\": \"./src/components/dropdown/dropdown-room/dropdown-room.js\",\n\t\"./components/dropdown/dropdown-room/dropdown-room.scss\": \"./src/components/dropdown/dropdown-room/dropdown-room.scss\",\n\t\"./components/filter-date/filter-date.js\": \"./src/components/filter-date/filter-date.js\",\n\t\"./components/filter-date/filter-date.scss\": \"./src/components/filter-date/filter-date.scss\",\n\t\"./components/headers/header-reg/header-reg.scss\": \"./src/components/headers/header-reg/header-reg.scss\",\n\t\"./components/review/review.scss\": \"./src/components/review/review.scss\",\n\t\"./components/slider/slider.js\": \"./src/components/slider/slider.js\",\n\t\"./components/slider/slider.scss\": \"./src/components/slider/slider.scss\",\n\t\"./components/sub-field/sub-field.scss\": \"./src/components/sub-field/sub-field.scss\",\n\t\"./components/text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./index.js\": \"./src/index.js\",\n\t\"./pages/cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./pages/colors-type/colors-type.scss\": \"./src/pages/colors-type/colors-type.scss\",\n\t\"./pages/form-elements/form-element.scss\": \"./src/pages/form-elements/form-element.scss\",\n\t\"./pages/header-ui/header-ui.scss\": \"./src/pages/header-ui/header-ui.scss\",\n\t\"./pages/headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./pages/index/index.scss\": \"./src/pages/index/index.scss\",\n\t\"./pop-up/calendar-card/calendar-card.js\": \"./src/pop-up/calendar-card/calendar-card.js\",\n\t\"./pop-up/calendar-card/calendar-card.scss\": \"./src/pop-up/calendar-card/calendar-card.scss\",\n\t\"./pop-up/card/card-focus/card-focus.scss\": \"./src/pop-up/card/card-focus/card-focus.scss\",\n\t\"./pop-up/card/card.js\": \"./src/pop-up/card/card.js\",\n\t\"./pop-up/card/card.scss\": \"./src/pop-up/card/card.scss\",\n\t\"./pop-up/login-card/login-card.scss\": \"./src/pop-up/login-card/login-card.scss\",\n\t\"./pop-up/reg-card/reg-card.scss\": \"./src/pop-up/reg-card/reg-card.scss\",\n\t\"./pop-up/room-select/room-select.scss\": \"./src/pop-up/room-select/room-select.scss\",\n\t\"./pop-up/total-price/total-price.scss\": \"./src/pop-up/total-price/total-price.scss\",\n\t\"./scss/fonts.scss\": \"./src/scss/fonts.scss\",\n\t\"./scss/icon-fonts.scss\": \"./src/scss/icon-fonts.scss\",\n\t\"./scss/null.scss\": \"./src/scss/null.scss\",\n\t\"./scss/total.scss\": \"./src/scss/total.scss\",\n\t\"./variables/variables.scss\": \"./src/variables/variables.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.js$|\\\\.scss$\";\n\n//# sourceURL=webpack://Webpack-three/./src/_sync_\\.js$%7C\\.scss$?");
 
 /***/ }),
 

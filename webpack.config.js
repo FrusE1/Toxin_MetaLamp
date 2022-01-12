@@ -16,9 +16,10 @@ const PATHS = {
 const PAGES_ROOT = PATHS.src + '/pages/';
 const PAGES_DIRNAMES = [
 	'index/',
-	'__form-elements/',
-	'__colors-type/',
-	'__cards'
+	'form-elements/',
+	'colors-type/',
+	'cards',
+	'headers-footers'
 ];
 
 const PAGES_DIR = PAGES_DIRNAMES.map(dirName => PAGES_ROOT + dirName);

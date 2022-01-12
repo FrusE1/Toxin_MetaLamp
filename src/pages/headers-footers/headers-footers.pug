@@ -1,0 +1,9 @@
+extends /pages/base.pug
+
+block head
+  title headers-footers
+block content
+  body.body-headers-footers
+    include /pages/header-ui/header_ui.pug
+    .headers-footers._container
+      include /components/headers/header-reg/header-reg.pug

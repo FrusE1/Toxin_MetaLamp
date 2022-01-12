@@ -1,0 +1,22 @@
+extends /pages/base.pug
+
+block head
+	title Cards
+block content
+	include /pop-up/card/card.pug
+	include /pop-up/card/card-focus/card-focus.pug
+	body.body-cards
+		include /pages/header-ui/header_ui.pug
+		.cards._container
+			.card__item
+				include /pop-up/room-select/room-select.pug
+				include /pop-up/reg-card/reg-card.pug
+			.card__item
+				include /pop-up/total-price/total-price.pug
+				include /pop-up/login-card/login-card.pug
+			.card__item
+				include /pop-up/calendar-card/calendar-card.pug
+				.slider-card__item
+					+cardFocusSlider()
+				.slider-card__item
+					+cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
