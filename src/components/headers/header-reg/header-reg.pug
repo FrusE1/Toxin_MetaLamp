@@ -3,7 +3,9 @@ include /components/buttons/buttons/buttons-mixin/button.pug
 .header-reg
   .header-reg__logo.header-logo
     a(class="header-logo__link" href="#")
-      img(src="../src/images/icons/header-logo.svg" class="header-logo__img")
+      .header-logo__container
+        img(src="../src/images/icons/header-logo.svg" class="header-logo__img")
+        img(src="../src/images/icons/logo-text.svg" class="header-logo__img")
   .header-reg__container
     .header-reg__menu.menu-header
       ul.menu-header__list
