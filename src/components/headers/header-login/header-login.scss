@@ -1,0 +1,16 @@
+/* start header-login style */
+@import "@variables";
+.header-login {
+  &__border {
+    margin: auto 0;
+    height: 30px;
+    width: 1px;
+    background-color: $dark-10;
+  }
+}
+.user-header {
+  margin: auto 0;
+  margin-left: 20px;
+  color: $dark-50;
+}
+/* end header-login style */

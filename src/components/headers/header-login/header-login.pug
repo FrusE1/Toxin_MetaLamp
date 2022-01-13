@@ -1,12 +1,12 @@
 include /components/buttons/buttons/buttons-mixin/button-border.pug
 include /components/buttons/buttons/buttons-mixin/button.pug
-header.header-reg.header
-  .header-reg__logo.header-logo
+header.header-login.header
+  .header-login__logo.header-logo
     a(class="header-logo__link" href="#")
       .header-logo__container
         img(src="../src/images/icons/header-logo.svg" class="header-logo__img")
         img(src="../src/images/icons/logo-text.svg" class="header-logo__img")
-  .header-reg__content.header-content
+  .header-login__content.header-content
     .header-reg__menu.menu-header
       ul.menu-header__list
         li.menu-header__item
@@ -22,8 +22,6 @@ header.header-reg.header
         li.menu-header__item
           a(class="menu-header__link link-icon_padding" href="#") Соглашения
             .icon-more
-    .header-reg__account.account-head
-      .account-head__btn-login
-        +buttonBorder("войти")
-      .account-head__btn-reg
-        +button("зарегистрироваться")
+    .header-login__border
+    .header-login__user.user-header
+      .user-header__username Юлий Цезарь
