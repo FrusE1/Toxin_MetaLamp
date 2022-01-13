@@ -2,22 +2,24 @@
 @import "@variables";
 .header {
   background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   padding: 18px 0;
-  display: flex;
-  justify-content: space-between;
 }
 .header-content {
   align-items: center;
   display: flex;
 }
-.header-logo {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.hotel-logo {
   display: flex;
   align-items: center;
-  &__container {
+  &__row {
     display: flex;
   }
   &__img {
-    display: block;
     &:not(:last-child) {
       margin-right: 12px;
     }

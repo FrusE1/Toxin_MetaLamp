@@ -1,27 +1,28 @@
 include /components/buttons/buttons/buttons-mixin/button-border.pug
 include /components/buttons/buttons/buttons-mixin/button.pug
 header.header-login.header
-  .header-login__logo.header-logo
-    a(class="header-logo__link" href="#")
-      .header-logo__container
-        img(src="../src/images/icons/header-logo.svg" class="header-logo__img")
-        img(src="../src/images/icons/logo-text.svg" class="header-logo__img")
-  .header-login__content.header-content
-    .header-reg__menu.menu-header
-      ul.menu-header__list
-        li.menu-header__item
-          a.menu-header__link(href="#")
-            span О нас
-        li.menu-header__item
-          a(class="menu-header__link link-icon_padding" href="#") Услуги
-            .icon-more
-        li.menu-header__item
-          a.menu-header__link(href="#") Вакансии
-        li.menu-header__item
-          a.menu-header__link(href="#") Новости
-        li.menu-header__item
-          a(class="menu-header__link link-icon_padding" href="#") Соглашения
-            .icon-more
-    .header-login__border
-    .header-login__user.user-header
-      .user-header__username Юлий Цезарь
+  .header-login__container.header-container._container
+    .header-login__logo.hotel-logo
+      a(class="hotel-logo__link" href="#")
+        .hotel-logo__row
+          img(src="../src/images/icons/header-logo.svg" class="hotel-logo__img" alt="hotel-logo")
+          img(src="../src/images/icons/logo-text.svg" class="hotel-logo__img" alt="hotel-logo")
+    .header-login__content.header-content
+      .header-reg__menu.menu-header
+        ul.menu-header__list
+          li.menu-header__item
+            a.menu-header__link(href="#")
+              span О нас
+          li.menu-header__item
+            a(class="menu-header__link link-icon_padding" href="#") Услуги
+              .icon-more
+          li.menu-header__item
+            a.menu-header__link(href="#") Вакансии
+          li.menu-header__item
+            a.menu-header__link(href="#") Новости
+          li.menu-header__item
+            a(class="menu-header__link link-icon_padding" href="#") Соглашения
+              .icon-more
+      .header-login__border
+      .header-login__user.user-header
+        .user-header__username Юлий Цезарь

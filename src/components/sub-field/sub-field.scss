@@ -1,7 +1,10 @@
 /* start sub-field style */
 @import "@variables";
 .sub-field {
-	position: relative;
+	display: inline-block;
+	&__field {
+		position: relative;
+	}
 	&__title {
 		margin-bottom: 5px;
 	}
@@ -16,7 +19,7 @@
 			border: 1px solid $dark-50;
 		}
 		&:hover ~ .sub-field__label {
-			right: 65px;
+			right: 10px;
 		}
 		&::-webkit-input-placeholder {
 			color: $dark-25;
@@ -34,8 +37,8 @@
 	&__label {
 		position: absolute;
 		font-size: 18px;
-		right: 66px;
-		top: 50%;
+		right: 12px;
+		top: 12px;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;

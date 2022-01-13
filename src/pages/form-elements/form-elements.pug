@@ -3,8 +3,9 @@ extends /pages/base.pug
 block head
 	title Form-element
 block content
+	include /components/sub-field/sub-field.pug
+	include /components/date-dropdown/date-dropdown.pug
 	body.body-forms
-		include /components/date-dropdown/date-dropdown.pug
 		include /pages/header-ui/header_ui.pug
 		.container-total._container
 			.form-element__container-one._container-form
@@ -16,7 +17,7 @@ block content
 					.date-dropdown-container
 						+dateDropdown("date Dropdown", "date Dropdown")
 					include /components/filter-date/filter-date.pug
-					include /components/sub-field/sub-field.pug
+					+subField("subscription text field", "Email")
 				form.form-element__second-block
 					include /components/buttons/checkbox/checkbox-block.pug
 					include /components/buttons/radio-button/radio-button-block.pug
