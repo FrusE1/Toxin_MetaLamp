@@ -3,6 +3,7 @@
 .footer {
   background-color: #fff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin-bottom: 40px;
   &-top {
     &__row {
       display: flex;
@@ -73,6 +74,7 @@
   }
   &__social {
     display: flex;
+    align-items: center;
     & > * {
       font-size: 24px;
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -81,6 +83,9 @@
     }
     & > *:not(:last-child) {
       padding-right: 20px;
+    }
+    & > *:not(:first-child) {
+      font-size: 22px;
     }
   }
 }
