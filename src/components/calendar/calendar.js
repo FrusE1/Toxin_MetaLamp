@@ -21,12 +21,9 @@ if (document.querySelector('.calendar__input')) { // проверка налич
 		navTitles: {
 			days: 'MMMM yyyy',
 		},
-		range: true,
-		dynamicRange: true,
 		buttons: ['clear', button],
 		prevHtml: `<span class="calendar__arrow calendar__arrow_prev icon-arrow"></span>`,
 		nextHtml: `<span class="calendar__arrow calendar__arrow_next icon-arrow"></span>`,
-		multipleDatesSeparator: ' - ',
 		classes: 'calendar-birth',
 	});
 };

@@ -1,5 +1,5 @@
-mixin checkbox(name, check)
+mixin checkbox(name, text, check)
 	label.checkbox__label
-		input(class="checkbox__input" type="checkbox" checked=check)
+		input(class="checkbox__input" name=name value="yes" type="checkbox" checked=check)
 		span(class="checkbox__check icon-vector")
-		=name
+		=text

@@ -1,11 +1,11 @@
 include /components/text-field/text-field.pug
 include /components/buttons/buttons/buttons-mixin/button-price.pug
-.login-card.cards-element
+form(action="#" class="login-card cards-element")
   .login-card__container._container-card
     h1.login-card__title Войти
     .login-card__field
-      +textField('', '', 'Имя')
-      +textField('', '', 'Фамилия')
+      +textField("text", "", "", "name", "Имя")
+      +textField("text", "", "", "surname", "Фамилия")
     .login-card__button
       +buttonPrice("войти")
     .login-card__reg.login-reg

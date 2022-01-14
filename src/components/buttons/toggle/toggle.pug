@@ -1,4 +1,4 @@
-mixin toggle(text, check)
+mixin toggle(name, text, check)
 	label.toggle__label
-		input(class="toggle__input" type="checkbox" checked=check)
+		input(class="toggle__input" name=name type="checkbox" value="yes" checked=check)
 		=text

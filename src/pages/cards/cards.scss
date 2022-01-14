@@ -7,6 +7,9 @@
 .cards {
 	display: flex;
 	justify-content: space-between;
+	&._container {
+		padding-bottom: 30px;
+	}
 }
 .cards-element {
 	max-width: 380px;

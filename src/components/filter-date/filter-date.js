@@ -30,5 +30,6 @@ if (document.querySelector('.filter-date__input')) { // проверка нал�
 		dateFormat: "dd MMM",
 		selectedDates: [],
 		classes: "calendar-filter",
+		selectedDates: ['2019-08-19', '2019-08-23'],
 	});
 };

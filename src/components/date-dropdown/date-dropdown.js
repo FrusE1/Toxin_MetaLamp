@@ -26,7 +26,6 @@ if (document.querySelector('.date-dropdown__input')) { // проверка на�
 		buttons: ['clear', buttonDrop],
 		prevHtml: `<span class="calendar__arrow calendar__arrow_prev icon-arrow"></span>`,
 		nextHtml: `<span class="calendar__arrow calendar__arrow_next icon-arrow"></span>`,
-		multipleDatesSeparator: ' - ',
 		classes: "calendar-drop",
 		onSelect: function (fd, d, picker) {
 			document.querySelector(".date-dropdown__input-one").value = fd.formattedDate[0];

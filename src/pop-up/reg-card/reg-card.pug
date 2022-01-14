@@ -4,21 +4,21 @@ include /components/calendar/calendar-mixin.pug
 include /components/buttons/toggle/toggle.pug
 include /components/buttons/buttons/buttons-mixin/button-price.pug
 include /components/buttons/buttons/buttons-mixin/button-border.pug
-.reg-card.cards-element
+form(action="#" class="reg-card cards-element")
 	.reg-card__container._container-card
 		h1.reg-card__title Регистрация аккаунта
 		.reg-card__field
-			+textField('', '', 'Имя')
-			+textField('', '', 'Фамилия')
+			+textField("text", "", "", "name", "Имя")
+			+textField("text", "", "", "surname", "Фамилия")
 		.reg-card__radio-btn
 			+radio-button()
 		.reg-card__calendar
 			+calendar("дата рождения")
 		.reg-card__mail
-			+textField('данные для входа в сервис', '', 'Email')
-			+textField('', '', 'Пароль')
+			+textField("text", "данные для входа в сервис", "", "email", "Email")
+			+textField("password", "", "", "password", "Пароль")
 		.reg-card__toggle
-			+toggle('Получать спецпредложения')
+			+toggle("special-offers", "Получать спецпредложения")
 		.reg-card__button
 			+buttonPrice("перейти к оплате")
 		.reg-card__login.reg-login
