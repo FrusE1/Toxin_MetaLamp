@@ -9,7 +9,7 @@ block content
 		include /pages/header-ui/header_ui.pug
 		.container-total._container
 			.form-element__container-one._container-form
-				form.form-element__first-block
+				.form-element__first-block
 					include /components/text-field/text-field-block.pug
 					.dropdown-guests-container
 						include /components/dropdown/dropdown-guests/dropdown-guests-block.pug
@@ -18,32 +18,32 @@ block content
 						+dateDropdown("date Dropdown", "date Dropdown")
 					include /components/filter-date/filter-date.pug
 					+subField("subscription text field", "Email")
-				form.form-element__second-block
+				.form-element__second-block
 					include /components/buttons/checkbox/checkbox-block.pug
 					include /components/buttons/radio-button/radio-button-block.pug
 					include /components/buttons/toggle/toggle-block.pug
 					include /components/buttons/like/like-block.pug
 					include /components/buttons/rate/rate-block.pug
-				form.form-element__third-block
+				.form-element__third-block
 					include /components/slider/slider-block.pug
 					include /components/buttons/buttons/buttons.pug
 					.paginator-container
 						include /components/buttons/paginator/paginator.pug
 			.form-element__container-two._container-form
-				form.form-element__drop-rooms
+				.form-element__drop-rooms
 					.dropdown-room-container
 						include /components/dropdown/dropdown-room/dropdown-room.pug
 						include /components/dropdown/dropdown-room-expanded/dropdown-room-expanded.pug
-				form.form-element__drop-guests-one
+				.form-element__drop-guests-one
 					include /components/dropdown/drop-guests-expanded/drop-guests-expOne.pug
-				form.form-element__drop-guests-one
+				.form-element__drop-guests-one
 					include /components/dropdown/drop-guests-expanded/drop-guests-expTwo.pug
 			.form-element__container-three._container-form
-				form.form-element__list
+				.form-element__list
 					include /components/checkbox-list/checkbox-list-block.pug
 					include /components/checkbox-rich/checkbox-rich-block.pug
 					include /components/bullet-list/bullet-list.pug
 			.form-element__container-four._container-form
-				form.form-element__other
+				.form-element__other
 					include /components/benefits/benefits-block.pug
 					include /components/review/review-block.pug
