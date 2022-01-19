@@ -1,5 +1,6 @@
 /* start buttons style */
 @import "@variables";
+@import "@mixin";
 .button {
 	margin-bottom: 40px;
 	&__title {
@@ -14,7 +15,7 @@
 	&__item {
 		position: relative;
 		border-radius: 22px;
-		font-size: $h3;
+		@include adaptive-value("font-size", 12, 8, 1);
 		line-height: $lh_h3;
 		text-transform: uppercase;
 		color: #fff;

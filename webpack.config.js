@@ -18,8 +18,9 @@ const PAGES_DIRNAMES = [
 	'index/',
 	'form-elements/',
 	'colors-type/',
-	'cards',
-	'headers-footers'
+	'cards/',
+	'headers-footers/',
+	'site/'
 ];
 
 const PAGES_DIR = PAGES_DIRNAMES.map(dirName => PAGES_ROOT + dirName);
@@ -116,6 +117,7 @@ module.exports = {
 	resolve: {
 		alias: {
 			'@variables': path.resolve(__dirname, 'src/variables/variables.scss'),
+			'@mixin': path.resolve(__dirname, 'src/scss/mixin.scss'),
 			// '@images': path.resolve(__dirname, 'src/assets/images/')
 		}
 	}

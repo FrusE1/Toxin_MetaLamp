@@ -5,11 +5,17 @@ block head
 block content
 	include /pages/header-ui/header_ui.pug
 	.page._container
-		.page__column
-			a(class="page__link" href="colors-type.html") colors-type
-		.page__column
-			a(class="page__link" href="form-elements.html") form-elements
-		.page__column
-			a(class="page__link" href="cards.html") cards
-		.page__column
-			a(class="page__link" href="headers-footers.html") headers-footers
+		.page-ui.page-columns
+			.page-ui__title.title-page UI-kit
+			.page-ui__column
+				a(class="page__link" href="colors-type.html") colors-type
+			.page-ui__column
+				a(class="page__link" href="form-elements.html") form-elements
+			.page-ui__column
+				a(class="page__link" href="cards.html") cards
+			.page-ui__column
+				a(class="page__link" href="headers-footers.html") headers-footers
+		.page-web.page-columns
+			.page-web__title.title-page Web-site
+			.page-web__column
+				a(class="page__link" href="site.html") Web-site

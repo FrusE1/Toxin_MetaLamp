@@ -1,5 +1,6 @@
-@import "@variables";
 /* Глобальные стили */
+@import "@variables";
+@import "@mixin";
 html,
 body {
 	font-family: Montserrat, sans-serif;
@@ -16,7 +17,22 @@ body {
 }
 ._container {
 	max-width: $dekstop-width;
-	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 5px;
+}
+@media (min-width: $dekstop-width) {
+	._container {
+		margin: 0 auto;
+	}
+}
+@media (max-width: $dekstop-width) {
+	._container {
+		@include adaptive-value("margin-right", 140, 5, 1);
+		@include adaptive-value("margin-left", 140, 5, 1);
+	}
+}
+@media (max-width: $table-width) {
+	._container {
+		margin: 0 auto;
+	}
 }
 /* Конец глобальных стилей */
