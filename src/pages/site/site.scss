@@ -3,4 +3,14 @@
 .site-content {
   flex: 1 1 100%;
 }
+@media (max-width: #{$table-width + px}) {
+  .wrapper-toxin > .footer {
+    display: none;
+  }
+}
+@media (min-width: #{$table-width + 1 + px}) {
+  .wrapper-toxin > .footer-mobile {
+    display: none;
+  }
+}
 /* end site style */

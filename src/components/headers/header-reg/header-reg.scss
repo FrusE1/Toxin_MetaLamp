@@ -21,7 +21,7 @@
   &__row {
     display: flex;
     & > *:first-child {
-      @include adaptive-value("height", 40, 20, 1);
+      @include adaptive-value("height", 40, 30, 1);
     }
   }
   &__img {
@@ -34,8 +34,8 @@
   @include adaptive-value("margin-right", 20, 0, 1);
   &__list {
     @include adaptive-value("font-size", 14, 10, 1);
-    @include adaptive-value("padding-left", 20, 10, 1);
-    // @include adaptive-value("padding-left", 20, 10, 1);
+    padding-left: 20px;
+    min-width: 110px;
     display: flex;
     flex-wrap: wrap;
     & > *:not(:last-child) {
@@ -88,10 +88,18 @@
     }
   }
 }
-@media (max-width: $phone-width) {
+@media (max-width: #{$phone-width + px}) {
   .menu-header {
     &__list {
       flex-direction: column;
+    }
+  }
+  .hotel-logo {
+    &__row > *:last-child {
+      display: none;
+    }
+    &__row > *:first-child {
+      margin: 0;
     }
   }
 }

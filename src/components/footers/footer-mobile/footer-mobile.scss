@@ -1,4 +1,5 @@
 /* start footer-mobile style */
+@import "@mixin";
 @import "@variables";
 .footer-mobile {
   &__container {
@@ -10,7 +11,9 @@
   &__main {
     display: flex;
     flex-direction: column;
-    padding: 120px 10px;
+    padding-top: calc(20px + (120 - 20) * ((100vw - 320px) / (#{$table-width} - 320)));
+    padding-bottom: calc(20px + (120 - 20) * ((100vw - 320px) / (#{$table-width} - 320)));
+    // padding: 120px 10px;
     align-items: center;
   }
   &__logo {
@@ -18,6 +21,7 @@
   }
   &__text {
     margin-bottom: 22px;
+    font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (#{$table-width} - 320)));
   }
   &__social {
     display: flex;
