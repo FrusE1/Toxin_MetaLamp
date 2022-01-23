@@ -1,5 +1,6 @@
 /* start date-dropdown style */
 @import "@variables";
+@import "@mixin";
 .date-dropdown-container {
 	margin-bottom: 40px;
 }
@@ -14,6 +15,7 @@
 		margin-bottom: 6px;
 	}
 	&__input {
+		@include adaptive-value("font-size", 14, 11, 1);
 		width: 100%;
 		height: 44px;
 		border: 1px solid $dark-25;

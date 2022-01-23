@@ -1,19 +1,20 @@
 /* start room-select block style */
 @import "@variables";
+@import "@mixin";
 .room-select {
 	margin-bottom: 40px;
 	&__title {
-		font-size: $h1;
+		@include adaptive-value("font-size", 24, 14, 1);
 		line-height: $lh_h1;
 		font-weight: 700;
 		color: $dark-100;
-		margin-bottom: 22px;
+		@include adaptive-value("margin-bottom", 22, 16, 1);
 	}
 	&__date-container {
-		margin-bottom: 20px;
+		@include adaptive-value("margin-bottom", 20, 15, 1);
 	}
 	&__drop-container {
-		margin-bottom: 30px;
+		@include adaptive-value("margin-bottom", 30, 20, 1);
 	}
 }
 /* end room-select block style */

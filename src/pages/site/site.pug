@@ -6,6 +6,12 @@ block content
   body
     .wrapper.wrapper-toxin
       include /components/headers/header-reg/header-reg.pug
-      .site-content
+      .main-page__content
+        .main-page__background
+          .main-page__image
+            img(src="../src/images/main-image-1.png" alt="background-image")
+          .main-page__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+        .main-page__card
+          include /pop-up/room-select/room-select.pug
       include  /components/footers/footer/footer.pug
       include  /components/footers/footer-mobile/footer-mobile.pug

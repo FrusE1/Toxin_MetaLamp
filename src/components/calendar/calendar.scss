@@ -1,5 +1,6 @@
-@import "@variables";
 /* start calendar style */
+@import "@variables";
+@import "@mixin";
 .calendar {
 	box-sizing: border-box;
 	display: flex;

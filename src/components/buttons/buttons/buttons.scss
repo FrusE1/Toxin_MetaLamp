@@ -6,6 +6,10 @@
 	&__title {
 		margin-bottom: 15px;
 	}
+	&__items {
+		display: inline-block;
+		width: 100%;
+	}
 	&__items:not(:last-child) {
 		margin-bottom: 30px;
 	}

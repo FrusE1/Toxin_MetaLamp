@@ -1,5 +1,6 @@
 /* start dropdown-guests style */
 @import "@variables";
+@import "@mixin";
 .dropdown-guests-container {
 	margin-top: 20px;
 	margin-bottom: 23px;
@@ -13,6 +14,7 @@
 		margin-bottom: 5px;
 	}
 	&__input {
+		@include adaptive-value("font-size", 14, 11, 1);
 		position: relative;
 		width: 100%;
 		height: 44px;
