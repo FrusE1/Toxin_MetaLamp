@@ -77,6 +77,9 @@
 			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 			&:hover,
 			&:focus {
+				& > .button__span {
+					right: 12px;
+				}
 				opacity: 0.8;
 			}
 			&:active {
@@ -86,13 +89,10 @@
 	}
 	&__span {
 		position: absolute;
-		top: 13px;
+		top: 30%;
 		right: 14px;
 		font-size: 18px;
 		transition: 0.3s;
-		&:active {
-			right: 12px;
-		}
 	}
 }
 

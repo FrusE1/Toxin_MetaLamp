@@ -4,3 +4,6 @@
 .headers > *{
   margin-bottom: 20px;
 }
+.footers > *:not(:last-child){
+  margin-bottom: 40px;
+}

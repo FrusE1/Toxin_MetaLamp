@@ -68,10 +68,10 @@
   & > *:not(:last-child) {
     margin-right: 20px;
   }
-  &__btn-login > * {
+  &__btn-login .button__item-border {
     padding: 7.5px 18.3px;
   }
-  &__btn-reg > * {
+  &__btn-reg .button__item_default {
     padding: 9.5px 19.85px;
   }
 }

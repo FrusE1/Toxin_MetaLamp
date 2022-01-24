@@ -252,5 +252,30 @@
 		padding-top: 3px;
 	}
 }
+@media (max-width: 375px) {
+	.air-datepicker {
+		width: calc(288px + (320 - 288) * ((100vw - 320px) / (375 - 320)));
+	}
+	.air-datepicker-body {
+		font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (375 - 320)));
+	}
+	.air-datepicker-nav--title {
+		font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (375 - 320)));
+	}
+	.air-datepicker-nav {
+		padding-top: calc(12px + (17 - 12) * ((100vw - 320px) / (375 - 320)));
+		padding-bottom: calc(25px + (32 - 25) * ((100vw - 320px) / (375 - 320)));
+		padding-right: calc(18px + (24 - 18) * ((100vw - 320px) / (375 - 320)));
+		padding-left: calc(18px + (24 - 18) * ((100vw - 320px) / (375 - 320)));
+	}
+	.air-datepicker-body--cells.-days- {
+		padding-right: calc(3px + (20 - 3) * ((100vw - 320px) / (375 - 320)));
+		padding-left: calc(3px + (20 - 3) * ((100vw - 320px) / (375 - 320)));
+	}
+	.air-datepicker-body--day-names {
+		padding-right: calc(3px + (20 - 3) * ((100vw - 320px) / (375 - 320)));
+		padding-left: calc(3px + (20 - 3) * ((100vw - 320px) / (375 - 320)));
+	}
+}
 
 /* end calendar style */

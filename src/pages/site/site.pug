@@ -9,9 +9,12 @@ block content
       .main-page__content
         .main-page__background
           .main-page__image
-            img(src="../src/images/main-image-1.png" alt="background-image")
+            img(class="background-image-1" src="../src/images/background-image-1.png" alt="background-image")
+            img(class="background-image-2" src="../src/images/background-image-2.png" alt="background-image")
           .main-page__text Лучшие номера для вашей работы, отдыха и просто вдохновения
-        .main-page__card
+        .main-page__card.active-card
           include /pop-up/room-select/room-select.pug
+      .popup.popup-reg(id="popup")
+        include /pop-up/reg-card/reg-card.pug
       include  /components/footers/footer/footer.pug
       include  /components/footers/footer-mobile/footer-mobile.pug
