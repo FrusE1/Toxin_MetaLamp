@@ -18,37 +18,49 @@
     overflow: hidden;
     height: calc(473px + (830 - 473) * ((100vw - 768px) / (1440 - 768)));
   }
+  &__background.reg-background {
+    display: none;
+    @include adaptive-value("height", 683, 500, 1);
+  }
   &__image {
     transform: scale(1.07);
     position: absolute;
     top: 0;
     right: 0;
-    & > * {
+    & img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
       object-position: 0% -90px;
+    }
+  }
+  &__image.reg-image {
+    transform: scale(1);
+    & img {
+      object-position: -28px -238px;
     }
   }
   &__card {
     position: absolute;
     box-sizing: border-box;
-    top: 8.2%;
-    left: 9.5%;
+    top: 8.1%;
+    left: 9.2%;
   }
-}
-.background-image-2 {
-  display: none;
 }
 .popup {
   box-sizing: border-box;
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 90px;
-  left: 50%;
   margin: 0 0 0 -190px;
   transition: 0.5s;
+  &-reg {
+    top: 90px;
+    left: 50%;
+  }
+  &-login {
+    top: 233px;
+    left: 50%;
+  }
 }
 .popup.popup_active {
   opacity: 1;
@@ -91,6 +103,23 @@
   .main-page {
     &__card {
       left: 0;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .main-page {
+    &__image.reg-image {
+      width: calc(1420px + (2000 - 1420) * ((100vw - 1440px) / (1920 - 1440)));
+    }
+    &__background.reg-background {
+      height: calc(653px + (800 - 653) * ((100vw - 1440px) / (1920 - 1440)));
+    }
+  }
+}
+@media (max-width: #{$table-width + 1 + px}) {
+  .main-page {
+    &__card {
+      top: 18.1%;
     }
   }
 }

@@ -4,8 +4,8 @@ form(action="#" class="login-card cards-element")
   .login-card__container._container-card
     h1.login-card__title Войти
     .login-card__field
-      +textField("text", "", "", "name", "Имя")
-      +textField("text", "", "", "surname", "Фамилия")
+      +textField("text", "", "", "email", "Email")
+      +textField("password", "", "", "password", "Пароль")
     .login-card__button
       +buttonPrice("войти")
     .login-card__reg.login-reg

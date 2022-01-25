@@ -15,6 +15,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	box-sizing: content-box;
+	& > .header-login {
+		display: none;
+	}
 }
 ._container {
 	max-width: $dekstop-width;
