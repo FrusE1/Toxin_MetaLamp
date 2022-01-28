@@ -1,43 +1,45 @@
 /* start slider style */
 @import "@variables";
-.slider {
+.slider__container {
 	margin-bottom: 44px;
 }
-.slider-header {
-	display: flex;
-	margin-bottom: 22px;
-}
-.slider__price {
-	color: $dark-50;
-	line-height: 0;
-}
-.slider__title {
-	margin-right: 62px;
-}
-.slider__label:first-child {
-	margin-right: 4px;
-}
-.slider__label:last-child {
-	margin-left: 4px;
-}
-.slider__currency {
-	line-height: 100%;
-}
-.slider__input {
-	font-size: $h3;
-	color: $dark-50;
-	width: 38px;
-	height: 10px;
-}
-.slider__input_right {
-	text-align: end;
-}
-.slider__label {
-	font-size: $h3;
-	line-height: $lh_h3;
-}
-.slider__filter {
-	max-width: 266px;
+.slider {
+	&-header {
+		display: flex;
+		margin-bottom: 22px;
+	}
+	&__price {
+		color: $dark-50;
+		line-height: 0;
+	}
+	&__title {
+		margin-right: 62px;
+	}
+	&__label:first-child {
+		margin-right: 4px;
+	}
+	&__label:last-child {
+		margin-left: 4px;
+	}
+	&__currency {
+		line-height: 100%;
+	}
+	&__input {
+		font-size: $h3;
+		color: $dark-50;
+		width: 38px;
+		height: 10px;
+	}
+	&__input_right {
+		text-align: end;
+	}
+	&__label {
+		font-size: $h3;
+		line-height: $lh_h3;
+	}
+	&__filter {
+		max-width: 266px;
+	}
 }
 .noUi-handle {
 	cursor: pointer;

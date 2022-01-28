@@ -1,0 +1,62 @@
+extends /pages/base.pug
+
+block head
+  title Toxin
+block content
+  include /pop-up/card/card.pug
+  include /pop-up/card/card-focus/card-focus.pug
+  include /components/dropdown/dropdown-guests/dropdown-guests.pug
+  include /components/buttons/checkbox/checkbox.pug
+  include /components/checkbox-rich/checkbox-rich.pug
+  include /components/dropdown/dropdown-room/dropdown-room.pug
+  include /components/checkbox-list/checkbox-list.pug
+  body
+    .wrapper.wrapper-toxin
+      include /components/headers/header-reg/header-reg.pug
+      include /components/headers/header-login/header-login.pug
+      .room-filter._container
+        .room-filter__article
+          .room-filter__filter-date
+            include /components/filter-date/filter-date.pug
+          .room-filter__guests
+            +dropGuests("Гости", "0", "0", "0")
+          .room-filter__slider
+            include /components/slider/slider-block.pug
+          .room-filter__checkbox.checkbox
+            h3.checkbox__title.title-style правила дома
+            .checkbox__list
+              +checkbox("smoking", "Можно курить")
+              +checkbox("pets", "Можно с питомцами", true)
+              +checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
+          .room-filter__checkbox-rich.checkbox-rich
+            h3.checkbox-rich__title.title-style доступность
+            .checkbox-rich__container
+              +checkboxRich("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+              +checkboxRich("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
+          .room-filter__rooms
+            +dropdownRoom("удобства номера")
+          .room-filter__checkbox-list
+            +checkboxList("дополнительные удобства")
+        .room-filter__cards.cards-room
+          h1.cards-room__title Номера, которые мы для вас подобрали
+          .cards-room__cards
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+          .card-room__pagination
+            include /components/buttons/paginator/paginator.pug
+      .popup.popup-reg
+        include /pop-up/reg-card/reg-card.pug
+      .popup.popup-login
+        include /pop-up/login-card/login-card.pug
+      include  /components/footers/footer/footer.pug
+      include  /components/footers/footer-mobile/footer-mobile.pug

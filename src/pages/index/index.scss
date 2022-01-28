@@ -6,7 +6,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 40%;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		align-items: center;
 		padding: 40px 0;
 		border: 2px solid $dark-75;
@@ -22,6 +22,11 @@
 		font-size: $h1;
 		line-height: $lh_h2;
 		color: $dark-100;
+	}
+	&-web {
+		&__column:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 }
 .title-page {

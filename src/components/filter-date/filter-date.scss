@@ -1,11 +1,15 @@
 /* start filter-date style */
 @import "@variables";
+.filter-date__container {
+	margin-bottom: 40px;
+	width: 266px;
+}
 .filter-date {
 	position: relative;
-	margin-bottom: 40px;
+	box-sizing: border-box;
 	&__input {
 		color: $dark-75;
-		width: 266px;
+		width: 100%;
 		height: 44px;
 		border: 1px solid $dark-25;
 		border-radius: 4px;
@@ -34,7 +38,7 @@
 	&__label {
 		position: absolute;
 		font-size: 13px;
-		right: 69px;
+		right: 6%;
 		top: 50%;
 		transition: 0.4s;
 	}

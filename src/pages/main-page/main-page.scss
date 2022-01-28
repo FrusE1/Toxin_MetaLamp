@@ -1,12 +1,10 @@
-/* start site style */
+/* start main-page style */
 @import "@variables";
 @import "@mixin";
 .main-page {
-  &__content {
-    position: relative;
-    width: 100%;
-    flex: 1 1 100%;
-  }
+  position: relative;
+  width: 100%;
+  flex: 1 1 100%;
   &__text {
     max-width: 297px;
     position: absolute;
@@ -143,4 +141,4 @@
     left: 0;
   }
 }
-/* end site style */
+/* end main-page style */

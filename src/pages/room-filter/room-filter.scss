@@ -1,0 +1,39 @@
+/* start room-filter style */
+@import "@variables";
+@import "@mixin";
+.room-filter {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex: 1 1 100%;
+  &__article {
+    max-width: 266px;
+    margin-right: 40px;
+  }
+  &__filter-date {
+    margin-bottom: 20px;
+  }
+  &__guests {
+    margin-bottom: 30px;
+  }
+  &__slider {
+    margin-bottom: 30px;
+  }
+  &__checkbox {
+    margin-bottom: 30px;
+  }
+  &__checkbox-rich {
+    margin-bottom: 30px;
+  }
+  &__rooms {
+    margin-bottom: 20px;
+  }
+}
+.cards-room {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+  }
+}
+/* end room-filter style */

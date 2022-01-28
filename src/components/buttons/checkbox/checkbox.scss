@@ -1,7 +1,9 @@
 @import "@variables";
 /* start checkbox style */
-.checkbox {
+.checkbox-container {
 	margin-bottom: 41px;
+}
+.checkbox {
 	&__title {
 		margin-bottom: 17px;
 	}
@@ -9,6 +11,9 @@
 		margin-bottom: 13px;
 	}
 	&__label {
+		font-size: $fz_body;
+		text-transform: none;
+		font-weight: 400;
 		cursor: pointer;
 		color: $dark-50;
 		display: block;

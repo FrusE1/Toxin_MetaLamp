@@ -1,26 +1,27 @@
-.dropdown-room
-	.dropdown-room__title-block
-		h3.dropdown-room__title.title-style Dropdown
-		.dropdown-room__subtitle Default
-	input(type="text" class="dropdown-room__input" value="Сколько комнат" id="more-room")
-	label(class="dropdown-room__label icon-more" for="more-room")
-	.dropdown-room__block(hidden)
-		ul.dropdown-room__list
-			li.dropdown-room__item
-				p.dropdown-room__text спальни
-				.dropdown-room__counter
-					button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
-					span(class="dropdown-room__value") 2
-					button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
-			li.dropdown-room__item
-				p.dropdown-room__text кровати
-				.dropdown-room__counter
-					button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
-					span(class="dropdown-room__value") 2
-					button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
-			li.dropdown-room__item
-				p.dropdown-room__text ванные комнаты
-				.dropdown-room__counter
-					button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
-					span(class="dropdown-room__value") 1
-					button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
+mixin dropdownRoom(title, text)
+	.dropdown-room
+		.dropdown-room__title.title-room
+			h3.title-room__title.title-style=title
+			.title-room__text=text
+		input(type="text" name="number-of-rooms" class="dropdown-room__input" value="Сколько комнат" id="more-room")
+		label(class="dropdown-room__label icon-more" for="more-room")
+		.dropdown-room__block(hidden)
+			ul.dropdown-room__list
+				li.dropdown-room__item
+					p.dropdown-room__text спальни
+					.dropdown-room__counter
+						button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
+						span(class="dropdown-room__value") 2
+						button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
+				li.dropdown-room__item
+					p.dropdown-room__text кровати
+					.dropdown-room__counter
+						button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
+						span(class="dropdown-room__value") 2
+						button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
+				li.dropdown-room__item
+					p.dropdown-room__text ванные комнаты
+					.dropdown-room__counter
+						button(class="dropdown-room__btn dropdown-room__btn_minus" data-direction="minus")
+						span(class="dropdown-room__value") 1
+						button(class="dropdown-room__btn dropdown-room__btn_plus" data-direction="plus")
