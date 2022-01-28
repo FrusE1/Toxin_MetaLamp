@@ -1,8 +1,9 @@
 /* start reg-card style */
 @import "@variables";
+@import "@mixin";
 .reg-card {
 	&__title {
-		font-size: $h1;
+		@include adaptive-value("font-size", 24, 16, 1);
 		line-height: $lh_h1;
 		color: $dark-100;
 		font-weight: 700;

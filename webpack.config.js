@@ -20,7 +20,7 @@ const PAGES_DIRNAMES = [
 	'colors-type/',
 	'cards/',
 	'headers-footers/',
-	'site/'
+	'main-page/'
 ];
 
 const PAGES_DIR = PAGES_DIRNAMES.map(dirName => PAGES_ROOT + dirName);

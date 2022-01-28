@@ -13,7 +13,6 @@
     flex-direction: column;
     padding-top: calc(20px + (120 - 20) * ((100vw - 320px) / (#{$table-width} - 320)));
     padding-bottom: calc(20px + (120 - 20) * ((100vw - 320px) / (#{$table-width} - 320)));
-    // padding: 120px 10px;
     align-items: center;
   }
   &__logo {
@@ -38,6 +37,11 @@
     & > *:not(:first-child) {
       font-size: 22px;
     }
+  }
+}
+@media (min-width: #{$table-width + px}) {
+  .footer-mobile__text {
+    font-size: 14px;
   }
 }
 /* end footer-mobile style */

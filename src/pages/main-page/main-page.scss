@@ -20,7 +20,7 @@
   }
   &__background.reg-background {
     display: none;
-    @include adaptive-value("height", 683, 500, 1);
+    height: 683px;
   }
   &__image {
     transform: scale(1.07);
@@ -36,7 +36,8 @@
   &__image.reg-image {
     transform: scale(1);
     & img {
-      object-position: -28px -238px;
+      @include adaptive-value("height", 1220, 783, 1);
+      object-position: 0% -238px;
     }
   }
   &__card {
@@ -52,14 +53,13 @@
   visibility: hidden;
   position: absolute;
   margin: 0 0 0 -190px;
+  left: 50%;
   transition: 0.5s;
   &-reg {
     top: 90px;
-    left: 50%;
   }
   &-login {
     top: 233px;
-    left: 50%;
   }
 }
 .popup.popup_active {
@@ -69,7 +69,7 @@
 @media (max-width: 1100px) {
   .main-page {
     &__background {
-      min-height: 650px;
+      min-height: 550px;
     }
     &__image img {
       min-height: 650px;
@@ -83,14 +83,10 @@
   }
   .main-page {
     &__image img {
-      min-height: 550px;
       object-position: center;
     }
     &__text {
       display: none;
-    }
-    &__background {
-      min-height: 473px;
     }
   }
 }
@@ -103,6 +99,10 @@
   .main-page {
     &__card {
       left: 0;
+    }
+    &__background.reg-background {
+      display: none;
+      height: 600px;
     }
   }
 }
@@ -119,8 +119,28 @@
 @media (max-width: #{$table-width + 1 + px}) {
   .main-page {
     &__card {
-      top: 18.1%;
+      top: 16%;
     }
+  }
+}
+@media (max-width: 1200px) {
+  .popup {
+    &-reg {
+      top: 120px;
+    }
+  }
+}
+@media (max-width: #{$phone-width + px}) {
+  .popup {
+    &-reg {
+      top: 140px;
+    }
+  }
+}
+@media (max-width: 380px) {
+  .popup {
+    margin: 0 0 0 0;
+    left: 0;
   }
 }
 /* end site style */
