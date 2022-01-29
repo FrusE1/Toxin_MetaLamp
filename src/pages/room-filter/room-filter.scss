@@ -31,9 +31,20 @@
   }
 }
 .cards-room {
+  &__title {
+    font-size: $h1;
+    line-height: $lh_h1;
+    color: $dark-100;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
   &__cards {
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 12px;
+    margin-bottom: 35px;
   }
 }
 /* end room-filter style */

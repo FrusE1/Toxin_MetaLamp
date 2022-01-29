@@ -6,8 +6,10 @@
 .checkbox-list__ui {
 	position: relative;
 	margin-bottom: 40px;
+	max-width: 266px;
 }
 .checkbox-list {
+	max-width: 266px;
 	position: relative;
 	&__label {
 		cursor: pointer;
@@ -21,7 +23,7 @@
 		font-size: 13px;
 		position: absolute;
 		top: 6px;
-		right: 70px;
+		right: 5.5%;
 		transition: 0.5s;
 	}
 	&.dropdown-list_active .checkbox-list__items {

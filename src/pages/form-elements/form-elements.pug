@@ -6,6 +6,7 @@ block content
 	include /components/sub-field/sub-field.pug
 	include /components/date-dropdown/date-dropdown.pug
 	include /components/dropdown/dropdown-room/dropdown-room.pug
+	include /components/buttons/paginator/paginator.pug
 	body.body-forms
 		include /pages/header-ui/header_ui.pug
 		.container-total._container
@@ -32,7 +33,7 @@ block content
 						include /components/slider/slider-block.pug
 					include /components/buttons/buttons/buttons.pug
 					.paginator-container
-						include /components/buttons/paginator/paginator.pug
+						+pagination("pagination")
 			.form-element__container-two._container-form
 				.form-element__drop-rooms
 					.form-element__dropdown-room

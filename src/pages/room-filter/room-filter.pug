@@ -10,6 +10,7 @@ block content
   include /components/checkbox-rich/checkbox-rich.pug
   include /components/dropdown/dropdown-room/dropdown-room.pug
   include /components/checkbox-list/checkbox-list.pug
+  include /components/buttons/paginator/paginator.pug
   body
     .wrapper.wrapper-toxin
       include /components/headers/header-reg/header-reg.pug
@@ -40,20 +41,20 @@ block content
         .room-filter__cards.cards-room
           h1.cards-room__title Номера, которые мы для вас подобрали
           .cards-room__cards
+            +cardFocusSlider()
             +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
-            +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
+            +cardSlider("../src/images/card-3.jpg", "../src/images/card-2.jpg", "3", "980", "люкс", "8 500₽", "35")
+            +cardSlider("../src/images/card-4.jpg", "../src/images/card-3.jpg", "5", "856", "", "7 300₽", "19")
+            +cardSlider("../src/images/card-5.jpg", "../src/images/card-4.jpg", "4", "740", "", "6 000₽", "44")
+            +cardSlider("../src/images/card-6.jpg", "../src/images/card-5.jpg", "3", "982", "", "5 800₽", "56")
+            +cardSlider("../src/images/card-7.jpg", "../src/images/card-6.jpg", "5", "678", "", "5 500₽", "45")
+            +cardSlider("../src/images/card-8.jpg", "../src/images/card-7.jpg", "4", "450", "", "5 300₽", "39")
+            +cardSlider("../src/images/card-9.jpg", "../src/images/card-8.jpg", "3", "350", "", "5 000₽", "77")
+            +cardSlider("../src/images/card-10.jpg", "../src/images/card-9.jpg", "5", "666", "", "5 000₽", "25")
+            +cardSlider("../src/images/card-11.jpg", "../src/images/card-10.jpg", "3", "444", "", "5 000₽", "15")
+            +cardSlider("../src/images/card-12.jpg", "../src/images/card-11.jpg", "3", "352", "", "5 000₽", "55")
           .card-room__pagination
-            include /components/buttons/paginator/paginator.pug
+            +pagination("")
       .popup.popup-reg
         include /pop-up/reg-card/reg-card.pug
       .popup.popup-login
