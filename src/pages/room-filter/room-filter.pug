@@ -6,29 +6,28 @@ block content
   include /pop-up/card/card.pug
   include /pop-up/card/card-focus/card-focus.pug
   include /components/dropdown/dropdown-guests/dropdown-guests.pug
-  include /components/buttons/checkbox/checkbox.pug
+  include /components/buttons/checkbox/checkbox-block.pug
   include /components/checkbox-rich/checkbox-rich.pug
   include /components/dropdown/dropdown-room/dropdown-room.pug
   include /components/checkbox-list/checkbox-list.pug
   include /components/buttons/paginator/paginator.pug
+  include /components/slider/slider.pug
   body
     .wrapper.wrapper-toxin
       include /components/headers/header-reg/header-reg.pug
       include /components/headers/header-login/header-login.pug
+      include /components/filter-date/filter-date.pug
       .room-filter._container
         .room-filter__article
           .room-filter__filter-date
-            include /components/filter-date/filter-date.pug
+            +filterDate("даты пребывания в отеле")
           .room-filter__guests
             +dropGuests("Гости", "0", "0", "0")
-          .room-filter__slider
-            include /components/slider/slider-block.pug
-          .room-filter__checkbox.checkbox
-            h3.checkbox__title.title-style правила дома
-            .checkbox__list
-              +checkbox("smoking", "Можно курить")
-              +checkbox("pets", "Можно с питомцами", true)
-              +checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
+          .room-filter__slider.slider
+            +sliderElem("диапазон цены")
+            .slider__text Стоимость за сутки пребывания в номере
+          .room-filter__checkbox
+            +checkboxElem("правила дома")
           .room-filter__checkbox-rich.checkbox-rich
             h3.checkbox-rich__title.title-style доступность
             .checkbox-rich__container
@@ -53,11 +52,11 @@ block content
             +cardSlider("../src/images/card-10.jpg", "../src/images/card-9.jpg", "5", "666", "", "5 000₽", "25")
             +cardSlider("../src/images/card-11.jpg", "../src/images/card-10.jpg", "3", "444", "", "5 000₽", "15")
             +cardSlider("../src/images/card-12.jpg", "../src/images/card-11.jpg", "3", "352", "", "5 000₽", "55")
-          .card-room__pagination
+          .cards-room__pagination
             +pagination("")
       .popup.popup-reg
         include /pop-up/reg-card/reg-card.pug
       .popup.popup-login
         include /pop-up/login-card/login-card.pug
-      include  /components/footers/footer/footer.pug
-      include  /components/footers/footer-mobile/footer-mobile.pug
+      include /components/footers/footer/footer.pug
+      include /components/footers/footer-mobile/footer-mobile.pug

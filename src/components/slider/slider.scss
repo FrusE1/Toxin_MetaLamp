@@ -4,41 +4,16 @@
 	margin-bottom: 44px;
 }
 .slider {
+	max-width: 266px;
 	&-header {
 		display: flex;
+		justify-content: space-between;
 		margin-bottom: 22px;
-	}
-	&__price {
-		color: $dark-50;
-		line-height: 0;
-	}
-	&__title {
-		margin-right: 62px;
-	}
-	&__label:first-child {
-		margin-right: 4px;
-	}
-	&__label:last-child {
-		margin-left: 4px;
-	}
-	&__currency {
-		line-height: 100%;
-	}
-	&__input {
-		font-size: $h3;
-		color: $dark-50;
-		width: 38px;
-		height: 10px;
-	}
-	&__input_right {
-		text-align: end;
-	}
-	&__label {
-		font-size: $h3;
-		line-height: $lh_h3;
-	}
-	&__filter {
-		max-width: 266px;
+		&__value {
+			font-size: $h3;
+			line-height: $lh_h3;
+			color: $dark-50;
+		}
 	}
 }
 .noUi-handle {
@@ -53,10 +28,10 @@
 	display: none;
 }
 .noUi-horizontal .noUi-handle {
-	top: -6.5px;
+	top: -5.8px;
 	right: -6px;
-	width: 16px;
-	height: 16px;
+	width: 15px;
+	height: 15px;
 }
 .noUi-target {
 	background: none;

@@ -1,9 +1,6 @@
-mixin sliderNumber()
-	.slider__price
-		label.slider__label
-			input(type="number" min="1000" max="15000" class="slider__input slider__input_right" value="2000" id="input-0")
-			span.slider__currency ₽
-		span.slider__dash -
-		label.slider__label
-			input(type="number" min="1000" max="15000" class="slider__input slider__input_left" value="12000" id="input-1")
-			span.slider__currency ₽
+mixin sliderElem(title)
+	.slider
+		.slider__header.slider-header
+			h3.slider-header__title.title-style=title
+			.slider-header__value
+		.slider__filter

@@ -7,74 +7,6 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 			const valueDropRoom = dropRoomElem.querySelectorAll('.dropdown-room__value');
 			const btnDropRoomMinus = dropRoomElem.querySelectorAll('.dropdown-room__btn_minus')
 			let inputDropRoomVar = "Сколько комнат";
-			// Значения установленные заранее
-			let valueDropRoomOnePrev = +valueDropRoom[0].textContent;
-			let valueDropRoomTwoPrev = +valueDropRoom[1].textContent;
-			let valueDropRoomThreePrev = +valueDropRoom[2].textContent;
-
-			let bedroomsPrev;
-			if (valueDropRoomOnePrev == 0) {
-				bedroomsPrev = `0 спален`;
-			} else if (valueDropRoomOnePrev == 1) {
-				bedroomsPrev = `${valueDropRoomOnePrev} спальня`;
-			}
-			else if (valueDropRoomOnePrev <= 4) {
-				bedroomsPrev = `${valueDropRoomOnePrev} спальни`;
-			}
-			else if (valueDropRoomOnePrev > 4) {
-				bedroomsPrev = `${valueDropRoomOnePrev} спален`;
-			};
-
-			let bedDropPrev;
-			if (valueDropRoomTwoPrev == 0) {
-				bedDropPrev = ``;
-			} else if (valueDropRoomTwoPrev == 1) {
-				bedDropPrev = `, ${valueDropRoomTwoPrev} кровать`;
-			}
-			else if (valueDropRoomTwoPrev <= 4) {
-				bedDropPrev = `, ${valueDropRoomTwoPrev} кровати`;
-			}
-			else if (valueDropRoomTwoPrev > 4) {
-				bedDropPrev = `, ${valueDropRoomTwoPrev} кроватей`;
-			};
-
-			let bathroomsDropPrev;
-			if (valueDropRoomThreePrev == 0) {
-				bathroomsDropPrev = ``;
-			} else if (valueDropRoomThreePrev == 1) {
-				bathroomsDropPrev = `, ${valueDropRoomThreePrev} ванная комната`;
-			}
-			else if (valueDropRoomThreePrev <= 4) {
-				bathroomsDropPrev = `, ${valueDropRoomThreePrev} ванные комнаты`;
-			}
-			else if (valueDropRoomThreePrev > 4) {
-				bathroomsDropPrev = `, ${valueDropRoomThreePrev} ванных комнат`;
-			};
-
-			let valueDropRoomSummPrev = valueDropRoomOnePrev + valueDropRoomTwoPrev + valueDropRoomThreePrev;
-			let inputDropRoomSummPrev = bedroomsPrev + bedDropPrev + bathroomsDropPrev;
-			if (valueDropRoomSummPrev == 0) {
-				inputDropRoom.value = inputDropRoomVar;
-			} else if (valueDropRoomSummPrev == 1) {
-				inputDropRoom.value = `${inputDropRoomSummPrev}`;
-			} else if (valueDropRoomSummPrev <= 4) {
-				inputDropRoom.value = `${inputDropRoomSummPrev}`;
-			} else if (valueDropRoomSummPrev > 4) {
-				inputDropRoom.value = `${inputDropRoomSummPrev}`;
-			};
-
-			if (valueDropRoomOnePrev >= 1) {
-				btnDropRoomMinus[0].style.color = "rgba(31, 32, 65, 0.5)";
-				btnDropRoomMinus[0].style.borderColor = "rgba(31, 32, 65, 0.5)";
-			}
-			if (valueDropRoomTwoPrev >= 1) {
-				btnDropRoomMinus[1].style.color = "rgba(31, 32, 65, 0.5)";
-				btnDropRoomMinus[1].style.borderColor = "rgba(31, 32, 65, 0.5)";
-			}
-			if (valueDropRoomThreePrev >= 1) {
-				btnDropRoomMinus[2].style.color = "rgba(31, 32, 65, 0.5)";
-				btnDropRoomMinus[2].style.borderColor = "rgba(31, 32, 65, 0.5)";
-			}
 
 			// Основной код подсчета гостей
 			let targetRoomDrop = event.target;
@@ -101,6 +33,7 @@ if (document.querySelector('.dropdown-room__block')) { // проверка на�
 			let valueDropRoomTwo = +valueDropRoom[1].textContent;
 			let valueDropRoomThree = +valueDropRoom[2].textContent;
 			let bedrooms;
+			// вывод текста в инпут
 			if (valueDropRoomOne == 0) {
 				bedrooms = `0 спален`;
 			} else if (valueDropRoomOne == 1) {

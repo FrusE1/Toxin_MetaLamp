@@ -1,7 +1,8 @@
-include /components/buttons/checkbox/checkbox.pug
-.checkbox
-	h3.checkbox__title.title-style Checkbox Buttons
-	.checkbox__list
-		+checkbox("smoking", "Можно курить")
-		+checkbox("pets", "Можно с питомцами", true)
-		+checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
+mixin checkboxElem(title)
+	include /components/buttons/checkbox/checkbox.pug
+	.checkbox
+		h3.checkbox__title.title-style=title
+		.checkbox__list
+			+checkbox("smoking", "Можно курить")
+			+checkbox("pets", "Можно с питомцами", true)
+			+checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)

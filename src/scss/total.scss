@@ -21,7 +21,6 @@ body {
 }
 ._container {
 	max-width: $dekstop-width;
-	padding: 0 5px;
 }
 .title-style {
 	@include adaptive-value("font-size", 12, 10, 1);

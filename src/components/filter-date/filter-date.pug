@@ -1,4 +1,5 @@
-.filter-date
-	h3.filter-date__text.title-style filter date dropdown
-	input(class="filter-date__input filter-date__input-calendar" type="text", id="calendar-filter", placeholder="ДД.ММ - ДД.ММ")
-	label(class="filter-date__label icon-more")
+mixin filterDate(title)
+	.filter-date
+		h3.filter-date__text.title-style=title
+		input(class="filter-date__input filter-date__input-calendar" type="text", id="calendar-filter", placeholder="ДД.ММ - ДД.ММ")
+		label(class="filter-date__label icon-more")

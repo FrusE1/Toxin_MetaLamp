@@ -9,6 +9,7 @@
 	max-width: 266px;
 }
 .checkbox-list {
+	box-sizing: border-box;
 	max-width: 266px;
 	position: relative;
 	&__label {
@@ -23,7 +24,7 @@
 		font-size: 13px;
 		position: absolute;
 		top: 6px;
-		right: 5.5%;
+		right: 6%;
 		transition: 0.5s;
 	}
 	&.dropdown-list_active .checkbox-list__items {

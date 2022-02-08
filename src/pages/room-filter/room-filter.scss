@@ -5,11 +5,10 @@
   margin-top: 30px;
   position: relative;
   display: flex;
-  width: 100%;
-  flex: 1 1 100%;
+  justify-content: space-between;
   &__article {
     max-width: 266px;
-    margin-right: 40px;
+    padding-right: 15px;
   }
   &__filter-date {
     margin-bottom: 20px;
@@ -21,13 +20,14 @@
     margin-bottom: 30px;
   }
   &__checkbox {
+    max-width: 230px;
     margin-bottom: 30px;
   }
   &__checkbox-rich {
-    margin-bottom: 30px;
+    margin-bottom: 28.5px;
   }
   &__rooms {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 .cards-room {
@@ -41,10 +41,35 @@
   &__cards {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 270px);
     grid-row-gap: 20px;
     grid-column-gap: 12px;
     margin-bottom: 35px;
+  }
+}
+.slider {
+  &__text {
+    margin-top: 15.5px;
+    font-size: $h3;
+    line-height: $lh_h3;
+    color: $dark-50;
+  }
+}
+@media (min-width: 1440px) {
+  .room-filter._container {
+    align-self: center;
+  }
+  .room-filter {
+    &__article {
+      padding-right: 60px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .cards-room {
+    &__cards {
+      grid-template-columns: repeat(2, 270px);
+    }
   }
 }
 /* end room-filter style */

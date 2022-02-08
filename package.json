@@ -9,7 +9,8 @@
 	"dependencies": {
 		"air-datepicker": "^3.0.1",
 		"nouislider": "^15.5.0",
-		"swiper": "^7.4.1"
+		"swiper": "^7.4.1",
+		"wnumb": "^1.2.0"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^4.0.0-alpha.0",

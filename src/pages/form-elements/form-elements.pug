@@ -7,6 +7,9 @@ block content
 	include /components/date-dropdown/date-dropdown.pug
 	include /components/dropdown/dropdown-room/dropdown-room.pug
 	include /components/buttons/paginator/paginator.pug
+	include /components/filter-date/filter-date.pug
+	include /components/slider/slider.pug
+	include /components/buttons/checkbox/checkbox-block.pug
 	body.body-forms
 		include /pages/header-ui/header_ui.pug
 		.container-total._container
@@ -19,18 +22,18 @@ block content
 					.date-dropdown-container
 						+dateDropdown("date Dropdown", "date Dropdown")
 					.filter-date__container
-						include /components/filter-date/filter-date.pug
+						+filterDate("filter date dropdown")
 					+subField("subscription text field", "Email")
 				.form-element__second-block
 					.checkbox-container
-						include /components/buttons/checkbox/checkbox-block.pug
+						+checkboxElem("Checkbox Buttons")
 					include /components/buttons/radio-button/radio-button-block.pug
 					include /components/buttons/toggle/toggle-block.pug
 					include /components/buttons/like/like-block.pug
 					include /components/buttons/rate/rate-block.pug
 				.form-element__third-block
 					.slider__container
-						include /components/slider/slider-block.pug
+						+sliderElem("Range Slider")
 					include /components/buttons/buttons/buttons.pug
 					.paginator-container
 						+pagination("pagination")
