@@ -115,7 +115,6 @@ if (document.querySelector('.dropdown-guests')) { // проверка налич
 
 		btnDropReady.addEventListener("click", function (event) { // Кнопка "применить"
 			dropGuestsElem.classList.remove('_active-dropdown-guests');
-			event.preventDefault();
 		});
 
 		document.addEventListener("click", showList);

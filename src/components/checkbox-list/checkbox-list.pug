@@ -5,7 +5,7 @@ mixin checkboxList(title, classDrop)
 			input(type="checkbox" class="checkbox-list__input")
 			span(class="checkbox-list__icon icon-more")
 			=title
-		.checkbox-list__items( class=classDrop hidden)
+		.checkbox-list__items(hidden)
 			+checkbox("breakfast", "Завтрак")
 			+checkbox("desk", "Письменный стол", true)
 			+checkbox("cheair-feeding", "Стул для кормления", true)

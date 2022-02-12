@@ -5,7 +5,7 @@ if (document.querySelector('.popup')) {     // проверка наличия p
   const cardReg = document.querySelector('.popup-reg');
   const cardLogin = document.querySelector('.popup-login');
   const roomSelect = document.querySelector('.main-page__card');
-  const backgroundPage = document.querySelector('.main-page__content');
+  const backgroundPage = document.querySelector('.main-page');
   const btnCardLogin = document.querySelector('.login-card__button');
   const headerLogin = document.querySelector('.header-login');
   const headerReg = document.querySelector('.header-reg');

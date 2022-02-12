@@ -23,7 +23,7 @@
 	&__icon {
 		font-size: 13px;
 		position: absolute;
-		top: 6px;
+		top: 5px;
 		right: 6%;
 		transition: 0.5s;
 	}
@@ -32,7 +32,7 @@
 		margin-top: 16px;
 	}
 	&.dropdown-list_active .checkbox-list__icon {
-		top: 5px;
+		top: 4px;
 		transform: rotateX(180deg);
 	}
 	&__items > label:not(:last-child) {

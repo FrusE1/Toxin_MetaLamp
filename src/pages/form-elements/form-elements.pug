@@ -10,6 +10,7 @@ block content
 	include /components/filter-date/filter-date.pug
 	include /components/slider/slider.pug
 	include /components/buttons/checkbox/checkbox-block.pug
+	include /components/checkbox-rich/checkbox-rich-block.pug
 	body.body-forms
 		include /pages/header-ui/header_ui.pug
 		.container-total._container
@@ -50,7 +51,7 @@ block content
 			.form-element__container-three._container-form
 				.form-element__list
 					include /components/checkbox-list/checkbox-list-block.pug
-					include /components/checkbox-rich/checkbox-rich-block.pug
+					+checkboxRich("rich Checkbox Buttons")
 					include /components/bullet-list/bullet-list.pug
 			.form-element__container-four._container-form
 				.form-element__other

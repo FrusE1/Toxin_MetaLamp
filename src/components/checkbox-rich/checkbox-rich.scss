@@ -7,7 +7,7 @@
 		margin-bottom: 14px;
 	}
 	&__container {
-		max-width: 266px;
+		max-width: 260px;
 	}
 	&__container > label:not(:last-child) {
 		margin-bottom: 6px;
@@ -20,6 +20,9 @@
 		line-height: $lh_h3;
 	}
 	&__label {
+		&:first-child {
+			max-width: 235px;
+		}
 		cursor: pointer;
 		font-size: $fz_body;
 		line-height: $lh_body;

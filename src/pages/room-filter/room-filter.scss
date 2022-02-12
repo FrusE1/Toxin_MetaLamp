@@ -18,11 +18,11 @@
     margin-bottom: 30px;
   }
   &__slider {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
   &__checkbox {
     max-width: 230px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
   &__checkbox-rich {
     margin-bottom: 28.5px;
@@ -46,6 +46,9 @@
     grid-row-gap: 19px;
     grid-column-gap: 12px;
     margin-bottom: 40px;
+  }
+  &__pagination {
+    padding-right: 15px;
   }
 }
 .slider {
