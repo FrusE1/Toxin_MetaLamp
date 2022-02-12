@@ -44,10 +44,6 @@
   }
   &__link {
     color: $dark-50;
-    & span {
-      font-weight: 700;
-      color: $dark-75;
-    }
     & > .icon-more {
       position: absolute;
       @include adaptive-value("font-size", 13, 10, 1);

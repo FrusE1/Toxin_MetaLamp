@@ -9,11 +9,10 @@ if (document.querySelector('.slider')) { // проверка наличия slid
 		noUiSlider.create(rangeSlider, {
 			start: [5000, 10000],
 			connect: true,
-			step: 100,
 			range: {
-				'min': [1000],
-				'31.1%': [5000],
-				'63.2%': [10000],
+				'min': [1000, 100],
+				'31.1%': [5000, 100],
+				'63.2%': [10000, 100],
 				'max': [15000]
 			},
 			format: wNumb({

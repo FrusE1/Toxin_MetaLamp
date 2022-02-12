@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
   &__article {
     max-width: 266px;
     padding-right: 15px;
@@ -42,9 +43,9 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 270px);
-    grid-row-gap: 20px;
+    grid-row-gap: 19px;
     grid-column-gap: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 }
 .slider {
@@ -54,6 +55,11 @@
     line-height: $lh_h3;
     color: $dark-50;
   }
+}
+.border-bottom {
+  width: 100%;
+  height: 1px;
+  background-color: $dark-25;
 }
 @media (min-width: 1440px) {
   .room-filter._container {

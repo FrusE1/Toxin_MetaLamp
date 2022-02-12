@@ -22,7 +22,7 @@ block content
           .room-filter__filter-date
             +filterDate("даты пребывания в отеле")
           .room-filter__guests
-            +dropGuests("Гости", "0", "0", "0")
+            +dropGuests("Гости", "2", "0", "1")
           .room-filter__slider.slider
             +sliderElem("диапазон цены")
             .slider__text Стоимость за сутки пребывания в номере
@@ -54,6 +54,7 @@ block content
             +cardSlider("../src/images/card-12.jpg", "../src/images/card-11.jpg", "3", "352", "", "5 000₽", "55")
           .cards-room__pagination
             +pagination("")
+      .border-bottom
       .popup.popup-reg
         include /pop-up/reg-card/reg-card.pug
       .popup.popup-login
