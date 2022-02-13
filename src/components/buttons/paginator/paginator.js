@@ -115,6 +115,13 @@ if (document.querySelector('.paginator')) { // проверка наличия p
         pagination(totalPages, totalPages);
       });
     };
+    // Изменение числа в зависимости от страницы пагинации
+    const spanPagination = document.querySelector(".paginator-span");
+    if (page == 1) {
+      spanPagination.innerHTML = `${1 * page} – ${12 * page}`;
+    } else {
+      spanPagination.innerHTML = `${12 * page - 11} – ${12 * page}`;
+    }
   };
   pagination(totalPages, 1);
 };
