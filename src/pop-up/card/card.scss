@@ -1,9 +1,10 @@
 /* start card style */
 @import "@variables";
+@import "@mixin";
 .slider-card {
   background-color: #fff;
   border-radius: 4px;
-  width: 270px;
+  width: calc(190px + (270 - 190) * ((100vw - 320px) / (1440 - 320)));
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   &__item:not(:last-child){
     margin-bottom: 38px;
@@ -16,13 +17,19 @@
     }
   }
   &__border {
-    margin: 9px auto 9px auto;
-    width: 230px;
+    margin-top: calc(5px + (9 - 5) * ((100vw - 320px) / (1440 - 320)));
+    margin-bottom: calc(5px + (9 - 5) * ((100vw - 320px) / (1440 - 320)));
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(180px + (230 - 180) * ((100vw - 320px) / (1440 - 320)));
     height: 1px;
     background: $dark-10;
   }
   &__bottom {
-    padding: 20px 18px 19px 20px;
+    @include adaptive-value("padding-top", 20, 5, 1);
+    @include adaptive-value("padding-bottom", 19, 5, 1);
+    @include adaptive-value("padding-right", 18, 5, 1);
+    @include adaptive-value("padding-left", 20, 5, 1);
   }
   &__amount {
     padding-right: 2px;
@@ -30,8 +37,8 @@
 }
 .swiper {
   border-radius: 4px 4px 0 0;
-  width: 270px;
-  height: 152px;
+  width: calc(190px + (270 - 190) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(120px + (152 - 120) * ((100vw - 320px) / (1440 - 320)));
   &:hover > .swiper-button {
     opacity: 1;
   }
@@ -121,7 +128,9 @@
 .amount-card {
   display: flex;
   color: $dark-50;
+  font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1440 - 320)));
   &__number {
+    font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 700;
     padding-right: 4px;
   }
@@ -131,35 +140,75 @@
 	display: flex;
 	justify-content: space-between;
 	&__number {
-		font-size: $h2;
+    font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (1440 - 320)));
 		line-height: $lh_h2;
 		font-weight: 700;
 		color: $dark-100;
 		& > span:first-child {
 			padding-right: 4px;
-			font-size: $fz_body;
+			font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1440 - 320)));
 			line-height: $lh_body;
 		}
 		& > span:last-child {
-			padding-left: 9px;
+      padding-left: calc(6px + (9 - 6) * ((100vw - 320px) / (1440 - 320)));
 			text-transform: uppercase;
-			font-size: $h3;
+      font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1440 - 320)));
 			line-height: $lh_h3;
 			color: $purple;
 		}
 	}
   &__price {
 		padding-top: 1px;
-		font-size: $h3;
+    font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (1440 - 320)));
 		line-height: $lh_h3;
 		color: $dark-50;
 		& span {
 			padding-right: 3.5px;
-			font-size: $fz_body;
+			font-size: calc(11px + (14 - 11) * ((100vw - 320px) / (1440 - 320)));
 			line-height: $lh_body;
 			font-weight: 700;
 			color: $dark-50;
 		}
 	}
+}
+@media (max-width: 450px) {
+  .slider-card {
+    width: 280px;
+    &__border {
+      margin: 9px auto 9px auto;
+      width: 260px;
+    }
+    &__bottom {
+      padding: 20px 18px 19px 20px;
+    }
+  }
+  .price-card {
+    &__number {
+      font-size: 19px;
+      & > span:first-child {
+        font-size: 14px;
+      }
+      & > span:last-child {
+        padding-left: 9px;
+        font-size: 12px;
+      }
+    }
+    &__price {
+      font-size: 12px;
+      & span {
+        font-size: 14px
+      }
+    }
+  }
+  .amount-card {
+    font-size: 14px;
+    &__number {
+      font-size:14px;
+    }
+  }
+  .swiper {
+    width: 280px;
+    height: 200px;
+  }
 }
 /* end card style */

@@ -18,7 +18,7 @@
   &__logo {
     margin-bottom: 18px;
   }
-  &__text {
+  &__copy {
     margin-bottom: 22px;
     font-size: calc(10px + (14 - 10) * ((100vw - 320px) / (#{$table-width} - 320)));
   }

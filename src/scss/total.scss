@@ -20,7 +20,9 @@ body {
 	}
 }
 ._container {
-	max-width: $dekstop-width;
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 .title-style {
 	@include adaptive-value("font-size", 12, 10, 1);
@@ -29,20 +31,10 @@ body {
 	color: $dark-100;
 	text-transform: uppercase;
 }
-@media (min-width: $dekstop-width) {
+@media (min-width: 1441px) {
 	._container {
-		margin: 0 auto;
+		max-width: 1750px;
 	}
 }
-@media (max-width: $dekstop-width) {
-	._container {
-		@include adaptive-value("margin-right", 140, 5, 1);
-		@include adaptive-value("margin-left", 140, 5, 1);
-	}
-}
-@media (max-width: $table-width) {
-	._container {
-		margin: 0 auto;
-	}
-}
+
 /* Конец глобальных стилей */

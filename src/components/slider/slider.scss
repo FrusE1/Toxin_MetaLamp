@@ -1,5 +1,6 @@
 /* start slider style */
 @import "@variables";
+@import "@mixin";
 .slider__container {
 	margin-bottom: 44px;
 }
@@ -10,7 +11,7 @@
 		justify-content: space-between;
 		margin-bottom: 22px;
 		&__value {
-			font-size: $h3;
+			@include adaptive-value("font-size", 12, 10, 1);
 			line-height: $lh_h3;
 			color: $dark-50;
 		}

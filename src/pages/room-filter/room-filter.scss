@@ -2,14 +2,15 @@
 @import "@variables";
 @import "@mixin";
 .room-filter {
-  margin-top: 30px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 72px;
+  @include adaptive-value("margin-top", 30, 10, 1);
+  @include adaptive-value("margin-bottom", 72, 20, 1);
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
   &__article {
-    max-width: 266px;
     padding-right: 15px;
+    max-width: 266px;
   }
   &__filter-date {
     margin-bottom: 20px;
@@ -21,7 +22,6 @@
     margin-bottom: 29px;
   }
   &__checkbox {
-    max-width: 230px;
     margin-bottom: 31px;
   }
   &__checkbox-rich {
@@ -33,16 +33,16 @@
 }
 .cards-room {
   &__title {
-    font-size: $h1;
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
     line-height: $lh_h1;
     color: $dark-100;
     font-weight: 700;
-    margin-bottom: 20.5px;
+    @include adaptive-value("margin-bottom", 20.5, 14, 1);
   }
   &__cards {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 270px);
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 19px;
     grid-column-gap: 12px;
     margin-bottom: 40px;
@@ -65,19 +65,87 @@
   background-color: $dark-25;
 }
 @media (min-width: 1440px) {
-  .room-filter._container {
-    align-self: center;
-  }
   .room-filter {
     &__article {
       padding-right: 60px;
     }
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .cards-room {
     &__cards {
-      grid-template-columns: repeat(2, 270px);
+      grid-template-columns: repeat(2, minmax(190px, auto));
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .cards-room {
+    &__cards {
+      grid-template-columns: repeat(3, minmax(190px, auto));
+    }
+  }
+  .room-filter {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      width: calc(210px + (266 - 210) * ((100vw - 320px) / (1024 - 320)));
+      padding-right: 10px;
+    }
+    &__article {
+      padding-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      min-width: 100%;
+      margin-bottom: 20px;
+    }
+    &__filter-date {
+      margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1024 - 320)));
+    }
+    &__guests {
+      margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1024 - 320)));
+    }
+    &__slider {
+      margin-bottom: calc(14px + (29 - 14) * ((100vw - 320px) / (1024 - 320)));
+    }
+    &__checkbox {
+      margin-bottom: calc(15px + (31 - 15) * ((100vw - 320px) / (1024 - 320)));
+    }
+    &__checkbox-rich {
+      margin-bottom: calc(14px + (28.5 - 14) * ((100vw - 320px) / (1024 - 320)));
+    }
+    &__rooms {
+      margin-bottom: calc(13px + (25 - 13) * ((100vw - 320px) / (1024 - 320)));
+    }
+  }
+}
+@media (max-width: 700px) {
+  .cards-room {
+    &__cards {
+      grid-template-columns: repeat(2, minmax(190px, auto));
+    }
+  }
+}
+@media (max-width: 488px) {
+  .room-filter {
+    &__article {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      padding-right: 0;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .cards-room {
+    &__title {
+      max-width: 280px;
+    }
+    &__cards {
+      grid-template-columns: repeat(1, 280px);
     }
   }
 }

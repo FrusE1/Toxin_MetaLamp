@@ -17,7 +17,7 @@
 		@include adaptive-value("font-size", 14, 11, 1);
 		position: relative;
 		width: 100%;
-		height: 44px;
+		@include adaptive-value("height", 44, 30, 1);
 		padding-left: 14.5px;
 		padding-bottom: 2px;
 		color: $dark-75;
@@ -35,7 +35,7 @@
 		position: absolute;
 		font-size: 13px;
 		right: 6%;
-		top: 50%;
+		@include adaptive-value("top", 32, 22, 1);
 		transition: 0.4s;
 	}
 	&__block {
@@ -115,7 +115,7 @@
 	}
 	&._active-dropdown-guests .dropdown-guests__label {
 		transform: rotateX(180deg);
-		top: 45%;
+		@include adaptive-value("top",29, 19, 1);
 		transition: 0.4s;
 	}
 	&-btns {

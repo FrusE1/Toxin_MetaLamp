@@ -1,5 +1,6 @@
 /* start checkbox-rich style */
 @import "@variables";
+@import "@mixin";
 .checkbox-rich {
 	box-sizing: border-box;
 	width: $form_width;
@@ -16,7 +17,7 @@
 		padding-top: 2px;
 		font-weight: 400;
 		color: $dark-50;
-		font-size: $h3;
+		@include adaptive-value("font-size", 12, 10, 1);
 		line-height: $lh_h3;
 	}
 	&__label {
@@ -24,7 +25,7 @@
 			max-width: 235px;
 		}
 		cursor: pointer;
-		font-size: $fz_body;
+		@include adaptive-value("font-size", 14, 12, 1);
 		line-height: $lh_body;
 		color: $dark-75;
 		font-weight: 700;

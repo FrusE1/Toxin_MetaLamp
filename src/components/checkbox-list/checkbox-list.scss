@@ -1,5 +1,6 @@
 /* start checkbox-list style */
 @import "@variables";
+@import "@mixin";
 .checkbox-list-container {
 	width: $form_width;
 }
@@ -24,7 +25,7 @@
 		color: $dark-50;
 		font-size: 13px;
 		position: absolute;
-		top: 5px;
+		@include adaptive-value("top", 5, 6, 1);
 		right: 6%;
 		transition: 0.5s;
 	}
@@ -33,7 +34,7 @@
 		margin-top: 16px;
 	}
 	&.dropdown-list_active .checkbox-list__icon {
-		top: 4px;
+		@include adaptive-value("top", 4, 5, 1);
 		transform: rotateX(180deg);
 	}
 	&__items > label:not(:last-child) {

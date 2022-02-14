@@ -1,25 +1,26 @@
-@import "@variables";
 /* start checkbox style */
+@import "@variables";
+@import "@mixin";
 .checkbox-container {
 	margin-bottom: 41px;
 }
 .checkbox {
 	box-sizing: border-box;
 	&__title {
-		margin-bottom: 17px;
+		@include adaptive-value("margin-bottom", 17, 10, 1);
 	}
 	&__list > label:not(:last-child) {
-		margin-bottom: 13px;
+		@include adaptive-value("margin-bottom", 13, 9, 1);
 	}
 	&__label {
-		font-size: $fz_body;
+		@include adaptive-value("font-size", 14, 11, 1);
 		text-transform: none;
 		font-weight: 400;
 		cursor: pointer;
 		color: $dark-50;
 		display: block;
 		position: relative;
-		padding-left: 30px;
+		@include adaptive-value("padding-left", 30, 20, 1);
 		line-height: 127%;
 	}
 	&__input {
@@ -29,8 +30,8 @@
 		position: absolute;
 		top: -1.5px;
 		left: 0;
-		width: 20px;
-		height: 20px;
+		@include adaptive-value("width", 20, 16, 1);
+		@include adaptive-value("height", 20, 16, 1);
 		border: 1px solid $dark-25;
 		border-radius: 4px;
 		transition: 0.5s;
@@ -44,8 +45,8 @@
 	&__check {
 		font-size: 10px;
 		position: absolute;
+		@include adaptive-value("left", 5, 3, 1);
 		top: 1px;
-		left: 5px;
 		display: none;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 		-webkit-background-clip: text;
