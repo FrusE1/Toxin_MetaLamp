@@ -20,26 +20,29 @@ block content
       include /components/filter-date/filter-date.pug
       .room-filter
         .room-filter__container._container
-          .room-filter__article
-            .room-filter__filter-date.room-filter__item
+          .room-filter__dropdown.dropdown-filter
+            .dropdown-filter__text Фильтр
+              span(class="dropdown-filter__span icon-more")
+          .room-filter__side.side-filter
+            .side-filter__filter-date.side-filter__item
               +filterDate("даты пребывания в отеле")
-            .room-filter__guests.room-filter__item
+            .side-filter__guests.side-filter__item
               +dropGuests("Гости", "2", "0", "1")
-            .room-filter__slider.slider.room-filter__item
+            .side-filter__slider.slider.side-filter__item
               +sliderElem("диапазон цены")
               .slider__text Стоимость за сутки пребывания в номере
-            .room-filter__checkbox.room-filter__item
+            .side-filter__checkbox.side-filter__item
               +checkboxElem("правила дома")
-            .room-filter__checkbox-rich.room-filter__item
+            .side-filter__checkbox-rich.side-filter__item
               +checkboxRich("доступность")
-            .room-filter__rooms.room-filter__item
+            .side-filter__rooms.side-filter__item
               +dropdownRoom("удобства номера")
-            .room-filter__checkbox-list.room-filter__item
+            .side-filter__checkbox-list.side-filter__item
               +checkboxList("дополнительные удобства")
           .room-filter__cards.cards-room
             h1.cards-room__title Номера, которые мы для вас подобрали
             .cards-room__cards
-              +cardSlider("../src/images/card-1.jpg", "../src/images/card-2.jpg", "4", "840", "", "9 900₽", "65")
+              +cardSlider("../src/images/card-1.jpg", "../src/images/card-2.jpg", "5", "888", "люкс", "9 990₽", "145")
               +cardSlider("../src/images/card-2.jpg", "../src/images/card-1.jpg", "4", "840", "", "9 900₽", "65")
               +cardSlider("../src/images/card-3.jpg", "../src/images/card-2.jpg", "3", "980", "люкс", "8 500₽", "35")
               +cardSlider("../src/images/card-4.jpg", "../src/images/card-3.jpg", "5", "856", "", "7 300₽", "19")
@@ -53,7 +56,6 @@ block content
               +cardSlider("../src/images/card-12.jpg", "../src/images/card-11.jpg", "3", "352", "", "5 000₽", "55")
             .cards-room__pagination
               +pagination("")
-      .border-bottom
       .popup.popup-reg
         include /pop-up/reg-card/reg-card.pug
       .popup.popup-login

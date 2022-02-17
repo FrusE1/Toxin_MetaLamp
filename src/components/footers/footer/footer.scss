@@ -17,6 +17,7 @@
       @include adaptive-value("padding-bottom", 95, 10, 1);
     }
     &__logo {
+      margin-right: 10px;
       & > .hotel-logo__link {
         @include adaptive-value("margin-bottom", 17, 8, 1);
       }
@@ -27,39 +28,31 @@
     }
   }
 }
-.hotel-logo__text {
-  @include adaptive-value("font-size", 14, 6, 1);
-  max-width: 260px;
+.hotel-logo {
+  &__text {
+    @include adaptive-value("font-size", 14, 6, 1);
+    max-width: 260px;
+  }
 }
 .hotel-nav {
-  width: 549px;
+  width: calc(380px + (548 - 380) * ((100vw - 768px) / (1440 - 768)));
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  & > *:not(:first-child) {
-    padding: 0 10px;
+  margin-right: calc(10px + (22 - 10) * ((100vw - 768px) / (1440 - 768)));
+  & > *:nth-child(2) {
+    margin-right: calc(0px + (34 - 0) * ((100vw - 1100px) / (1440 - 1100)));
   }
-  & > *:last-child {
-    padding: 0;
+  &__title {
+    color: $dark-100;
+    @include adaptive-value("font-size", 12, 6, 1);
+    line-height: $lh_h3;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include adaptive-value("margin-bottom", 18, 5, 1);
   }
-  &__list {
-    &:nth-child(2) {
-      margin-right: 33px;
-    }
-    & > *:first-child {
-      color: $dark-100;
-      @include adaptive-value("font-size", 12, 6, 1);
-      line-height: $lh_h3;
-      font-weight: 700;
-      text-transform: uppercase;
-      @include adaptive-value("margin-bottom", 18, 5, 1);
-    }
-    & > *:not(:first-child) {
-      @include adaptive-value("margin-bottom", 14.3, 0, 1);
-    }
-    & > *:last-child {
-      margin-bottom: 0;
-    }
+  &__list > *:not(:last-child) {
+    padding-bottom: calc(10px + (14 - 10) * ((100vw - 1100px) / (1440 - 1100)));
   }
   &__link {
     @include adaptive-value("font-size", 14, 6, 1);
@@ -67,6 +60,7 @@
   }
 }
 .hotel-subscription {
+  max-width: calc(220px + (260 - 220) * ((100vw - 768px) / (1440 - 768)));
   padding-top: 4.5px;
   &__title {
     color: $dark-100;
@@ -78,8 +72,7 @@
   }
   &__text {
     @include adaptive-value("font-size", 14, 6, 1);
-    @include adaptive-value("margin-bottom", 18, 0, 1);
-    max-width: 260px;
+    @include adaptive-value("margin-bottom", 22, 0, 1);
   }
 }
 .footer-border {
@@ -88,6 +81,9 @@
   background-color: #E5E5E5;
 }
 .footer-bottom {
+  &__copy {
+    @include adaptive-value("font-size", 14, 10, 1);
+  }
   &__row {
     display: flex;
     justify-content: space-between;
@@ -97,30 +93,22 @@
     display: flex;
     align-items: center;
     & > * {
-      font-size: 24px;
+      @include adaptive-value("font-size", 24, 10, 1);
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 	  	-webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
     }
     & > *:not(:last-child) {
-      padding-right: 20px;
+      padding-right: 22px;
     }
     & > *:not(:first-child) {
       font-size: 22px;
     }
   }
 }
-@media (max-width: 1439px) {
-  .footer {
-    &-top {
-      &__row {
-        flex-direction: column;
-        align-items: center;
-        & > *:not(:last-child) {
-          margin-bottom: 20px;
-        }
-      }
-    }
+@media (max-width: 1024px) {
+  .hotel-logo__text {
+    display: none;
   }
 }
 /* end footer style */

@@ -11,5 +11,6 @@ if (document.querySelector('.slider-card')) { // проверка наличия
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    loop: true,
   });
 };

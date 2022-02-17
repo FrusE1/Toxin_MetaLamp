@@ -2,16 +2,22 @@
 @import "@variables";
 @import "@mixin";
 .room-filter {
-  @include adaptive-value("margin-top", 30, 10, 1);
-  @include adaptive-value("margin-bottom", 72, 20, 1);
+  @include adaptive-value("padding-top", 30, 10, 1);
+  @include adaptive-value("padding-bottom", 72, 20, 1);
+  border-bottom: 1px solid $dark-25;
   &__container {
     display: flex;
     justify-content: space-around;
   }
-  &__article {
+  &__side {
     padding-right: 15px;
     max-width: 266px;
   }
+  &__dropdown {
+    margin-bottom: calc(10px + (12 - 10) * ((100vw - 320px) / (500 - 320)));
+  }
+}
+.side-filter {
   &__filter-date {
     margin-bottom: 20px;
   }
@@ -59,14 +65,34 @@
     color: $dark-50;
   }
 }
-.border-bottom {
-  width: 100%;
-  height: 1px;
-  background-color: $dark-25;
+.dropdown-filter {
+  padding: 5px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 4px;
+  width: calc(70px + (90 - 70) * ((100vw - 320px) / (500 - 320)));
+  display: none;
+  &__text {
+    font-size: calc(9px + (11 - 9) * ((100vw - 320px) / (500 - 320)));
+    line-height: $lh_h3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+  }
+  &__span {
+    position: absolute;
+    top: calc(0.2px + (0.5 - 0.2) * ((100vw - 320px) / (500 - 320)));
+    right: 0;
+    transition: 0.5s;
+  }
+  &.filter-active &__span {
+    top: calc(-0.5px + (-1.5 - (-0.5)) * ((100vw - 320px) / (500 - 320)));
+    transform: rotateX(180deg);
+  }
 }
 @media (min-width: 1440px) {
   .room-filter {
-    &__article {
+    &__side {
       padding-right: 60px;
     }
   }
@@ -89,17 +115,19 @@
       flex-direction: column;
       align-items: center;
     }
-    &__item {
-      width: calc(210px + (266 - 210) * ((100vw - 320px) / (1024 - 320)));
-      padding-right: 10px;
-    }
-    &__article {
+    &__side {
       padding-right: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       min-width: 100%;
       margin-bottom: 20px;
+    }
+  }
+  .side-filter {
+    &__item {
+      width: calc(210px + (266 - 210) * ((100vw - 320px) / (1024 - 320)));
+      padding-right: 10px;
     }
     &__filter-date {
       margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1024 - 320)));
@@ -128,12 +156,22 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .dropdown-filter {
+    display: block;
+  }
+  .room-filter__side {
+    display: none;
+    min-width: 220px;
+  }
+}
 @media (max-width: 488px) {
   .room-filter {
-    &__article {
+    &__side {
       flex-direction: column;
-      align-items: center;
     }
+  }
+  .side-filter {
     &__item {
       padding-right: 0;
     }

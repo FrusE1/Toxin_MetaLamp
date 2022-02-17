@@ -1,7 +1,7 @@
 /* start sub-field style */
 @import "@variables";
 .sub-field {
-	display: inline-block;
+	box-sizing: border-box;
 	&__field {
 		position: relative;
 	}
@@ -9,7 +9,7 @@
 		margin-bottom: 5px;
 	}
 	&__input {
-		width: 266px;
+		width: 100%;
 		height: 44px;
 		border: 1px solid $dark-25;
 		border-radius: 4px;
