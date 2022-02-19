@@ -12,9 +12,30 @@
 	}
 	&__date-container {
 		@include adaptive-value("margin-bottom", 20, 15, 1);
+		& .date-dropdown__input {
+			padding-left: 14px;
+			padding-bottom: 3px;
+		}
 	}
 	&__drop-container {
 		@include adaptive-value("margin-bottom", 30, 20, 1);
+		& .dropdown-guests__input {
+			padding-left: 14px;
+		}
+		& .dropdown-guests__label {
+			right: 5%;
+		}
+	}
+	&__btn-container {
+		& .button__span {
+			right: 4%;
+		}
+		& .button__item-price {
+			padding-top: 14.5px;
+			padding-bottom: 14.5px;
+			padding-left: 13px;
+			padding-right: 16px;
+		}
 	}
 }
 /* end room-select block style */
