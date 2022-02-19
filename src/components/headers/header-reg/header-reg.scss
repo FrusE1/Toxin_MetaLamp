@@ -7,9 +7,58 @@
   @include adaptive-value("padding-top", 15, 5, 1);
   @include adaptive-value("padding-bottom", 15, 5, 1);
 }
-.header-content {
+.header-body {
   align-items: center;
   display: flex;
+  &__burger {
+    @media (max-width: 768px) {
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 4;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $dark-100;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.3s;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      & span {
+        position: absolute;
+        background-color: $dark-100;
+        top: 46%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: 0.3s;
+      }
+    }
+    &.burger-active::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &.burger-active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    &.burger-active span {
+      transform: scale(0);
+    }
+    &.burger-active {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+  }
 }
 .header-container {
   display: flex;
@@ -96,13 +145,59 @@
       flex-direction: column;
     }
   }
-  .hotel-logo {
-    &__row > *:last-child {
-      display: none;
+}
+@media (max-width: 768px) {
+  .menu-header {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.3s;
+    z-index: 3;
+    &__list {
+      flex-direction: column;
+      margin: 100px 0 0 20px;
     }
-    &__row > *:first-child {
-      margin: 0;
+    &__item:not(:last-child) {
+      padding-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (768 - 320)));;
     }
+    &__link {
+      color: $dark-100;
+      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (768 - 320)));
+      & > .icon-more {
+        color: $dark-100;
+        font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (768 - 320)));
+      }
+    }
+  }
+  .menu-header.burger-active {
+    top: 0;
+  }
+  .account-head {
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -100%;
+    transition: 0.3s;
+    z-index: 4;
+    & > *:not(:last-child) {
+      margin-right: calc(30px + (40 - 30) * ((100vw - 320px) / (768 - 320)));
+    }
+    &__btn-login .button__item-border {
+      padding: 12.5px 24.3px;
+    }
+    &__btn-reg .button__item_default {
+      padding: 14.5px 24.85px;
+    }
+    &__btn .button__item {
+      font-size: 12px;
+    }
+  }
+  .account-head.burger-active {
+    bottom: 40px;
+    left: 40px;
   }
 }
 /* end header-reg style */

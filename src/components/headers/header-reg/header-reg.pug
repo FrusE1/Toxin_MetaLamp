@@ -7,8 +7,10 @@ header.header-reg.header
         .hotel-logo__row
           img(src="../src/images/icons/header-logo.svg" class="hotel-logo__img" alt="hotel-logo")
           img(src="../src/images/icons/logo-text.svg" class="hotel-logo__img" alt="hotel-logo")
-    .header-reg__content.header-content
-      .header-reg__menu.menu-header
+    .header-reg__body.header-body
+      .header-body__burger
+        span
+      nav.header-reg__menu.menu-header
         ul.menu-header__list
           li.menu-header__item
             a.menu-header__link(href="#") О нас
@@ -22,8 +24,8 @@ header.header-reg.header
           li.menu-header__item
             a(class="menu-header__link link-icon_padding" href="#") Соглашения
               .icon-more
-      form(action="#" class="header-reg__account account-head")
-        .account-head__btn-login
+      .header-reg__account.account-head
+        .account-head__btn.account-head__btn-login
           +buttonBorder("войти")
-        .account-head__btn-reg
+        .account-head__btn.account-head__btn-reg
           +button("зарегистрироваться", "#popup")
