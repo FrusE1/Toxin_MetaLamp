@@ -1,0 +1,19 @@
+extends /pages/base.pug
+
+block head
+  title Toxin-registration
+block content
+  body
+    .wrapper.wrapper-toxin
+      include /components/headers/header-reg/header-reg.pug
+      include /components/headers/header-login/header-login.pug
+      main.reg-page
+        .reg-page__background.reg-background
+          .reg-background__image
+            img(src="../src/images/background-image-2.png" alt="background-image")
+        .popup.popup-reg
+          include /pop-up/reg-card/reg-card.pug
+        .popup.popup-login.popup-active
+          include /pop-up/login-card/login-card.pug
+      include  /components/footers/footer/footer.pug
+      include  /components/footers/footer-mobile/footer-mobile.pug

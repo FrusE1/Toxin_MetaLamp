@@ -1,3 +1,2 @@
-mixin buttonBorder(text)
-	a(href="#")
-		button.button__item.button__item-border=text
+mixin buttonBorder(text, active)
+	button(class=`button__item button__item-border ${active}`)=text

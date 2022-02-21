@@ -36,5 +36,10 @@ body {
 		max-width: 1750px;
 	}
 }
+@media (min-width: #{$table-width + 1 + px}) {
+  .wrapper-toxin > .footer-mobile {
+    display: none;
+  }
+}
 
 /* Конец глобальных стилей */

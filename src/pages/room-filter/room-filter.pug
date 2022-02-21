@@ -18,12 +18,12 @@ block content
       include /components/headers/header-reg/header-reg.pug
       include /components/headers/header-login/header-login.pug
       include /components/filter-date/filter-date.pug
-      .room-filter
+      main.room-filter
         .room-filter__container._container
           .room-filter__dropdown.dropdown-filter
             .dropdown-filter__text Фильтр
               span(class="dropdown-filter__span icon-more")
-          .room-filter__side.side-filter
+          aside.room-filter__side.side-filter
             .side-filter__filter-date.side-filter__item
               +filterDate("даты пребывания в отеле")
             .side-filter__guests.side-filter__item
@@ -39,7 +39,7 @@ block content
               +dropdownRoom("удобства номера")
             .side-filter__checkbox-list.side-filter__item
               +checkboxList("дополнительные удобства")
-          .room-filter__cards.cards-room
+          section.room-filter__cards.cards-room
             h1.cards-room__title Номера, которые мы для вас подобрали
             .cards-room__cards
               +cardSlider("../src/images/card-1.jpg", "../src/images/card-2.jpg", "5", "888", "люкс", "9 990₽", "145")

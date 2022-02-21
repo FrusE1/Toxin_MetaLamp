@@ -7,19 +7,12 @@ block content
     .wrapper.wrapper-toxin
       include /components/headers/header-reg/header-reg.pug
       include /components/headers/header-login/header-login.pug
-      .main-page
+      main.main-page
         .main-page__background
           .main-page__image
             img(src="../src/images/background-image-1.png" alt="background-image")
-          .main-page__text Лучшие номера для вашей работы, отдыха и просто вдохновения
-        .main-page__background.reg-background
-          .main-page__image.reg-image
-            img(src="../src/images/background-image-2.png" alt="background-image")
+          .main-page__text Лучшие номера для вашей работы, отдыха и просто вдохновени
       .main-page__card
         include /pop-up/room-select/room-select.pug
-      .popup.popup-reg
-        include /pop-up/reg-card/reg-card.pug
-      .popup.popup-login
-        include /pop-up/login-card/login-card.pug
       include  /components/footers/footer/footer.pug
       include  /components/footers/footer-mobile/footer-mobile.pug

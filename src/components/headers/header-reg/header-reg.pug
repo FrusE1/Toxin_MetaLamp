@@ -24,8 +24,8 @@ header.header-reg.header
           li.menu-header__item
             a(class="menu-header__link link-icon_padding" href="#") Соглашения
               .icon-more
-      .header-reg__account.account-head
+      form(class="header-reg__account account-head" action="reg-page.html")
         .account-head__btn.account-head__btn-login
-          +buttonBorder("войти")
+          +buttonBorder("войти", "active-login")
         .account-head__btn.account-head__btn-reg
-          +button("зарегистрироваться", "#popup")
+          +button("зарегистрироваться", "active-reg")

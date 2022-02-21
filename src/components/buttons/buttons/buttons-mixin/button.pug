@@ -1,3 +1,2 @@
-mixin button(name)
-  a(href="#")
-    button.button__item.button__item_default=name
+mixin button(name, active)
+  button(class=`button__item button__item_default ${active}`)=name
