@@ -8,7 +8,7 @@
 }
 .reg-background {
   &__image {
-    height: calc(543px + (684 - 543) * ((100vw - 320px) / (1440 - 320)));
+    height: calc(600px + (684 - 600) * ((100vw - 320px) / (1440 - 320)));
     overflow: hidden;
     & img {
       transform: scale(1.065);

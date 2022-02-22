@@ -1,7 +1,7 @@
 extends /pages/base.pug
 
 block head
-  title Toxin-registration
+  title Toxin Sign-in
 block content
   body
     .wrapper.wrapper-toxin
@@ -11,9 +11,9 @@ block content
         .reg-page__background.reg-background
           .reg-background__image
             img(src="../src/images/background-image-2.png" alt="background-image")
-        .popup.popup-reg.popup-active
+        .popup.popup-reg
           include /pop-up/reg-card/reg-card.pug
-        .popup.popup-login
+        .popup.popup-login.popup-active
           include /pop-up/login-card/login-card.pug
       include  /components/footers/footer/footer.pug
       include  /components/footers/footer-mobile/footer-mobile.pug

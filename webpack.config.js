@@ -23,6 +23,7 @@ const PAGES_DIRNAMES = [
 	'main-page/',
 	'room-filter/',
 	'reg-page/',
+	'login-page/',
 ];
 
 const PAGES_DIR = PAGES_DIRNAMES.map(dirName => PAGES_ROOT + dirName);
