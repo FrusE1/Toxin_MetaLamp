@@ -1,7 +1,6 @@
 /* Подключение шрифтов */
 @font-face {
 	font-family: "Montserrat";
-	// src: url("../fonts/Montserrat-Regular.eot");
 	src: local("☺"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"),
 		url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype"),
 		url("../fonts/Montserrat-Regular/Montserrat-Regular.svg") format("svg");
@@ -10,7 +9,6 @@
 }
 @font-face {
 	font-family: "Montserrat";
-	// src: url("../fonts/Montserrat-Bold.eot");
 	src: local("☺"), url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"),
 		url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"),
 		url("../fonts/Montserrat-Bold/Montserrat-Bold.svg") format("svg");

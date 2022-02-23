@@ -1,12 +1,13 @@
-mixin review(name, date, comment)
+include /components/buttons/like/like.pug
+mixin review(name, img, date, like, comment)
 	.review
 		.review-profile
 			.review-profile__avatar
-				img(src=require('/src/images/avatar.png') class="review-profile__img")
+				img(src=require(`/src/images/${img}`) class="review-profile__img")
 			.review-profile__inf
 				.review-profile__name=name
 				.review-profile__date=date
 		.review-grade
 			.review-grade__like
-				+like('12', true)
+				+like(`${like}`)
 			.review-grade__comment=comment

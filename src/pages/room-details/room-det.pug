@@ -1,0 +1,54 @@
+extends /pages/base.pug
+
+block head
+  title Toxin room details
+block content
+  include /components/benefits/benefits.pug
+  include /components/review/review.pug
+  body
+    .wrapper.wrapper-toxin
+      include /components/headers/header-reg/header-reg.pug
+      include /components/headers/header-login/header-login.pug
+      include /components/bullet-list/bullet-list.pug
+      main.room-det
+        .room-det__images.images-room
+          .images-room__items
+            .images-room__img
+              img(src="../src/images/room-details-img_1.png" alt="room-img_1")
+            .images-room__img
+              img(src="../src/images/room-details-img_2.png" alt="room-img_2")
+            .images-room__img
+              img(src="../src/images/room-details-img_3.png" alt="room-img_3")
+        .room-det__content.details-room._container
+          .details-room__rows
+            .details-room__row
+              section.details-room__benefits
+                h2.details-room__title Сведения о номере
+                .benefits
+                  +benefits("Комфорт", "Шумопоглощающие стены", "icon-emoticon")
+                  +benefits("Удобство", "Окно в каждой из спален", "icon-city benefits__icon-city")
+                  +benefits("Удобство", "Окно в каждой из спален", "icon-fire")
+              section.details-room__chart.chart
+                h2.details-room__title Впечатления от номера
+                .chart__container
+                  canvas(class="chart__canvas" id="myChart")
+            .details-room__row
+              section.details-room__review
+                h2.details-room__title Отзывы посетителей номера
+                +review("Мурад Сарафанов", "avatar.png", "5 дней назад", "11", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+                +review("Патрисия Стёклышкова", "avatar_2.png", "Неделю назад", "2", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+            .details-room__row
+              section.details-room__bullet-list.bullet-list
+                h2.details-room__title Правила
+                .bullet-list-container
+                  ul.bullet-list__items
+                    +bulletList("Нельзя с питомцами")
+                    +bulletList("Без вечеринок и мероприятий")
+                    +bulletList("Время прибытия — после 13:00, а выезд до 12:00")
+              section.details-room__cancel.cancel-room
+                h2.details-room__title Отмена
+                p.cancel-room__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+          .details-room__card
+            include /pop-up/total-price/total-price.pug
+      include  /components/footers/footer/footer.pug
+      include  /components/footers/footer-mobile/footer-mobile.pug

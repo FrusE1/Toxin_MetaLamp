@@ -2,19 +2,17 @@
 @import "@variables";
 .benefits {
 	width: $form_width;
+	& > *:not(:last-child) {
+		border-bottom: 1px solid $dark-10;
+	}
 	&-container {
 		display: flex;
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			padding-bottom: 20px;
 		}
 		&:not(:first-child) {
-			margin-top: 19px;
+			padding-top: 19px;
 		}
-	}
-	&-border {
-		width: 280px;
-		height: 1px;
-		background: $dark-10;
 	}
 	&__icon {
 		vertical-align: middle;
