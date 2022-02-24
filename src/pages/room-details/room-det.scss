@@ -60,6 +60,11 @@
   max-width: 341px;
 }
 .chart {
+  &__container {
+    position: relative;
+    width: 20vw;
+    height: 12vw;
+  }
   &__canvas {
     width: 120px;
     height: 120px;
