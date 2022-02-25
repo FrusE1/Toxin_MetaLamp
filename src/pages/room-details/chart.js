@@ -1,18 +1,20 @@
 import Chart from 'chart.js/auto';
 import { removeData } from 'jquery';
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('chart').getContext('2d');
+ctx.canvas.parentNode.style.height = "120px";
+ctx.canvas.parentNode.style.width = "120px";
+let chartArr = [130, 65, 65, 0]
 const myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
     labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
     datasets: [{
-      label: '# of Votes',
-      data: [130, 65, 65, 0],
+      data: [chartArr[0], chartArr[1], chartArr[2], chartArr[3]],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.9)',
-        'rgba(54, 162, 235, 0.9)',
-        'rgba(255, 206, 86, 0.9)',
-        'rgba(75, 192, 192, 0.9)'
+        'rgba(255, 227, 156, 1)',
+        'rgba(111, 207, 151, 1)',
+        'rgba(188, 156, 255, 1)',
+        'rgba(145, 145, 145, 1)'
       ],
       spacing: 2,
       cutout: '89%',
@@ -21,6 +23,7 @@ const myChart = new Chart(ctx, {
   options: {
     plugins: {
       legend: {
+        display: false,
         position: 'right',
         align: 'end',
         labels: {
@@ -28,15 +31,13 @@ const myChart = new Chart(ctx, {
             family: "Montserrat",
             size: 14,
           }
-        }
+        },
       }
     },
-    layout: {
-      padding: {
-        right: 10,
-      }
-    }
+    rotation: 180,
+    maintainAspectRatio: false,
   },
 });
-ctx.canvas.parentNode.style.height = '120px';
-ctx.canvas.parentNode.style.width = '120px';
+// Центральный текст внутри диаграммы
+const chartText = document.querySelector('.chart__text span');
+chartText.innerHTML = `${chartArr[0] + chartArr[1] + chartArr[2] + chartArr[3]}`

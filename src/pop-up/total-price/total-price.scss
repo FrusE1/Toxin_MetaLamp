@@ -1,6 +1,7 @@
 /* start total-price block style */
 @import "@variables";
 .total-price {
+	box-sizing: border-box;
 	margin-bottom: 40px;
 	&__date-container {
 		margin-bottom: 20px;

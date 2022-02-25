@@ -60,14 +60,25 @@
   max-width: 341px;
 }
 .chart {
+  width: 311px;
   &__container {
     position: relative;
-    width: 20vw;
-    height: 12vw;
   }
-  &__canvas {
-    width: 120px;
-    height: 120px;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include adaptive-value("font-size", 12, 10, 1);
+    line-height: $lh_h3;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $purple;
+    text-align: center;
+    & span {
+      @include adaptive-value("font-size", 24, 18, 1);
+      padding-bottom: 2px;
+    }
   }
 }
 /* end room-details style */
