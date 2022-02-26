@@ -36,6 +36,11 @@
 .details-room {
   display: flex;
   justify-content: space-between;
+  &__benefits {
+    & .benefits-container:nth-child(3) {
+      padding-top: 21px;
+    }
+  }
   &__rows {
     flex: 0 1 60%;
     display: flex;
@@ -49,7 +54,7 @@
     justify-content: space-between;
   }
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     @include adaptive-value("font-size", 19, 14, 1);
     line-height: $lh_h2;
     color: $dark-100;
@@ -60,25 +65,59 @@
   max-width: 341px;
 }
 .chart {
-  width: 311px;
+  width: 341px;
   &__container {
     position: relative;
+    display: flex;
+    align-items: flex-end;
   }
   &__text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 49%;
     transform: translate(-50%, -50%);
-    @include adaptive-value("font-size", 12, 10, 1);
+    @include adaptive-value("font-size", 12, 11, 1);
     line-height: $lh_h3;
     text-transform: uppercase;
     font-weight: 700;
     color: $purple;
     text-align: center;
-    & span {
-      @include adaptive-value("font-size", 24, 18, 1);
-      padding-bottom: 2px;
+  }
+  &__list {
+    margin-left: 26px;
+    padding-bottom: 1px;
+  }
+  &__item::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 27%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  &__item {
+    padding-left: 15px;
+    position: relative;
+    &:nth-child(1)::before {
+      background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
     }
+    &:nth-child(2)::before {
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+    &:nth-child(3)::before {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+    &:nth-child(4)::before {
+      background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+    }
+  }
+}
+.text-chart {
+  &__num {
+    @include adaptive-value("font-size", 24, 20, 1);
+    padding-bottom: 7.5px;
   }
 }
 /* end room-details style */

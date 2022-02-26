@@ -27,15 +27,19 @@ block content
                 .benefits
                   +benefits("Комфорт", "Шумопоглощающие стены", "icon-emoticon")
                   +benefits("Удобство", "Окно в каждой из спален", "icon-city benefits__icon-city")
-                  +benefits("Удобство", "Окно в каждой из спален", "icon-fire")
+                  +benefits("Уют", "Номер оснащён камином", "icon-fire benefits__icon-fire")
               section.details-room__chart.chart
                 h2.details-room__title Впечатления от номера
                 .chart__container
                   canvas(class="chart__canvas" id="chart")
-                  .chart__text 
-                    span 1
-                    br
-                    | голосов
+                  .chart__text.text-chart
+                    .text-chart__num 1
+                    .text-chart__text голосов
+                  ul.chart__list
+                    li.chart__item Великолепно
+                    li.chart__item Хорошо
+                    li.chart__item Удовлетворительно
+                    li.chart__item Разочарован
             .details-room__row
               section.details-room__review
                 h2.details-room__title Отзывы посетителей номера

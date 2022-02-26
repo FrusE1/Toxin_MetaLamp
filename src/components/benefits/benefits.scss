@@ -23,7 +23,11 @@
 		-webkit-text-fill-color: transparent;
 		&-city {
 			font-size: 38px;
-			padding-right: 15px;
+			padding: 5.5px 15px 0 5px;
+		}
+		&-fire {
+			font-size: 43px;
+			padding: 2.5px 12.5px 0 3px;
 		}
 	}
 	&-desc__title {
