@@ -1,5 +1,6 @@
-@import "@variables";
 /* start like style */
+@import "@variables";
+@import "@mixin";
 .like {
 	margin-bottom: 34px;
 	&__title {
@@ -42,13 +43,13 @@
 		font-size: 10px;
 		color: $dark-25;
 		left: 21px;
-		bottom: 1.4px;
+		@include adaptive-value("bottom", 1.4, 4, 1);
 		transition: 0.5s;
 	}
 	&__span {
 		position: absolute;
 		left: 5px;
-		bottom: 0.5px;
+		@include adaptive-value("bottom", 0.5, 3.5, 1);
 		&-icon {
 			display: none;
 			font-size: 10px;

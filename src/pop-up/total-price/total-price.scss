@@ -1,48 +1,55 @@
 /* start total-price block style */
 @import "@variables";
+@import "@mixin";
 .total-price {
 	box-sizing: border-box;
-	margin-bottom: 40px;
+	@include adaptive-value("margin-bottom", 40, 15, 1);
 	&__date-container {
-		margin-bottom: 20px;
+		@include adaptive-value("margin-bottom", 20, 10, 1);
+		& .date-dropdown__input {
+			@include adaptive-value("padding-bottom", 6, 0, 1);
+		}
 	}
 	&__drop-container {
-		margin-bottom: 19px;
+		@include adaptive-value("margin-bottom", 19, 15, 1);
+		& .dropdown-guests__input {
+			@include adaptive-value("padding-bottom", 5, 0, 1);
+		}
 	}
 	&__head {
-		margin-bottom: 20px;
+		@include adaptive-value("margin-bottom", 20, 10, 1);
 	}
 }
 .price-head {
 	display: flex;
 	justify-content: space-between;
 	&__number {
-		font-size: $h1;
+		@include adaptive-value("font-size", 24, 18, 1);
 		line-height: $lh_h1;
 		font-weight: 700;
 		color: $dark-100;
 		& > span:first-child {
 			padding-right: 4px;
-			font-size: $fz_body;
+			@include adaptive-value("font-size", 14, 11, 1);
 			line-height: $lh_body;
 		}
 		& > span:last-child {
 			padding-top: 2px;
 			padding-left: 8px;
 			text-transform: uppercase;
-			font-size: $h3;
+			@include adaptive-value("font-size", 12, 10, 1);
 			line-height: $lh_h3;
 			color: $purple;
 		}
 	}
 	&__price {
-		padding-top: 7px;
-		font-size: $h3;
+		@include adaptive-value("padding-top", 7, 4, 1);
+		@include adaptive-value("font-size", 12, 10, 1);
 		line-height: $lh_h3;
 		color: $dark-50;
 		& span {
 			padding-right: 3.5px;
-			font-size: $fz_body;
+			@include adaptive-value("font-size", 14, 11, 1);
 			line-height: $lh_body;
 			font-weight: 700;
 			color: $dark-50;
@@ -52,13 +59,14 @@
 .bill-top {
 	margin-bottom: 30px;
 	& > *:not(:last-child) {
-		margin-bottom: 16px;
+		@include adaptive-value("margin-bottom", 16, 10, 1);
 	}
 	&__item {
 		display: flex;
 		justify-content: space-between;
 	}
 	&__price {
+		@include adaptive-value("font-size", 14, 12, 1);
 		line-height: 125%;
 	}
 }
@@ -87,13 +95,15 @@
 	justify-content: space-between;
 	width: 240px;
 	&__text {
+		@include adaptive-value("font-size", 14, 12, 1);
 		max-width: 218px;
 		line-height: 125%;
 	}
 }
 .bill-bottom {
 	display: flex;
-	font-size: $h2;
+	justify-content: space-between;
+	@include adaptive-value("font-size", 19, 14, 1);
 	line-height: $lh_h2;
 	color: $dark-100;
 	font-weight: 700;
@@ -101,8 +111,11 @@
 	&__dots {
 		position: relative;
 		bottom: 4px;
-		width: 182.5px;
+		width: 100%;
 		border-bottom: 1px dotted $dark-25;
+	}
+	&__price {
+		white-space: nowrap;
 	}
 }
 /* end total-price block style */

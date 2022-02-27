@@ -34,8 +34,8 @@
 	&__label {
 		position: absolute;
 		font-size: 13px;
-		right: 6%;
-		@include adaptive-value("top", 32, 22, 1);
+		@include adaptive-value("top", 30, 24, 1);
+		@include adaptive-value("right", 15, 12, 1);
 		transition: 0.4s;
 	}
 	&__block {
