@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 
 const PATHS = {
@@ -67,11 +68,26 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(s*)css$/,
+				test: /\.(sa|sc|c)ss$/,
 				use: [
 					MiniCssExtractPlugin.loader,
 					'css-loader',
-					'sass-loader'
+					{
+						loader: "postcss-loader",
+						options: {
+							postcssOptions: {
+								plugins: [
+									[
+										"postcss-preset-env",
+										{
+											// Options
+										},
+									],
+								],
+							},
+						},
+					},
+					'sass-loader',
 				]
 			},
 			{
